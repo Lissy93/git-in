@@ -1,0 +1,52 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Hero from '../components/Hero.astro'
+import Feature from '../components/Feature.astro'
+import Counter from '../components/Counter.astro'
+import Contributors from '../components/Contributors.astro'
+import guides from '../data/guides';
+
+---
+
+<DefaultLayout title="Home">
+  <Hero />
+  <section class="mt-64 mb-32">
+    <h2 class="mb-16 text-6xl">Contributors</h2>
+    <Contributors />
+  </section>
+  <section class="my-64">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Articles</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        { guides.map(({ title, slug, icon, description }) =>
+          (
+          <Feature icon={icon} title={title} link={slug}>
+            { description }
+          </Feature>
+          )
+        )}
+      </div>
+    </div>
+  </section>
+  <section class="mt-64 mb-32">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Counters</h2>
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+        <Counter count="130" title="Stars" sub="On GitHub" />
+        <Counter count="17" title="Accessible" sub="Components" />
+        <Counter count="500" title="Commits" sub="Merged" />
+        <Counter count="18+" title="Months" sub="Since launch" />
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  section {
+    width: 96vw;
+    margin: 0 auto;
+  }
+  .guide-link {
+    text-decoration: none !important;
+  }
+</style>

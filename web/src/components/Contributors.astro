@@ -1,0 +1,91 @@
+---
+// src/components/ContributorList.astro
+import yaml from 'js-yaml';
+
+const URL = 'https://gist.githubusercontent.com/Lissy93/7b2d2781e57b0e1b4f3cc97eabcf299a/raw/14fd5d3bdec43e28bedaa40e350ec5adc2b3bf68/test.yml';
+
+
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+
+const placeholderImage = 'https://i.ibb.co/X231Rq8/octo-no-one.png';
+
+const fetchGitHubUserInfo = async (username) => {
+  const headers = GITHUB_TOKEN ? { 'Authorization': `token ${GITHUB_TOKEN}` } : undefined;
+  const response = await fetch(`https://api.github.com/users/${username}`, { headers });
+  if (!response.ok) return null;
+  const userInfo = await response.json();
+  return {
+    fullName: userInfo.name || username,
+    avatarUrl: userInfo.avatar_url || placeholderImage,
+  };
+};
+
+const fetchData = async () => {
+  const response = await fetch(URL);
+  const textData = await response.text();
+  const data = yaml.load(textData);
+
+  // Fetch GitHub user info for each contributor
+  for (const contributor of data.contributors) {
+    contributor.profile = `https://github.com/${contributor.username}`;
+    const userInfo = await fetchGitHubUserInfo(contributor.username);
+    if (userInfo) {
+      contributor.fullName = userInfo.fullName;
+      contributor.avatarUrl = userInfo.avatarUrl;
+    }
+  }
+
+  return data.contributors;
+};
+
+const contributors = await fetchData();
+---
+
+<section>
+  <p>
+    Want to be included here? Submit a PR adding your name + response
+  </p>
+  <ul>
+    {contributors.map((contributor) => (
+      <li class="user-response-block">
+        <a class="user" href={contributor.profile}>
+          <img class="avatar" width="64" src={contributor.avatarUrl} alt={contributor.username} />
+          <span class="full-name">{contributor.fullName}</span>
+        </a>
+        <div class="content">
+          <strong class="question">{contributor.question}</strong><br />
+          <i class="response">{contributor.response}</i>
+        </div>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style lang="scss">
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  }
+  .user-response-block {
+    @apply flex flex-row gap-2;
+    @apply m-2 rounded;
+    @apply flex flex-wrap md:flex-nowrap items-center p-4 bg-gray-100 m-2 rounded;
+    background-color: var(--neutral-900);
+    .user {
+      @apply w-48 gap-2 flex flex-col;
+      .full-name {
+        @apply font-semibold text-lg text-center;
+      }
+      .avatar {
+        @apply w-32 rounded-full;
+      }
+    }
+    .content {
+      @apply flex-grow p-2;
+      .question, .response {
+        @apply text-lg;
+      }
+    }
+}
+
+</style>

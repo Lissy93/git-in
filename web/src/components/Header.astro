@@ -1,0 +1,67 @@
+---
+import Navigation from '../components/Navigation.astro'
+import { SkipLinks } from 'accessible-astro-components'
+import { Icon } from 'astro-icon'
+import guides from '../data/guides';
+
+---
+
+<header>
+  <SkipLinks />
+  <Navigation>
+    <li class="menu-item">
+      <a href="/">Home</a>
+    </li>
+    <li class="menu-item">
+      <a href="/contributing/">Contributing</a>
+    </li>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Guides</button>
+      <ul class="dropdown-menu">
+        { guides.map(({ title, slug, icon, description }) => (
+          <li class="submenu-item" title={description}>
+            <Icon name={icon} />
+            <a href={`/guides/${slug}`}>{ title }</a>
+          </li>
+        ))}
+      </ul>
+    </li>
+    <li class="menu-item type-icon">
+      <a href="https://github.com/lissy93/git-into-open-source" title="Go to the GitHub page">
+        <Icon pack="ion" name="logo-github" />
+      </a>
+    </li>
+  </Navigation>
+</header>
+
+<style lang="scss" is:global>
+  @use '../assets/scss/base/outline' as *;
+
+  header {
+    li {
+      display: flex;
+      gap: 0.5rem;
+    }
+    [astro-icon] {
+        margin-top: -4px;
+        width: 30px;
+
+        path {
+          fill: var(--action-color);
+          transition: fill 0.2s ease-in-out;
+        }
+      }
+    .type-icon a {
+      display: block;
+
+      &:hover {
+        [astro-icon] path {
+          fill: var(--action-color-state);
+        }
+      }
+    }
+    .submenu-item {
+      [astro-icon] { width: 20px; opacity: 0.8; }
+    }
+  }
+</style>

@@ -1,0 +1,18 @@
+---
+import CallToAction from './CallToAction.astro'
+
+const currentYear = new Date().getFullYear()
+---
+
+<footer>
+  <CallToAction />
+  <section class="py-8">
+    <div class="container text-center opacity-50">
+      <p>
+        <a href="https://github.com/lissy93/git-into-open-source">Git into Open Source</a> is
+        licensed under MIT - &copy; <a href="https://aliciasykes.com">Alicia Sykes</a>
+        {' ' + currentYear}
+      </p>
+    </div>
+  </section>
+</footer>

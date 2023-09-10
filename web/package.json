@@ -1,0 +1,36 @@
+{
+  "name": "git-into-open-source",
+  "description": "",
+  "version": "0.1.0",
+  "author": "Alicia Sykes",
+  "homepage": "https://github.com/lissy93/git-into-open-source",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/partytown": "^1.0.3",
+    "@astrojs/tailwind": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "accessible-astro-components": "^2.1.0",
+    "astro": "^2.0.1",
+    "astro-compress": "^2.0.6",
+    "astro-icon": "^0.7.3",
+    "eslint": "^8.33.0",
+    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "prettier": "^2.8.3",
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "sass": "^1.49.9",
+    "svgo": "^2.8.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
