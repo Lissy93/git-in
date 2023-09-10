@@ -1,0 +1,18 @@
+# Step 1: Pick a question to answer from this list:
+Q1: &Q1 Why do you want to get into open source?
+Q2: &Q2 What's the coolest open source project you've ever used or come across?
+Q3: &Q3 What advice would you give to someone new to open source?
+Q4: &Q4 Have you ever built or contributed to a project that you'd like to share with us here?
+Q5: &Q5 Which tech (tools, languages, libraries, etc) do you most use or love?
+Q6: &Q6 What are your go-to resources, for learning new things in open source? 
+Q7: &Q7 What's the most rewarding thing you've experienced in your open-source journey?
+Q8: &Q8 How do you balance open source work, alongside your day job?
+Q9: &Q9 Where do you see open source going in the future?
+
+# Step 2: Add your response to the list below using this format:
+# - username: your GitHub username
+#   question: *Q1
+#   response: >-
+#     your response - markdown is supported!
+contributors:
+
