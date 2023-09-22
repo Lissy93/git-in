@@ -18,7 +18,6 @@ import logging
 from typing import Dict, List, Union, Optional
 from requests.exceptions import RequestException
 
-
 # Constants
 """ The username / org where the repository is located """
 REPO_OWNER = os.environ.get("REPO_OWNER", "lissy93")
