@@ -1,11 +1,9 @@
 import unittest
 from unittest.mock import patch, mock_open, Mock
 
-# from lib import fetch_github_info
-
 import sys
 sys.path.append('..')
-from lib.insert_contributor_content import fetch_github_info
+from lib.insert_contributor_content import read_file, write_file, fetch_github_info, map_question_to_heading, fetch_all_stargazers, build_markdown_content
 
 class TestFetchGitHubInfo(unittest.TestCase):
 
@@ -38,6 +36,7 @@ class TestFetchGitHubInfo(unittest.TestCase):
         self.assertEqual(result['name'], 'test_username')
         self.assertEqual(result['avatar_url'], 'https://i.ibb.co/X231Rq8/octo-no-one.png')
 
+# TODO: Write tests for the other functions in lib/insert_contributor_content.py
 
 if __name__ == '__main__':
     unittest.main()
