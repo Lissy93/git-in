@@ -1,0 +1,6 @@
+web/node_modules
+.env
+
+
+lib/__pycache__
+lib/tests/__pycache__
