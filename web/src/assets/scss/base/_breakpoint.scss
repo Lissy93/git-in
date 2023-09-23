@@ -6,20 +6,29 @@ $breakpoints: (
   "default": 0,
   "small": 24em,
   "medium": 48em,
-  "large": 75em
+  "large": 75em,
+  "small-down": null, // these won't actually store any values
+  "medium-down": null,
+  "large-down": null
 ) !default;
 
 @mixin breakpoint($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-      @content;
+    @if str-index($breakpoint, "-down") {
+      $breakpoint-name: str-slice($breakpoint, 0, str-index($breakpoint, "-down") - 1);
+      @media (max-width: map-get($breakpoints, $breakpoint-name) - 0.01em) {
+        @content;
+      }
+    } @else {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
     }
   } @else if (type_of($breakpoint) == number) {
     @media (min-width: $breakpoint+"px") {
       @content;
     }
-  }
-  @else {
+  } @else {
     @error "Not a correct value, check _base-breakpoints for available values.";
   }
 }
