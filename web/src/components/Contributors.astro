@@ -5,7 +5,8 @@ import yaml from 'js-yaml';
 const URL = 'https://gist.githubusercontent.com/Lissy93/7b2d2781e57b0e1b4f3cc97eabcf299a/raw/14fd5d3bdec43e28bedaa40e350ec5adc2b3bf68/test.yml';
 
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+// const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_TOKEN='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'
 
 const placeholderImage = 'https://i.ibb.co/X231Rq8/octo-no-one.png';
 
@@ -62,6 +63,7 @@ const contributors = await fetchData();
 </section>
 
 <style lang="scss">
+  @use '../assets/scss/base/breakpoint' as *;
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -70,7 +72,15 @@ const contributors = await fetchData();
     @apply flex flex-row gap-2;
     @apply m-2 rounded;
     @apply flex flex-wrap md:flex-nowrap items-center p-4 bg-gray-100 m-2 rounded;
-    background-color: var(--neutral-900);
+    background-color: var(--neutral-background);
+
+    
+    @include breakpoint(small-down) {
+      width: calc(100vw - 2rem);
+      justify-content: center;
+      .user { align-items: center; }
+    }
+
     .user {
       @apply w-48 gap-2 flex flex-col;
       .full-name {

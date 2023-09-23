@@ -2,7 +2,8 @@
 import Navigation from '../components/Navigation.astro'
 import { SkipLinks } from 'accessible-astro-components'
 import { Icon } from 'astro-icon'
-import guides from '../data/guides';
+
+const guides = await Astro.glob('./../pages/guides/*.md');
 
 ---
 
@@ -18,10 +19,10 @@ import guides from '../data/guides';
     <li class="menu-item has-dropdown">
       <button aria-haspopup="true" aria-expanded="false">Guides</button>
       <ul class="dropdown-menu">
-        { guides.map(({ title, slug, icon, description }) => (
-          <li class="submenu-item" title={description}>
-            <Icon name={icon} />
-            <a href={`/guides/${slug}`}>{ title }</a>
+        { guides.map((guide) => (
+          <li class="submenu-item" title={guide.frontmatter.description}>
+            { guide.frontmatter.icon && <Icon name={guide.frontmatter.icon} /> }
+            <a href={`${guide.url}`}>{ guide.frontmatter.title }</a>
           </li>
         ))}
       </ul>
