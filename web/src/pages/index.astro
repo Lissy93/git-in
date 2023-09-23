@@ -4,7 +4,7 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import Contributors from '../components/Contributors.astro'
-import guides from '../data/guides';
+const guides = await Astro.glob('./guides/*.md');
 
 ---
 
@@ -18,17 +18,26 @@ import guides from '../data/guides';
     <div class="container">
       <h2 class="mb-16 text-6xl">Articles</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        { guides.map(({ title, slug, icon, description }) =>
-          (
-          <Feature icon={icon} title={title} link={slug}>
-            { description }
-          </Feature>
-          )
-        )}
-      </div>
+        { 
+          guides
+          .sort((a, b) => {
+            const indexA = a.frontmatter.index ?? Infinity;
+            const indexB = b.frontmatter.index ?? Infinity;
+            return indexA - indexB;
+          })
+          .map((guide) => {
+            const { icon, title, description } = guide.frontmatter;
+            return (
+              <Feature icon={icon} title={title} link={guide.url}>
+                { description }
+              </Feature>
+            )
+          })
+        }
+    </div>
     </div>
   </section>
-  <section class="mt-64 mb-32">
+  <!-- <section class="mt-64 mb-32">
     <div class="container">
       <h2 class="mb-16 text-6xl">Counters</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
@@ -38,7 +47,7 @@ import guides from '../data/guides';
         <Counter count="18+" title="Months" sub="Since launch" />
       </div>
     </div>
-  </section>
+  </section> -->
 </DefaultLayout>
 
 <style lang="scss">
