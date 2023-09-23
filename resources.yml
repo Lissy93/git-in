@@ -1,0 +1,77 @@
+
+
+# A list of guides to display on the homepage + readme
+# Must contain title, description and file (all other fields are optional)
+
+# title should be under 60 chars, and description under 120
+# file must correspond to a file within the /guides directory
+# icon is optional, find an icon here: https://icones.js.org/
+# author can be set to your name, or GH username if you want to be credited
+# tags are a list of strings that make searching for guides easier
+# index is a number that determines the order of the guides
+# created is the date the guide was created, in the format YYYY-MM-DD
+
+guides:
+  - title: Submit your first PR (UI)
+    description: Learn how to submit your first pull-request via the GitHub UI.
+    file: submit-your-first-pr-ui
+    icon: 'fa:github'
+    index: 0
+
+  - title: Submit your first PR (CLI)
+    description: Learn how to submit your first code change to a project.
+    file: submit-your-first-pr-cli
+    icon: 'fa:code'
+    index: 1
+
+  - title: Other open source contributions
+    description: Not a developer? There's many other ways you can contribute without coding!
+    file: other-open-source-contributions
+    icon: 'fa:heart'
+
+  - title: Why Open Source?
+    description: How open source can help you learn and grow as a developer.
+    file: why-open-source
+    icon: 'fa:question'
+
+  - title: Open Source for Businesses
+    description: See all the ways embracing open source can benefit your company.
+    file: open-source-for-businesses
+    icon: 'fa:money'
+
+  - title: License and Legalities
+    description: Understanding different types of open-source licenses and the legal aspects of contributing.
+    file: license-and-legalities
+    icon: 'fa:gavel'
+
+  - title: Git and GitHub, where to start?
+    description: Git VSC is the backbone of open source, here are the resources you need to get started.
+    file: git-and-github-where-to-start
+
+  - title: Publicising your project
+    description: Proven techniques for bringing in traffic, users and the coveted GitHub stars to your repository.
+    file: publicising-your-project
+
+  - title: Creating a 10x GitHub profile
+    description: Tips and tricks for building an outstanding GitHub profile to showcases your work.
+    file: creating-a-10x-github-profile
+
+  - title: Funding your work
+    description: Methods for bringing in extra cash, as an open source developer.
+    file: funding-your-work
+
+  - title: How to Handle Rejection
+    description: Dealing with the emotional aspect and learning from rejected pull requests or issues.
+    file: handling-rejection
+    icon: 'fa:thumbs-down'
+
+  - title: Balancing open source with work and life
+    description: Stay healthy and happy while contributing to open source.
+    file: balancing-open-source-with-work-and-life
+
+
+# A list of helpful external resources
+resources:
+  - title: ''
+    url: ''
+    
