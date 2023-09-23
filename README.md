@@ -1,28 +1,52 @@
 <h1 align="center">Git Into Open Source!</h1>
 
 <p align="center">
-<a><img src="https://i.ibb.co/D7MyyJv/octocat-swim.png" width="128" /><br /></a>
+<a><img src="https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/.github/logo.png" width="128" /><br /></a>
 <b><i>Tools and resources to help you get started with open source</i></b>
 <br />
 <i>Create your first pull request here!</i><br />
 <b>🌐 <a href="https://git-in.to/">git-in.to</a></b><br />
-
 </p>
 
----
-
+<details>
+<summary><h4>Contents</h4></summary>
+  
+- [Contributors](#git-in)
+- [Contributing](#contributing)
+- [Guides and Resources](#guides-and-resources)
+- [License](#license)
+</details>
 
 ## Git In!
 
-The following users have contributed to this repo, by sharing their thoughts about open source.<br />
+The following users have contributed to this repo, by sharing their thoughts and ideas about open source.<br />
 Join them by editing the [`git-in-here.yml`](git-in-here.yml) file, and following the instructions in [`CONTRIBUTING.md`](/CONTRIBUTING.md) to submit a PR.
 
 
 <!-- git-in-start -->
-
 <!-- git-in-end -->
 
+<p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
 
+---
+
+## Contributing
+
+Submitting contributions to any repository is easy!
+
+The first step is to check out the projects contributing guidelines ([here's ours](/CONTRIBUTING.md)). These will usually outline setup instructions, and give you pointers as to where and how you can contribute.
+
+Next you'll need to either fork and clone the repo, or if it's a small change you can just edit it via the GitHub UI. Here is a step-by-step guide to help you get started with that.
+
+Finally, you can submit the pull request! Head back to the source repo, and you should see a new button, saying "Create Pull Request". If the author has set a PR template, be sure it's filled in properly.
+
+<p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
+
+---
+
+## Guides and Resources
+
+<p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
 
 ---
 
