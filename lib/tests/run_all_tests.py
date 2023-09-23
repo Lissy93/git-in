@@ -1,8 +1,12 @@
 import unittest
+import os
 
-# Discover and run all tests in the current directory and its subdirectories.
+# Get the directory where the script is located
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
 if __name__ == "__main__":
     test_loader = unittest.TestLoader()
-    test_suite = test_loader.discover(start_dir='.', pattern='test_*.py')
+    # Set the start directory to the directory of this script
+    test_suite = test_loader.discover(start_dir=current_directory, pattern='test_*.py')
     test_runner = unittest.TextTestRunner(verbosity=2)
     test_runner.run(test_suite)

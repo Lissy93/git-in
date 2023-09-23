@@ -150,8 +150,12 @@ def build_markdown_content(
     :param stargazers: The list of stargazers of the repository.
     :return: The markdown content to be inserted into the README.
     """
-    md_content = "User | Contribution\n---|---\n"
 
+    if not contributors:
+        logger.info(f"No contributors found yet, cancelling markdown generation")
+        return ""
+
+    md_content = "User | Contribution\n---|---\n"
     for contributor in contributors:
         username = contributor["username"]
         question = contributor["question"]
