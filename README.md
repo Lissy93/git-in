@@ -46,6 +46,14 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 
 ## Guides and Resources
 
+#### Open Source Guides
+<!-- guides-start -->
+<!-- guides-end -->
+
+#### External Resources
+<!-- resources-start -->
+<!-- resources-end -->
+
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
 
 ---
