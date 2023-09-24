@@ -21,7 +21,7 @@ updated: 2023-09-24
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-09-24 14:40:28.183008
+	This file was auto-generated at 2023-09-24 14:41:42.441050
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/submit-your-first-pr-cli.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->
