@@ -22,6 +22,7 @@ jobs:
         with:
           path: ./web
           node-version: 16
+          package-manager: npm
 
   deploy:
     needs: build
