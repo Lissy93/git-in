@@ -56,7 +56,9 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 <!-- resources-start -->
 - <img src='https://icon.horse/icon/rogerdudler.github.io' width='16' /> [Simple Introduction to Git](https://rogerdudler.github.io/git-guide/)
 - <img src='https://icon.horse/icon/opensource.guide' width='16' /> [Open Source Guides from GitHub](https://opensource.guide/)
+- <img src='https://icon.horse/icon/goodfirstissue.dev' width='16' /> [Good First Issue - Find beginner-friendly tickets](https://goodfirstissue.dev/)
 - <img src='https://icon.horse/icon/www.codetriage.com' width='16' /> [Code Triage - Find Projects to Contribute to](https://www.codetriage.com/)
+- <img src='https://icon.horse/icon/www.outreachy.org' width='16' /> [Outreachy - Paid Open Source Internships for Beginners](https://www.outreachy.org/)
 <!-- resources-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
