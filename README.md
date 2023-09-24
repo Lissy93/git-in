@@ -48,10 +48,15 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 
 #### Open Source Guides
 <!-- guides-start -->
+- <img width="16" src="https://api.iconify.design/fa:github.svg" /> [Submit your first PR (UI)](/guides/submit-your-first-pr-ui.md)
+- <img width="16" src="https://api.iconify.design/fa:code.svg" /> [Submit your first PR (CLI)](/guides/submit-your-first-pr-cli.md)
 <!-- guides-end -->
 
 #### External Resources
 <!-- resources-start -->
+- <img src='https://icon.horse/icon/rogerdudler.github.io' width='16' /> [Simple Introduction to Git](https://rogerdudler.github.io/git-guide/)
+- <img src='https://icon.horse/icon/opensource.guide' width='16' /> [Open Source Guides from GitHub](https://opensource.guide/)
+- <img src='https://icon.horse/icon/www.codetriage.com' width='16' /> [Code Triage - Find Projects to Contribute to](https://www.codetriage.com/)
 <!-- resources-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
