@@ -72,6 +72,10 @@ guides:
 
 # A list of helpful external resources
 resources:
-  - title: ''
-    url: ''
+  - title: 'Simple Introduction to Git'
+    url: 'https://rogerdudler.github.io/git-guide/'
+  - title: 'Open Source Guides from GitHub'
+    url: 'https://opensource.guide/'
+  - title: 'Code Triage - Find Projects to Contribute to'
+    url: 'https://www.codetriage.com/'
     
