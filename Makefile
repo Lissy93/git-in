@@ -1,4 +1,4 @@
-.PHONY: all install_lib_requirements insert_contributor_content copy_resources_to_site install_web_dependencies build_web start_web
+.PHONY: all install_lib_requirements insert_contributor_content copy_resources_to_site insert_resource_list install_web_dependencies build_web start_web
 
 PYTHON := $(shell which python3 2>/dev/null || which python)
 
@@ -11,6 +11,9 @@ insert_contributor_content:
 
 copy_resources_to_site:
 	$(PYTHON) lib/copy_resources_to_site.py
+
+insert_resource_list:
+	$(PYTHON) lib/insert_resource_list.py
 
 # Targets for web/
 install_web_dependencies:
