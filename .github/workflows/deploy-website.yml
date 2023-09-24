@@ -14,6 +14,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      SITE_URL: 'https://lissy93.github.io'
+      BASE_PATH: '/git-into-open-source'
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
