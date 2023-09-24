@@ -1,0 +1,13 @@
+
+This is a simple staticly generated website, built with Astro. 
+It's purpose is to provide a more interactive method to read the resources and guides.
+
+
+DEVELOPING INSTRUCTIONS
+-----------------------
+You'll need Node.js installed on your system.
+Clone the repository, and cd into the web directory.
+Install dependencies, with `npm install`
+Then run `npm run dev` to start the development server.
+Or, use `npm build` and `npm start` to build & start the production app.
+
