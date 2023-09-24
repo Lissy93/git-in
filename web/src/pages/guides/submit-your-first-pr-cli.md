@@ -7,7 +7,7 @@ icon: 'fa:code'
 tags: 'None'
 index: '1'
 created: None
-updated: 2023-09-23
+updated: 2023-09-24
 ---
 
 <!--
@@ -21,7 +21,7 @@ updated: 2023-09-23
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-09-23 23:45:31.460472
+	This file was auto-generated at 2023-09-24 14:40:28.183008
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/submit-your-first-pr-cli.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->
