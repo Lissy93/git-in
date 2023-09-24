@@ -72,10 +72,14 @@ guides:
 
 # A list of helpful external resources
 resources:
-  - title: 'Simple Introduction to Git'
-    url: 'https://rogerdudler.github.io/git-guide/'
-  - title: 'Open Source Guides from GitHub'
-    url: 'https://opensource.guide/'
-  - title: 'Code Triage - Find Projects to Contribute to'
-    url: 'https://www.codetriage.com/'
+  - title: Simple Introduction to Git
+    url: https://rogerdudler.github.io/git-guide/
+  - title: Open Source Guides from GitHub
+    url: https://opensource.guide/
+  - title: Good First Issue - Find beginner-friendly tickets
+    url: https://goodfirstissue.dev/
+  - title: Code Triage - Find Projects to Contribute to
+    url: https://www.codetriage.com/
+  - title: Outreachy - Paid Open Source Internships for Beginners
+    url: https://www.outreachy.org/
     
