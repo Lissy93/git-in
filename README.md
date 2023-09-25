@@ -36,7 +36,7 @@ Submitting contributions to any repository is easy!
 
 The first step is to check out the projects contributing guidelines ([here's ours](/CONTRIBUTING.md)). These will usually outline setup instructions, and give you pointers as to where and how you can contribute.
 
-Next you'll need to either fork and clone the repo, or if it's a small change you can just edit it via the GitHub UI. Here is a step-by-step guide to help you get started with that.
+Next you'll need to either fork and clone the repo, or if it's a small change you can just edit it via the GitHub UI. [Here is a step-by-step guide](/guides/submit-your-first-pr-cli.md) to help you get started with that.
 
 Finally, you can submit the pull request! Head back to the source repo, and you should see a new button, saying "Create Pull Request". If the author has set a PR template, be sure it's filled in properly.
 
