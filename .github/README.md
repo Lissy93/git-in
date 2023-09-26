@@ -59,6 +59,8 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 - <img src='https://icon.horse/icon/goodfirstissue.dev' width='16' /> [Good First Issue - Find beginner-friendly tickets](https://goodfirstissue.dev/)
 - <img src='https://icon.horse/icon/www.codetriage.com' width='16' /> [Code Triage - Find Projects to Contribute to](https://www.codetriage.com/)
 - <img src='https://icon.horse/icon/www.outreachy.org' width='16' /> [Outreachy - Paid Open Source Internships for Beginners](https://www.outreachy.org/)
+- <img src='https://icon.horse/icon/www.atlassian.com' width='16' /> [Learn Git - Comprehensive yet simple guide from BitBucket](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+- <img src='https://icon.horse/icon/gitimmersion.com' width='16' /> [Git Immersion - Quick walk through of Git](https://gitimmersion.com)
 <!-- resources-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
