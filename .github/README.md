@@ -20,7 +20,7 @@
 ## Git In!
 
 The following users have contributed to this repo, by sharing their thoughts and ideas about open source.<br />
-Join them by editing the [`git-in-here.yml`](git-in-here.yml) file, and following the instructions in [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) to submit a PR.
+Join them by editing the [`git-in-here.yml`](/git-in-here.yml) file, and following the instructions in [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) to submit a PR.
 
 
 <!-- git-in-start -->
