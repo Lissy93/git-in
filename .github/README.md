@@ -20,7 +20,7 @@
 ## Git In!
 
 The following users have contributed to this repo, by sharing their thoughts and ideas about open source.<br />
-Join them by editing the [`git-in-here.yml`](git-in-here.yml) file, and following the instructions in [`CONTRIBUTING.md`](/CONTRIBUTING.md) to submit a PR.
+Join them by editing the [`git-in-here.yml`](git-in-here.yml) file, and following the instructions in [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) to submit a PR.
 
 
 <!-- git-in-start -->
@@ -34,7 +34,7 @@ Join them by editing the [`git-in-here.yml`](git-in-here.yml) file, and followin
 
 Submitting contributions to any repository is easy!
 
-The first step is to check out the projects contributing guidelines ([here's ours](/CONTRIBUTING.md)). These will usually outline setup instructions, and give you pointers as to where and how you can contribute.
+The first step is to check out the projects contributing guidelines ([here's ours](/.github/CONTRIBUTING.md)). These will usually outline setup instructions, and give you pointers as to where and how you can contribute.
 
 Next you'll need to either fork and clone the repo, or if it's a small change you can just edit it via the GitHub UI. [Here is a step-by-step guide](/guides/submit-your-first-pr-cli.md) to help you get started with that.
 

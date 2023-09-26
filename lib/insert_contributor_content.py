@@ -30,7 +30,7 @@ PLACEHOLDER_PROFILE_PICTURE = "https://i.ibb.co/X231Rq8/octo-no-one.png"
 """ The directory where this script is located """
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 """ The relative path to the markdown file to update"""
-README_PATH = os.path.join(SCRIPT_DIR, "..", "README.md")
+README_PATH = os.path.join(SCRIPT_DIR, "..", ".github/README.md")
 """ The relative path to the YAML file containing the user-contributed content """
 CONTRIBUTORS_FILE_PATH = os.path.join(SCRIPT_DIR, "..", "git-in-here.yml")
 
