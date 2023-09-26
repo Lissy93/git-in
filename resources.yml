@@ -82,4 +82,8 @@ resources:
     url: https://www.codetriage.com/
   - title: Outreachy - Paid Open Source Internships for Beginners
     url: https://www.outreachy.org/
+  - title: Learn Git - Comprehensive yet simple guide from BitBucket
+    url: https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+  - title: Git Immersion - Quick walk through of Git
+    url: https://gitimmersion.com
     
