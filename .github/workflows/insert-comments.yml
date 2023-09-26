@@ -40,7 +40,7 @@ jobs:
         run: |
           git config --global user.name "Liss-Bot"
           git config --global user.email "alicia-gh-bot@mail.as93.net"
-          git add README.md
+          git add .github/README.md
           if git diff --staged --quiet; then
             echo "Nothin new added, so nothing to commit, exiting..."
           else

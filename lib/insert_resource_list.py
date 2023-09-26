@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 resources_file_path = os.path.join(project_root, 'resources.yml')
 guides_directory = os.path.join(project_root, 'guides')
-readme_path = os.path.join(project_root, 'README.md')
+readme_path = os.path.join(project_root, '.github/README.md')
 
 logger.info("Reading the resources.yml file...")
 # Read the resources.yml

@@ -86,7 +86,7 @@ def main():
             logging.warning(f"Skipping {guide['file']} as doc could not be found in {source_file_path}")
 
         # Copy the contributing guidleines from ./CONTRIBUTING.md to /web/src/pages/contributing.md
-        contributing_source_path = project_root / "CONTRIBUTING.md"
+        contributing_source_path = project_root / ".github/CONTRIBUTING.md"
         contributing_destination_path = project_root / "web/src/pages/contributing.md"
         content = contributing_source_path.read_text()
         contributing_headers = (
@@ -94,7 +94,7 @@ def main():
             f"layout: ../layouts/MarkdownLayout.astro\n"
             f"title: Contributing Guidelines\n"
             f"---\n\n"
-            f"<!-- This file was auto-generated from ./CONTRIBUTING.md -->\n\n"
+            f"<!-- This file was auto-generated from ./.github/CONTRIBUTING.md -->\n\n"
         )
         write_file(contributing_destination_path, contributing_headers + content)
         logging.info(f"Copied {contributing_source_path} to {contributing_destination_path}")
