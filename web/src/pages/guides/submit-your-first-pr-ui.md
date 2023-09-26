@@ -22,7 +22,7 @@ Hello World :)
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-09-26 16:57:40.813251
+	This file was auto-generated at 2023-09-26 23:01:30.033860
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/submit-your-first-pr-ui.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->
