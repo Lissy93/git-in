@@ -72,6 +72,21 @@ Have you noticed anything not right in the readme or any of the other docs here?
 
 I'm up for reviewing pull requests for other areas of this repository, not listed above. If you're unsure if your intended contribution would be a good fit or not, feel free to open an issue first, and we can chat about it :)
 
+### Not a coder?
+
+There's plenty of other ways you can support open source projects! 
+
+- Open an issue to report a bug
+- Write a tutorial or blog post
+- Leaving constructive feedback
+- Reviewing open pull requests
+- Contributing to docs
+- Adding international translations
+- Helping with testing
+- Assisting with UI, UX or asset design
+- Sponsoring the project or author
+- Sharing the project within your network
+
 ### Still nothing?
 
 There's plenty of other repositories on GitHub looking for contributors! Whatever your skill set or level, there will surly be the perfect project for your first few open source contributions. Take a look at this guide: [Finding Projects to Contribute to](https://github.com/Lissy93/git-into-open-source/blob/main/guides/finding-projects-to-contribute-to.md)
