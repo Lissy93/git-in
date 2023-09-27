@@ -1,43 +1,59 @@
 
 
 # A list of guides to display on the homepage + readme
-# Must contain title, description and file (all other fields are optional)
+# Required Fields:
+#   title - the title of the guide (max 60 chars)
+#   description - a short description of the guide (max 120 chars)
+#   file - filename of the doc must correspond to a file within the /guides directory
 
-# title should be under 60 chars, and description under 120
-# file must correspond to a file within the /guides directory
-# icon is optional, find an icon here: https://icones.js.org/
-# author can be set to your name, or GH username if you want to be credited
-# tags are a list of strings that make searching for guides easier
-# index is a number that determines the order of the guides
-# created is the date the guide was created, in the format YYYY-MM-DD
+# Optional Fields:
+#   icon - group and name, find an icon here: https://icones.js.org/
+#   color - a hex code but without the hash (#)
+#   author - can be set to your name, or GH username if you want to be credited
+#   tags - a list of strings that make searching for guides easier
+#   index - a number that determines the order of the guides
+#   created - date the guide was created, in the format YYYY-MM-DD
 
 guides:
+  - title: Why Open Source?
+    description: How open source can help you learn and grow as a developer.
+    file: why-open-source
+    icon: raphael:opensource
+    color: 9B5DE5
+    index: 0
+  
   - title: Submit your first PR (UI)
     description: Learn how to submit your first pull-request via the GitHub UI.
     file: submit-your-first-pr-ui
-    icon: 'fa:github'
-    index: 0
+    icon: fa:github
+    color: F15BB5
+    index: 1
+
+  - title: Full Local Git Setup
+    description: Step-by-step instructions for getting all prerequisites installed.
+    file: local-git-setup
+    icon: mdi:git
+    color: FEE440
+    index: 2
 
   - title: Submit your first PR (CLI)
     description: Learn how to submit your first code change to a project.
     file: submit-your-first-pr-cli
-    icon: 'fa:code'
-    index: 1
+    icon: ion:git-branch
+    color: 00BBF9
+    index: 3
 
   - title: Other open source contributions
     description: Not a developer? There's many other ways you can contribute without coding!
     file: other-open-source-contributions
     icon: 'fa:heart'
 
-  - title: Why Open Source?
-    description: How open source can help you learn and grow as a developer.
-    file: why-open-source
-    icon: 'fa:question'
-
   - title: Open Source for Businesses
     description: See all the ways embracing open source can benefit your company.
     file: open-source-for-businesses
-    icon: 'fa:money'
+    icon: ic:round-business-center
+    color: 00F5D4
+    index: 4
 
   - title: License and Legalities
     description: Understanding different types of open-source licenses and the legal aspects of contributing.
@@ -86,4 +102,14 @@ resources:
     url: https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
   - title: Git Immersion - Quick walk through of Git
     url: https://gitimmersion.com
+  - title: Git Tips & Tricks
+    url: https://github.com/git-tips/tips
+  - title: GitHub Cheatsheet and Hidden Features
+    url: https://github.com/tiimgreen/github-cheat-sheet
+  - title: Git GUIs for Windows, Mac and Linux
+    url: https://git-scm.com/downloads/guis
+  - title: All about Git Hooks
+    url: https://githooks.com/
+  - title: Effective branching patterns of larger teams
+    url: https://martinfowler.com/articles/branching-patterns.html
     
