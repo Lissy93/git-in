@@ -48,19 +48,27 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 
 #### Open Source Guides
 <!-- guides-start -->
-- <img width="16" src="https://api.iconify.design/fa:github.svg" /> [Submit your first PR (UI)](/guides/submit-your-first-pr-ui.md)
-- <img width="16" src="https://api.iconify.design/fa:code.svg" /> [Submit your first PR (CLI)](/guides/submit-your-first-pr-cli.md)
+- <img width="20" src="https://api.iconify.design/raphael:opensource.svg?height=20&color=%239B5DE5" /> [Why Open Source?](/guides/why-open-source.md)
+- <img width="20" src="https://api.iconify.design/fa:github.svg?height=20&color=%23F15BB5" /> [Submit your first PR (UI)](/guides/submit-your-first-pr-ui.md)
+- <img width="20" src="https://api.iconify.design/mdi:git.svg?height=20&color=%23FEE440" /> [Full Local Git Setup](/guides/local-git-setup.md)
+- <img width="20" src="https://api.iconify.design/ion:git-branch.svg?height=20&color=%2300BBF9" /> [Submit your first PR (CLI)](/guides/submit-your-first-pr-cli.md)
+- <img width="20" src="https://api.iconify.design/ic:round-business-center.svg?height=20&color=%2300F5D4" /> [Open Source for Businesses](/guides/open-source-for-businesses.md)
 <!-- guides-end -->
 
 #### External Resources
 <!-- resources-start -->
-- <img src='https://icon.horse/icon/rogerdudler.github.io' width='16' /> [Simple Introduction to Git](https://rogerdudler.github.io/git-guide/)
-- <img src='https://icon.horse/icon/opensource.guide' width='16' /> [Open Source Guides from GitHub](https://opensource.guide/)
-- <img src='https://icon.horse/icon/goodfirstissue.dev' width='16' /> [Good First Issue - Find beginner-friendly tickets](https://goodfirstissue.dev/)
-- <img src='https://icon.horse/icon/www.codetriage.com' width='16' /> [Code Triage - Find Projects to Contribute to](https://www.codetriage.com/)
-- <img src='https://icon.horse/icon/www.outreachy.org' width='16' /> [Outreachy - Paid Open Source Internships for Beginners](https://www.outreachy.org/)
-- <img src='https://icon.horse/icon/www.atlassian.com' width='16' /> [Learn Git - Comprehensive yet simple guide from BitBucket](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
-- <img src='https://icon.horse/icon/gitimmersion.com' width='16' /> [Git Immersion - Quick walk through of Git](https://gitimmersion.com)
+- <img src='https://icon.horse/icon/rogerdudler.github.io' width='20' /> [Simple Introduction to Git](https://rogerdudler.github.io/git-guide/)
+- <img src='https://icon.horse/icon/opensource.guide' width='20' /> [Open Source Guides from GitHub](https://opensource.guide/)
+- <img src='https://icon.horse/icon/goodfirstissue.dev' width='20' /> [Good First Issue - Find beginner-friendly tickets](https://goodfirstissue.dev/)
+- <img src='https://icon.horse/icon/www.codetriage.com' width='20' /> [Code Triage - Find Projects to Contribute to](https://www.codetriage.com/)
+- <img src='https://icon.horse/icon/www.outreachy.org' width='20' /> [Outreachy - Paid Open Source Internships for Beginners](https://www.outreachy.org/)
+- <img src='https://icon.horse/icon/www.atlassian.com' width='20' /> [Learn Git - Comprehensive yet simple guide from BitBucket](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+- <img src='https://icon.horse/icon/gitimmersion.com' width='20' /> [Git Immersion - Quick walk through of Git](https://gitimmersion.com)
+- <img src='https://icon.horse/icon/github.com' width='20' /> [Git Tips & Tricks](https://github.com/git-tips/tips)
+- <img src='https://icon.horse/icon/github.com' width='20' /> [GitHub Cheatsheet and Hidden Features](https://github.com/tiimgreen/github-cheat-sheet)
+- <img src='https://icon.horse/icon/git-scm.com' width='20' /> [Git GUIs for Windows, Mac and Linux](https://git-scm.com/downloads/guis)
+- <img src='https://icon.horse/icon/githooks.com' width='20' /> [All about Git Hooks](https://githooks.com/)
+- <img src='https://icon.horse/icon/martinfowler.com' width='20' /> [Effective branching patterns of larger teams](https://martinfowler.com/articles/branching-patterns.html)
 <!-- resources-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
