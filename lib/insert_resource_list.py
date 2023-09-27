@@ -18,6 +18,7 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 resources_file_path = os.path.join(project_root, 'resources.yml')
 guides_directory = os.path.join(project_root, 'guides')
 readme_path = os.path.join(project_root, '.github/README.md')
+icon_size=20
 
 logger.info("Reading the resources.yml file...")
 # Read the resources.yml
@@ -30,7 +31,8 @@ guide_links = []
 for guide in data.get("guides", []):
     guide_file_path = os.path.join(guides_directory, f"{guide['file']}.md")
     if os.path.exists(guide_file_path):
-        icon = f'<img width="16" src="https://api.iconify.design/{guide.get("icon")}.svg" />' if guide.get("icon") else ""
+        iconParams = f"?height={icon_size}&color=%23{guide.get('color', '00BBF9')}"
+        icon = f'<img width="{icon_size}" src="https://api.iconify.design/{guide.get("icon")}.svg{iconParams}" />' if guide.get("icon") else ""
         guide_links.append(f"- {icon} [{guide['title']}](/guides/{guide['file']}.md)")
         logger.info(f"Guide file found and link prepared: {guide_file_path}")
     else:
@@ -41,7 +43,7 @@ logger.info("Preparing external resource links...")
 resource_links = []
 for resource in data.get("resources", []):
     resource_host = urlparse(resource['url']).hostname
-    icon_tag = f"<img src='https://icon.horse/icon/{resource_host}' width='16' />"
+    icon_tag = f"<img src='https://icon.horse/icon/{resource_host}' width='{icon_size}' />"
     resource_links.append(f"- {icon_tag} [{resource['title']}]({resource['url']})")
 
 # Update the README.md between markers
