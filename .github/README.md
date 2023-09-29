@@ -60,6 +60,7 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 - <img src='https://icon.horse/icon/rogerdudler.github.io' width='20' /> [Simple Introduction to Git](https://rogerdudler.github.io/git-guide/)
 - <img src='https://icon.horse/icon/opensource.guide' width='20' /> [Open Source Guides from GitHub](https://opensource.guide/)
 - <img src='https://icon.horse/icon/goodfirstissue.dev' width='20' /> [Good First Issue - Find beginner-friendly tickets](https://goodfirstissue.dev/)
+- <img src='https://icon.horse/icon/firstcontributions.github.io' width='20' /> [First Contributions - Find projects to contribute to](https://firstcontributions.github.io/)
 - <img src='https://icon.horse/icon/www.codetriage.com' width='20' /> [Code Triage - Find Projects to Contribute to](https://www.codetriage.com/)
 - <img src='https://icon.horse/icon/www.outreachy.org' width='20' /> [Outreachy - Paid Open Source Internships for Beginners](https://www.outreachy.org/)
 - <img src='https://icon.horse/icon/www.atlassian.com' width='20' /> [Learn Git - Comprehensive yet simple guide from BitBucket](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
@@ -69,6 +70,7 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 - <img src='https://icon.horse/icon/git-scm.com' width='20' /> [Git GUIs for Windows, Mac and Linux](https://git-scm.com/downloads/guis)
 - <img src='https://icon.horse/icon/githooks.com' width='20' /> [All about Git Hooks](https://githooks.com/)
 - <img src='https://icon.horse/icon/martinfowler.com' width='20' /> [Effective branching patterns of larger teams](https://martinfowler.com/articles/branching-patterns.html)
+- <img src='https://icon.horse/icon/choosealicense.com' width='20' /> [Choose an open source license](https://choosealicense.com/)
 <!-- resources-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
