@@ -55,37 +55,6 @@ guides:
     color: 00F5D4
     index: 4
 
-  - title: License and Legalities
-    description: Understanding different types of open-source licenses and the legal aspects of contributing.
-    file: license-and-legalities
-    icon: 'fa:gavel'
-
-  - title: Git and GitHub, where to start?
-    description: Git VSC is the backbone of open source, here are the resources you need to get started.
-    file: git-and-github-where-to-start
-
-  - title: Publicising your project
-    description: Proven techniques for bringing in traffic, users and the coveted GitHub stars to your repository.
-    file: publicising-your-project
-
-  - title: Creating a 10x GitHub profile
-    description: Tips and tricks for building an outstanding GitHub profile to showcases your work.
-    file: creating-a-10x-github-profile
-
-  - title: Funding your work
-    description: Methods for bringing in extra cash, as an open source developer.
-    file: funding-your-work
-
-  - title: How to Handle Rejection
-    description: Dealing with the emotional aspect and learning from rejected pull requests or issues.
-    file: handling-rejection
-    icon: 'fa:thumbs-down'
-
-  - title: Balancing open source with work and life
-    description: Stay healthy and happy while contributing to open source.
-    file: balancing-open-source-with-work-and-life
-
-
 # A list of helpful external resources
 resources:
   - title: Simple Introduction to Git
@@ -94,6 +63,8 @@ resources:
     url: https://opensource.guide/
   - title: Good First Issue - Find beginner-friendly tickets
     url: https://goodfirstissue.dev/
+  - title: First Contributions - Find projects to contribute to
+    url: https://firstcontributions.github.io/
   - title: Code Triage - Find Projects to Contribute to
     url: https://www.codetriage.com/
   - title: Outreachy - Paid Open Source Internships for Beginners
@@ -112,4 +83,6 @@ resources:
     url: https://githooks.com/
   - title: Effective branching patterns of larger teams
     url: https://martinfowler.com/articles/branching-patterns.html
+  - title: Choose an open source license
+    url: https://choosealicense.com/
     
