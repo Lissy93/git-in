@@ -7,7 +7,7 @@ icon: 'raphael:opensource'
 tags: 'None'
 index: '0'
 created: None
-updated: 2023-09-27
+updated: 2023-09-29
 ---
 
 <!--
@@ -21,7 +21,7 @@ updated: 2023-09-27
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-09-27 16:24:07.601945
+	This file was auto-generated at 2023-09-29 19:46:24.036437
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/why-open-source.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->
