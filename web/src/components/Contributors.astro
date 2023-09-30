@@ -5,7 +5,7 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 const repo = 'lissy93/lissy93';
 
-const contributorCommentsUrl = 'https://gist.githubusercontent.com/Lissy93/7b2d2781e57b0e1b4f3cc97eabcf299a/raw/14fd5d3bdec43e28bedaa40e350ec5adc2b3bf68/test.yml';
+const contributorCommentsUrl = 'https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/git-in-here.yml';
 
 const placeholderImage = 'https://i.ibb.co/X231Rq8/octo-no-one.png';
 
@@ -24,6 +24,8 @@ const fetchContributorComments = async () => {
   const response = await fetch(contributorCommentsUrl);
   const textData = await response.text();
   const data = yaml.load(textData);
+
+  if (!data || !data.contributors) return [];
 
   // Fetch GitHub user info for each contributor
   for (const contributor of data.contributors) {
@@ -77,7 +79,7 @@ const stargazerClass = (username) => stargazers.includes(username.toLowerCase())
     then check out the <a href={`https://github.com/${repo}/blob/main/.github/CONTRIBUTING.md`}>contributing guide</a> to submit a PR.
   </p>
   <ul class="user-response-wrapper">
-    {contributors.map((contributor) => (
+    {contributors && contributors.map((contributor) => (
       <li class={`user-response-block ${stargazerClass(contributor.username)}`}>
         <a class="user" href={contributor.profile}>
           <img class="avatar" width="64" src={contributor.avatarUrl} alt={contributor.username} />

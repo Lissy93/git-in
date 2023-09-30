@@ -2,13 +2,13 @@
 
 import yaml from 'js-yaml';
 
-const resourcesUrl = 'https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/resources.yml?token=GHSAT0AAAAAACCKSIGR2MHIXLE4F4KW4K3GZIYBQNQ'
+const resourcesUrl = 'https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/resources.yml'
 
 const fetchResources = async (url) => {
   const response = await fetch(url);
   const textData = await response.text();
   const data = yaml.load(textData);
-  return data.resources;
+  return data.resources || [];
 };
 
 const resources = await fetchResources(resourcesUrl);
@@ -27,7 +27,7 @@ const getHostname = (url) => {
 
 <section>
   <ul class="resource-wrapper">
-    { resources.map((resource) => (
+    { resources && resources.map((resource) => (
       <li>
         <img src={`https://favicone.com/${getHostname(resource.url)}?s=32`} />
         <a href={resource.url}>{resource.title}</a>
