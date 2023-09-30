@@ -7,7 +7,7 @@ icon: 'mdi:git'
 tags: 'None'
 index: '2'
 created: None
-updated: 2023-09-29
+updated: 2023-09-30
 ---
 
 <!--
@@ -143,8 +143,11 @@ Next head over to GitHub, and log into your account
 Like other applications and services, git is configurable through a dotfile. You'll likely find your git config in `~/.gitconfig` - but it can be managed using the `git config` command.
 
 Before we make our first commit, there's a few things we need to setup in the git config. We can do this by running the following commands:
-- `git config --global user.name "Your Full Name"`
-- `git config --global user.email "youremail@example.com"`
+
+```bash
+git config --global user.name "Your Full Name"
+git config --global user.email "youremail@example.com"
+```
 
 That's all you need for now, but there's many other setting which can be tweaked here, such as setting aliases shorthands, default editor/ conflict / diff programs, enabling features, using plugins, etc. It's also possible (and sometimes preferable) to have different git configurations for different projects.
 
@@ -155,7 +158,7 @@ To learn about those, see the [Git Configuration](https://git-scm.com/book/en/v2
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-09-29 20:26:10.153953
+	This file was auto-generated at 2023-09-30 12:21:39.299831
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/local-git-setup.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->

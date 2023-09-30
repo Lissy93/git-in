@@ -18,7 +18,7 @@ You've got two options: The easiest, and sometimes best for just small changes i
 In the longer term, and especially once you're working on larger changes, you'll want to have Git installed on your system, and make changes locally, again instructions for which are [outlined here](https://github.com/Lissy93/git-into-open-source/blob/main/guides/submit-your-first-pr-cli.md).
 
 Prerequisites: You will need a GitHub account. If you're planning on making changes via the terminal, you'll also need Git installed, and an SSH key setup on your local system.
-Some projects may also require certain tools and build systems to be installed, such as Node.js or Python.
+For a step-by-step guide, see [setting up Git, GitHub, SSH](https://github.com/Lissy93/git-into-open-source/blob/main/guides/local-git-setup.md)
 
 ---
 
