@@ -1,6 +1,32 @@
+
+
+# website dependencies and caches
 web/node_modules
-.env
+web/.snowpack/
 
+# website build output
+web/dist
 
+# website logs
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+
+# website keys, secrets and config
+web/.env
+
+# library test caches
 lib/__pycache__
 lib/tests/__pycache__
+
+
+
+
+# macOS-specific files
+.DS_Store
+
+# vscode settings and dictionaries
+.vscode
+
+# webstorm settings and dictionaries
+.idea
