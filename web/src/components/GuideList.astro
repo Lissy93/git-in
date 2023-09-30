@@ -1,0 +1,45 @@
+---
+import Feature from './Feature.astro'
+
+const { guides, title } = Astro.props;
+
+---
+
+{ title && <h2>{title}</h2> }
+
+<div class="guides-wrapper">
+  { 
+    guides
+    .sort((a, b) => {
+      const indexA = a.frontmatter.index ?? Infinity;
+      const indexB = b.frontmatter.index ?? Infinity;
+      return indexA - indexB;
+    })
+    .map((guide) => {
+      const { icon, title, description } = guide.frontmatter;
+      return (
+        <Feature icon={icon} title={title} link={guide.url}>
+          { description }
+        </Feature>
+      )
+    })
+  }
+</div>
+
+<style lang="scss">
+h2 {
+  @apply mx-auto max-w-screen-xl m-3;
+}
+.guides-wrapper {
+  @apply
+    mx-auto
+    max-w-screen-xl
+    px-4
+    grid
+    grid-cols-1
+    gap-12
+    md:grid-cols-2
+    lg:grid-cols-3;
+}
+
+</style>

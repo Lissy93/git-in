@@ -1,12 +1,11 @@
 ---
-// src/components/ContributorList.astro
 import yaml from 'js-yaml';
 
-const URL = 'https://gist.githubusercontent.com/Lissy93/7b2d2781e57b0e1b4f3cc97eabcf299a/raw/14fd5d3bdec43e28bedaa40e350ec5adc2b3bf68/test.yml';
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
+const repo = 'lissy93/lissy93';
 
-// const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const GITHUB_TOKEN='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'
+const contributorCommentsUrl = 'https://gist.githubusercontent.com/Lissy93/7b2d2781e57b0e1b4f3cc97eabcf299a/raw/14fd5d3bdec43e28bedaa40e350ec5adc2b3bf68/test.yml';
 
 const placeholderImage = 'https://i.ibb.co/X231Rq8/octo-no-one.png';
 
@@ -21,8 +20,8 @@ const fetchGitHubUserInfo = async (username) => {
   };
 };
 
-const fetchData = async () => {
-  const response = await fetch(URL);
+const fetchContributorComments = async () => {
+  const response = await fetch(contributorCommentsUrl);
   const textData = await response.text();
   const data = yaml.load(textData);
 
@@ -39,19 +38,52 @@ const fetchData = async () => {
   return data.contributors;
 };
 
-const contributors = await fetchData();
+const fetchStargazers = async (): Promise<string[]>  => {
+  const headers = GITHUB_TOKEN ? { 'Authorization': `token ${GITHUB_TOKEN}` } : undefined;
+  let url = `https://api.github.com/repos/${repo}/stargazers?per_page=100`;
+  let stargazers = [];
+
+  const getNextLink = (linkHeader) => {
+    if (!linkHeader) return null;
+    const links = linkHeader.split(',');
+    const nextLink = links.find(link => link.includes('rel="next"'));
+    if (!nextLink) return null;
+    const match = nextLink.match(/<(.*)>/);
+    return match ? match[1] : null;
+    };
+
+  while (url) {
+    const response = await fetch(url, { headers });
+    const data = await response.json();
+    stargazers = stargazers.concat(data.map(stargazer => stargazer.login.toLowerCase()));
+    url = getNextLink(response.headers.get('Link'));
+  }
+
+  return stargazers;
+};
+
+const contributors = await fetchContributorComments();
+
+const stargazers = await fetchStargazers();
+
+const stargazerClass = (username) => stargazers.includes(username.toLowerCase()) ? 'stargazer' : '';
+
 ---
 
 <section>
-  <p>
-    Want to be included here? Submit a PR adding your name + response
+  <p class="how-include-me">
+    <b>Want to be included here?</b>
+    Just add your name to <a href={`https://github.com/${repo}/blob/main/git-in-here.yml`}><code>git-in-here.yml</code></a>, 
+    then check out the <a href={`https://github.com/${repo}/blob/main/.github/CONTRIBUTING.md`}>contributing guide</a> to submit a PR.
   </p>
-  <ul>
+  <ul class="user-response-wrapper">
     {contributors.map((contributor) => (
-      <li class="user-response-block">
+      <li class={`user-response-block ${stargazerClass(contributor.username)}`}>
         <a class="user" href={contributor.profile}>
           <img class="avatar" width="64" src={contributor.avatarUrl} alt={contributor.username} />
-          <span class="full-name">{contributor.fullName}</span>
+          <span class="full-name">
+            {contributor.fullName}
+          </span>
         </a>
         <div class="content">
           <strong class="question">{contributor.question}</strong><br />
@@ -68,21 +100,59 @@ const contributors = await fetchData();
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   }
-  .user-response-block {
-    @apply flex flex-row gap-2;
-    @apply m-2 rounded;
-    @apply flex flex-wrap md:flex-nowrap items-center p-4 bg-gray-100 m-2 rounded;
+  .how-include-me {
+    @apply text-center text-lg;
+    @apply p-4 my-4;
+    @apply mx-auto;
+    @apply max-w-screen-2xl;
+    @apply text-gray-500;
+    @apply rounded;
     background-color: var(--neutral-background);
+    b { margin-right: 0.5rem; }
+
+  }
+  .user-response-wrapper {
+    @apply
+      mx-auto
+      max-w-screen-2xl
+      grid
+      grid-cols-1
+      gap-4
+      sm:grid-cols-1
+      md:grid-cols-1
+      lg:grid-cols-2
+      xl:grid-cols-3;
+  }
+  .user-response-block {
+    @apply relative;
+    @apply flex flex-row gap-2;
+    @apply rounded;
+    @apply flex flex-wrap md:flex-nowrap items-center p-4 bg-gray-100 rounded;
+    background-color: var(--neutral-background);
+
+    &.stargazer {
+      &::after {
+        content: '⭐️';
+        position: absolute;
+        right: -1rem;
+        top: -1.25rem;
+        font-size: 2rem;
+        transition: transform 0.2s ease-in-out;
+      }
+      &:hover::after {
+        transform: scale(1.15) rotate(7deg);
+      }
+    }
 
     
     @include breakpoint(small-down) {
-      width: calc(100vw - 2rem);
+      width: calc(100vw - 4rem);
       justify-content: center;
       .user { align-items: center; }
     }
 
     .user {
-      @apply w-48 gap-2 flex flex-col;
+      @apply w-64 gap-2 flex flex-col;
       .full-name {
         @apply font-semibold text-lg text-center;
       }

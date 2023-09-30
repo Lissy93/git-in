@@ -1,0 +1,61 @@
+---
+
+import yaml from 'js-yaml';
+
+const resourcesUrl = 'https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/resources.yml?token=GHSAT0AAAAAACCKSIGR2MHIXLE4F4KW4K3GZIYBQNQ'
+
+const fetchResources = async (url) => {
+  const response = await fetch(url);
+  const textData = await response.text();
+  const data = yaml.load(textData);
+  return data.resources;
+};
+
+const resources = await fetchResources(resourcesUrl);
+
+const getHostname = (url) => {
+  try {
+    const { hostname } = new URL(url);
+    return hostname;
+  } catch (error) {
+    return 'as93.net';
+  }
+};
+
+---
+
+
+<section>
+  <ul class="resource-wrapper">
+    { resources.map((resource) => (
+      <li>
+        <img src={`https://favicone.com/${getHostname(resource.url)}?s=32`} />
+        <a href={resource.url}>{resource.title}</a>
+      </li>
+    )
+    ) }
+  </ul>
+</section>
+
+<style lang="scss">
+  @use '../assets/scss/base/breakpoint' as *;
+
+  .resource-wrapper {
+    @apply
+      mx-auto
+      max-w-screen-2xl
+      px-4;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        margin: 0.25rem 0;
+        img {
+          width: 16px;
+          border-radius: 4px;
+        }
+      }
+  }
+  
+</style>
