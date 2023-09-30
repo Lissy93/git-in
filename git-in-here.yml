@@ -15,4 +15,9 @@ Q9: &Q9 Where do you see open source going in the future?
 #   response: >-
 #     your response - markdown is supported!
 contributors:
-
+- username: lissy93
+  question: *Q3
+  response: >-
+    Don't be afraid to jump strait in, it's the best way to learn and great fun too!
+    Find a project you're passionate about, or start your own, as contributing is far
+    more fulfilling when you're working on something that you really care about :)
