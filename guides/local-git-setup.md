@@ -126,8 +126,11 @@ Next head over to GitHub, and log into your account
 Like other applications and services, git is configurable through a dotfile. You'll likely find your git config in `~/.gitconfig` - but it can be managed using the `git config` command.
 
 Before we make our first commit, there's a few things we need to setup in the git config. We can do this by running the following commands:
-- `git config --global user.name "Your Full Name"`
-- `git config --global user.email "youremail@example.com"`
+
+```bash
+git config --global user.name "Your Full Name"
+git config --global user.email "youremail@example.com"
+```
 
 That's all you need for now, but there's many other setting which can be tweaked here, such as setting aliases shorthands, default editor/ conflict / diff programs, enabling features, using plugins, etc. It's also possible (and sometimes preferable) to have different git configurations for different projects.
 
