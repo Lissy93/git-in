@@ -5,7 +5,7 @@ Python 3.6+ is required
 
 Environment Variables (all optional)
     - LOG_LEVEL: The log level to use: info | warn | error (default: INFO).
-    - GITHUB_TOKEN: The GitHub API token used for authentication.
+    - GH_ACCESS_TOKEN: The GitHub API token used for authentication.
     - REPO_OWNER: The username / org where the repository is located.
     - REPO_NAME: The name of the repository.
 """
@@ -24,7 +24,7 @@ REPO_OWNER = os.environ.get("REPO_OWNER", "lissy93")
 """ The name of the repository """
 REPO_NAME = os.environ.get("REPO_NAME", "git-into-open-source")
 """ A GitHub access token, required for higher rate-limit when fetching data """
-GH_ACCESS_TOKEN = os.environ.get("GITHUB_TOKEN", None)
+GH_ACCESS_TOKEN = os.environ.get("GH_ACCESS_TOKEN", None)
 """ Used for users who don't have a GitHub profile picture """
 PLACEHOLDER_PROFILE_PICTURE = "https://i.ibb.co/X231Rq8/octo-no-one.png"
 """ The directory where this script is located """

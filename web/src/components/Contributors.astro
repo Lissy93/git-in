@@ -1,11 +1,11 @@
 ---
 import yaml from 'js-yaml';
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_TOKEN = process.env.GH_ACCESS_TOKEN;
 
-const repo = 'lissy93/lissy93';
+const repo = 'lissy93/git-into-open-source';
 
-const contributorCommentsUrl = 'https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/git-in-here.yml';
+const contributorCommentsUrl = `https://raw.githubusercontent.com/${repo}/main/git-in-here.yml`;
 
 const placeholderImage = 'https://i.ibb.co/X231Rq8/octo-no-one.png';
 
