@@ -1,10 +1,10 @@
-name: 🌐 Deploy to GitHub Pages
+name: 🌍 Deploy to GitHub Pages
 
 on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    paths: ['web/**']
+    paths: ['web/**', 'guides/**']
     
 permissions:
   contents: read
@@ -18,9 +18,9 @@ jobs:
       SITE_URL: 'https://lissy93.github.io'
       BASE_PATH: '/git-into-open-source'
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout your repository 🛎️
         uses: actions/checkout@v3
-      - name: Install, build, and upload your site
+      - name: Install, build, and upload site 🛠️
         uses: withastro/action@v0
         with:
           path: ./web
@@ -34,6 +34,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages 🚢
         id: deployment
         uses: actions/deploy-pages@v1
