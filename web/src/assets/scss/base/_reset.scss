@@ -41,10 +41,6 @@ ul {
   padding: 0;
 }
 
-ul:where([class]) {
-  list-style: none;
-}
-
 button,
 input,
 select,

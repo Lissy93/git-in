@@ -4,6 +4,8 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import Contributors from '../components/Contributors.astro'
+import ExternalResources from '../components/ExternalResources.astro'
+import GuideList from '../components/GuideList.astro'
 const guides = await Astro.glob('./guides/*.md');
 
 ---
@@ -16,25 +18,14 @@ const guides = await Astro.glob('./guides/*.md');
   </section>
   <section class="my-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Articles</h2>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        { 
-          guides
-          .sort((a, b) => {
-            const indexA = a.frontmatter.index ?? Infinity;
-            const indexB = b.frontmatter.index ?? Infinity;
-            return indexA - indexB;
-          })
-          .map((guide) => {
-            const { icon, title, description } = guide.frontmatter;
-            return (
-              <Feature icon={icon} title={title} link={guide.url}>
-                { description }
-              </Feature>
-            )
-          })
-        }
+      <h2 class="mb-16 text-6xl">Guides</h2>
+      <GuideList guides={guides} />
     </div>
+  </section>
+  <section class="my-64">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">External Resources</h2>
+      <ExternalResources />
     </div>
   </section>
   <!-- <section class="mt-64 mb-32">

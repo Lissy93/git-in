@@ -6,8 +6,44 @@ const { frontmatter } = Astro.props
 
 <DefaultLayout title={frontmatter?.title}>
   <div class="container">
-    <div class="space-content my-12">
+    <div class="space-content my-12 markdown-guide">
       <slot />
     </div>
   </div>
 </DefaultLayout>
+
+<style lang="scss" is:global>
+  .markdown-guide {
+    ul {
+      list-style: circle;
+    }
+    ol {
+      list-style: auto;
+    }
+    code {
+      background: var(--neutral-background);
+      padding: 0.1rem 0.2rem;
+      border-radius: 4px;
+    }
+    pre code {
+      background: none;
+    }
+    blockquote {
+      border-left: 4px solid var(--action-color);
+      background: var(--neutral-background);
+      border-radius: 4px;
+      padding: 0.25rem 0.25rem 0.25rem 1rem;
+      margin-left: 0;
+    }
+    hr {
+      border: 0;
+      border-top: 2px solid var(--neutral-background);
+    }
+
+    ::selection {
+      background: var(--action-color);
+      color: var(--neutral-background);
+    }
+
+  }  
+</style>

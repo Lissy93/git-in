@@ -1,31 +1,11 @@
 ---
-import BaseLayout from '../../layouts/MarkdownLayout.astro';
-import Feature from '../../components/Feature.astro'
-// import { Astro } from '@astrojs/runtime';
+import BaseLayout from '../../layouts/DefaultLayout.astro';
+import GuideList from '../../components/GuideList.astro'
 
 const guides = await Astro.glob('./*.md');
 const pageTitle = "Tag Index";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Guides</h2>
-  <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-    { 
-      guides
-      .sort((a, b) => {
-        const indexA = a.frontmatter.index ?? Infinity;
-        const indexB = b.frontmatter.index ?? Infinity;
-        return indexA - indexB;
-      })
-      .map((guide) => {
-        const { icon, title, description } = guide.frontmatter;
-        return (
-          <Feature icon={icon} title={title} link={guide.url}>
-            { description }
-          </Feature>
-        )
-      })
-    }
-</div>
-
+  <GuideList title="Guides" guides={guides} />
 </BaseLayout>
