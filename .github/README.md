@@ -24,6 +24,9 @@ Join them by editing the [`git-in-here.yml`](/git-in-here.yml) file, and followi
 
 
 <!-- git-in-start -->
+User | Contribution
+---|---
+<a href='https://github.com/lissy93'>Alicia Sykes<br /><img src='https://avatars.githubusercontent.com/u/1862727?v=4' width='80' /></a> | **The advice I would give to someone new to open source is:**<br />Don't be afraid to jump strait in, it's the best way to learn and great fun too! Find a project you're passionate about, or start your own, as contributing is far more fulfilling when you're working on something that you really care about :)
 <!-- git-in-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
