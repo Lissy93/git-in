@@ -14,7 +14,7 @@
 - [Contributors](#git-in)
 - [Contributing](#contributing)
 - [Guides and Resources](#guides-and-resources)
-- [Repository Admin](#repo-adnim)
+- [Repository Admin](#repo-admin)
 - [License](#license)
 </details>
 
@@ -101,12 +101,18 @@ We have a non-GitHub mirror available at: **[codeberg.org/alicia/git-into-open-s
 ### Automations
 User-generated content is inserted automatically, using the Python scripts in the `lib/` directory, and run using GitHub Actions.
 
+- [![📖 Copy guides to website](https://github.com/Lissy93/git-into-open-source/actions/workflows/copy-guides.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/copy-guides.yml) - _Combines `guides/` with metadata in `resources.yml`, to deploy site_
+- [![🌍 Deploy to GitHub Pages](https://github.com/Lissy93/git-into-open-source/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/deploy-website.yml) - _Builds and deploys the latest version of `web/` to GitHub Pages_
+- [![👥 Insert Credits](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-credits.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-credits.yml) - _Inserts credits to helpful users, contributors and sponsors into the readme_
+- [![💬 Inserts Contributor Content](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml) - _Generates + inserts user-contributed content from `git-in-here.yml` into readme_
+- [![📚 Inserts Guides & Resources into Readme](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
+- [![🪞 Mirror to Codeberg](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
+
 ### Policies
 - [`CODE_OF_CONDUCT`](/.github/CODE_OF_CONDUCT.md) - Rules we have in place, to ensure this is a welcoming and inclusive project.
 - [`CONTRIBUTING`](/.github/CONTRIBUTING.md) - Guidelines to help you get started with contributing to this project.
 - [`GOVERNANCE`](/.github/GOVERNANCE.md) - Information on how the repository is governed and decisions are made.
 - [`PRIVACY`](/.github/PRIVACY.md) - Our commitment to respecting and protecting your data and privacy.
-- [`README`](/.github/README.md) - An overview of the project, its purpose, and how to use or get involved.
 - [`SECURITY`](/.github/SECURITY.md) - Protocols for reporting security vulnerabilities and our promise to keep the project secure.
 - [`SUPPORT`](/.github/SUPPORT.md) - Where to find help, ask questions, or get support related to this project.
 
