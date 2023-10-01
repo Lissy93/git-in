@@ -7,7 +7,7 @@ icon: 'mdi:git'
 tags: 'None'
 index: '2'
 created: None
-updated: 2023-09-30
+updated: 2023-10-01
 ---
 
 <!--
@@ -107,8 +107,17 @@ You may already have a key, in which case you can skip this step. If you do, it'
 Otherwise, we'll generate a new key by running:
 
 ```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+<details><summary>Note for legacy systems</summary>
+For legacy systems which does not support Ed25519 algorithm, use:
+
+```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
+
+</details>
 
 When prompted, complete the form (if you choose to set a password, be sure to remember or make note of it!)
 
@@ -123,7 +132,7 @@ ssh-add ~/.ssh/id_rsa
 
 Next we need to add the public key to your GitHub profile.
 
-Copy the contents of your newly generated SSH public key (the one ending in `.pub`). You can view the file by running `cat ~/.ssh/id_rsa.pub` (if you named your key something else, update that accordingly)
+Copy the contents of your newly generated SSH public key (the one ending in `.pub`). You can view the file by running `cat ~/.ssh/id_ed25519.pub` (if you named your key something else, update that accordingly)
 
 Next head over to GitHub, and log into your account
 1. Click on your profile photo, then click on Settings.
@@ -158,7 +167,7 @@ To learn about those, see the [Git Configuration](https://git-scm.com/book/en/v2
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-09-30 12:21:39.299831
+	This file was auto-generated at 2023-10-01 07:41:10.032786
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/local-git-setup.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->
