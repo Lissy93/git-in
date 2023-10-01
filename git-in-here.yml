@@ -9,11 +9,13 @@ Q7: &Q7 What's the most rewarding thing you've experienced in your open-source j
 Q8: &Q8 How do you balance open source work, alongside your day job?
 Q9: &Q9 Where do you see open source going in the future?
 
-# Step 2: Add your response to the list below using this format:
+# Step 2: Add your response to the END of this list, using this format:
 # - username: your GitHub username
 #   question: *Q1
 #   response: >-
-#     your response - markdown is supported!
+#     your response, be creative!
+#     Markdown is supported! Lines breaks are not preserved, so you can wrap lines
+
 contributors:
 - username: lissy93
   question: *Q3
@@ -28,4 +30,7 @@ contributors:
 - username: AkashRajpurohit
   question: *Q7
   response: >-
-    The most rewarding aspect of my open-source journey has been witnessing my code being utilized and positively impacting the lives of countless developers and end users.
+    The most rewarding aspect of my open-source journey has been witnessing my code
+    being utilized and positively impacting the lives of countless developers and end users.
+
+# Leave a blank line at the end of the file :)
