@@ -11,6 +11,15 @@ import { Icon } from 'astro-icon'
             Git into<br />
             <span class="text-gradient">Open Source</span></slot>
         </h1>
+        <div class="subtitle">
+          <p class="l1">Tools, guides and resources to help you kickstart your open source journey</p>
+          <p class="l2">
+            Not sure where to start? Why not submit a PR adding your username to
+            <a href="https://github.com/lissy93/git-into-open-source/blob/main/git-in-here.yml">
+              <code>git-in-here.yml</code>
+            </a>!
+          </p>
+        </div>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <a class="button has-icon" href="https://github.com/lissy93/git-into-open-source">
             <Icon pack="fa" name="github" />
@@ -31,6 +40,16 @@ import { Icon } from 'astro-icon'
 </section>
 
 <style lang="scss">
+  .subtitle {
+    color: var(--font-color-pale);
+    .l1 {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    l2 {
+      font-size: 1rem;
+    }
+  }
   .text-gradient {
     background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-500));
     background-clip: border-box;

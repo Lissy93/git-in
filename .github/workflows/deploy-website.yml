@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    paths: ['web/**', 'guides/**']
+    paths: ['web/**', 'guides/**', 'resources.yml', 'git-in-here.yml']
     
 permissions:
   contents: read
