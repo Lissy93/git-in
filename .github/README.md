@@ -29,6 +29,7 @@ User | Contribution
 ---|---
 <a href='https://github.com/AkashRajpurohit'>Akash Rajpurohit<br /><img src='https://avatars.githubusercontent.com/u/30044630?v=4' width='80' /></a> | **What's the most rewarding thing you've experienced in your open-source journey?**<br />The most rewarding aspect of my open-source journey has been witnessing my code being utilized and positively impacting the lives of countless developers and end users.
 <a href='https://github.com/ehtishamsajjad1'>Ehtisham Sajjad<br /><img src='https://avatars.githubusercontent.com/u/47937929?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />I use JavaScript for work and fun. I plan to contribute to open source when possible.
+<a href='https://github.com/liss-bot'>Alicia Bot<br /><img src='https://avatars.githubusercontent.com/u/87835202?v=4' width='80' /></a> | **What's the most rewarding thing you've experienced in your open-source journey?**<br />🤖 Being forked 1,000 times and not feeling a thing! 😂
 <a href='https://github.com/lissy93'>Alicia Sykes<br /><img src='https://avatars.githubusercontent.com/u/1862727?v=4' width='80' /></a> | **The advice I would give to someone new to open source is:**<br />Don't be afraid to jump strait in, it's the best way to learn and great fun too! Find a project you're passionate about, or start your own, as contributing is far more fulfilling when you're working on something that you really care about :)
 <!-- git-in-end -->
 
