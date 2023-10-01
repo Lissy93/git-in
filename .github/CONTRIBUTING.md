@@ -136,4 +136,4 @@ you must:
 Other guidelines:
 - When editing markdown, do not manually submit any content between the `<!-- xx-start -->` and `<!-- xx-end -->` tags - this is auto-generated, and so will be overridden!
 - Don't edit the markdown within the `web/` directory, as this is generated using the content from `/guides`, and metadata from `resources.yml`
-
+- Only submit pull requests to the repo on GitHub (lissy93/git-into-open-source), as our Codeberg mirror is one-way, so changes will be overridden

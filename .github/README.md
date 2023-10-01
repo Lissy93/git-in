@@ -9,11 +9,12 @@
 </p>
 
 <details>
-<summary><h4>Contents</h4></summary>
+<summary><b>Contents</b></summary>
   
 - [Contributors](#git-in)
 - [Contributing](#contributing)
 - [Guides and Resources](#guides-and-resources)
+- [Repository Admin](#repo-adnim)
 - [License](#license)
 </details>
 
@@ -81,6 +82,50 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 <!-- resources-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
+
+---
+
+
+## Repo Admin
+
+### Website
+We have a simple static site, to make browsing the guides and resources easier.
+It's built with Astro, and the source is in the [`web/`](/web) directory.
+
+A demo of the website is hosted at: **[git-into-open-source.as93.net](https://git-into-open-source.as93.net/)**
+
+### Mirror
+We have a non-GitHub mirror available at: **[codeberg.org/alicia/git-into-open-source](https://codeberg.org/alicia/git-into-open-source)**
+
+### Automations
+User-generated content is inserted automatically, using the Python scripts in the `lib/` directory, and run using GitHub Actions.
+
+### Policies
+- [`CODE_OF_CONDUCT`](/.github/CODE_OF_CONDUCT.md) - Rules we have in place, to ensure this is a welcoming and inclusive project.
+- [`CONTRIBUTING`](/.github/CONTRIBUTING.md) - Guidelines to help you get started with contributing to this project.
+- [`GOVERNANCE`](/.github/GOVERNANCE.md) - Information on how the repository is governed and decisions are made.
+- [`PRIVACY`](/.github/PRIVACY.md) - Our commitment to respecting and protecting your data and privacy.
+- [`README`](/.github/README.md) - An overview of the project, its purpose, and how to use or get involved.
+- [`SECURITY`](/.github/SECURITY.md) - Protocols for reporting security vulnerabilities and our promise to keep the project secure.
+- [`SUPPORT`](/.github/SUPPORT.md) - Where to find help, ask questions, or get support related to this project.
+
+### Service Credits
+This project would not be possible to keep running without the use of the following service providers and software authors:
+- Source code is managed on [GitHub](https://github.com/), and mirrored to [Codeberg](https://codeberg.org/)
+- The website is deployed to [Netlify](https://netlify.com/), with backups running on [Vercel](https://vercel.com/) and [GitHub Pages](https://pages.github.com/)
+- DNS, SSL, caching and DDoS protection is provided by [Cloudflare](https://cloudflare.com)
+- The site it built using [Astro](https://astro.build/), and based of [accessible-astro-starter](https://github.com/markteekman/accessible-astro-starter) by [@markteekman](https://github.com/markteekman)
+
+### Supporters
+Huge thanks to the following kind people, for their ongoing support in funding this, and other of my projects via GitHub Sponsors
+
+<!-- readme: sponsors -start -->
+<!-- readme: sponsors -end -->
+
+### Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 
 ---
 
