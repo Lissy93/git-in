@@ -85,4 +85,6 @@ resources:
     url: https://martinfowler.com/articles/branching-patterns.html
   - title: Choose an open source license
     url: https://choosealicense.com/
+  - title: "Selecting the Right Git Merging Strategy: Merge Commit, Squash and Merge, or Rebase and Merge"
+    url: https://akashrajpurohit.com/blog/selecting-the-right-git-merging-strategy-merge-commit-squash-and-merge-or-rebase-and-merge/
     
