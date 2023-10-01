@@ -156,7 +156,7 @@ def build_markdown_content(
         return ""
 
     md_content = "User | Contribution\n---|---\n"
-    for contributor in contributors:
+    for contributor in reversed(contributors):
         username = contributor["username"]
         question = contributor["question"]
         response = contributor["response"]
@@ -171,6 +171,7 @@ def build_markdown_content(
             f"**{question_heading}**<br />{response}\n"
         )
     return md_content
+
 
 
 """ The main entrypoint of the script """

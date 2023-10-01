@@ -37,7 +37,7 @@ const fetchContributorComments = async () => {
     }
   }
 
-  return data.contributors;
+  return data.contributors.reverse();
 };
 
 const fetchStargazers = async (): Promise<string[]>  => {
