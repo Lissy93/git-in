@@ -1,0 +1,80 @@
+name: Add your Name
+description: 👤 Contributor addition
+title: '[USER_ADDITION]: '
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        If you want your name to be listed in the readme, you should submit a
+        pull request, editing
+        [`git-in-here.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/git-in-here.yml)
+        and following the guidelines in the [contributing
+        doc](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CONTRIBUTING.md).
+        If you're unsure how to get started, there are plenty of
+        [guides](https://github.com/Lissy93/git-into-open-source#open-source-guides)
+        and resources linked to in the readme
+
+
+        You're welcome to proceed with submitting a ticket to get your response
+        listed, but it may take much longer, and the preferred method is a PR
+        (plus it's a great learning opportunity!)
+  - type: dropdown
+    id: worky
+    attributes:
+      label: Would you be up for submitting a PR for this?
+      options:
+        - 'No'
+        - Maybe
+        - Yes, but with support
+        - Hell yeah!
+  - type: dropdown
+    id: question
+    attributes:
+      label: Question
+      description: Reference of question you wish to answer (see git-in-here.yml for list)
+      options:
+        - Q1
+        - Q2
+        - Q3
+        - Q4
+        - Q5
+        - Q6
+        - Q7
+        - Q8
+        - Q9
+    validations:
+      required: true
+  - type: input
+    id: answer
+    attributes:
+      label: Answer
+      description: The answer you wish to submit to your selected question
+    validations:
+      required: true
+  - type: dropdown
+    id: worky
+    attributes:
+      label: Would you be up for submitting a PR for this?
+      options:
+        - 'No'
+        - Maybe
+        - Yes, but with support
+        - Hell yeah!
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Pre-Submission Checklist
+      options:
+        - label: I have checked this issue has [not already been raised](https://github.com/Lissy93/git-into-open-source/issues?q=is%3Aissue)
+          required: true
+        - label: I've searched the [docs](https://github.com/Lissy93/git-into-open-source/tree/main/.github) for an answer
+          required: true
+        - label: I agree to follow thr [Code of Conduct](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CODE_OF_CONDUCT.md)
+          required: true
+  - type: markdown
+    attributes:
+      value: >-
+        ![thanks](https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/web/public/favicon.png)
+        Thank you for taking the time to complete this ticket!
+        You should receive a response within 48 hours :)
+

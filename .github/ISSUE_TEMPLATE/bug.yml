@@ -1,0 +1,51 @@
+name: Bug Report
+description: >-
+  🐛 Found something that isn't working as expected?
+  Raise a ticket to get it fixed!
+title: '[BUG]: '
+assignees:
+  - lissy93
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of the project does this relate to?
+      options:
+        - lib - Scripts used to generate content
+        - web - The website displaying content
+        - guides - The content of the guides
+        - user data - Something not the .yml files
+        - other - Not specified
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Please describe the issue
+      description: >-
+        Give as much information as possible, including steps to reproduce,
+        expected output and actual output. If relevant, give details of your
+        system or browser.
+      placeholder: 'When using XYZ, I do ABC, I expect to see DEF, but I actually see GHI. '
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Pre-Submission Checklist
+      options:
+        - label: I have checked this issue has [not already been raised](https://github.com/Lissy93/git-into-open-source/issues?q=is%3Aissue)
+          required: true
+        - label: I've searched the [docs](https://github.com/Lissy93/git-into-open-source/tree/main/.github) for an answer
+          required: true
+        - label: I agree to follow thr [Code of Conduct](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CODE_OF_CONDUCT.md)
+          required: true
+  - type: markdown
+    attributes:
+      value: >-
+        ![thanks](https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/web/public/favicon.png)
+        Thank you for taking the time to complete this ticket!
+        You should receive a response within 48 hours :)

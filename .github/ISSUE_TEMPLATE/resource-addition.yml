@@ -1,0 +1,72 @@
+name: Resource Addition
+description: 📚 Found a great resource we should include on in the list? Suggest it here!
+title: '[RESOURCE_ADDITION]: '
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Did you know you can submit resources directly, by editing
+        [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml)
+        and opening a PR? If it's your first time, you might find [this
+        guide](https://github.com/Lissy93/git-into-open-source/blob/main/guides/submit-your-first-pr-ui.md)
+        helpful.
+  - type: input
+    id: resource-url
+    attributes:
+      label: Resource URL
+      description: >-
+        Please provide the URL to the resource you'd like considered for
+        addition
+    validations:
+      required: true
+  - type: input
+    id: resource-description
+    attributes:
+      label: Resource Description
+      description: Please provide a short description of the resource
+    validations:
+      required: true
+  - type: textarea
+    id: resource-justification
+    attributes:
+      label: Reasoning
+      description: >-
+        Please justify the addition of the resource. Why is it valuable to the
+        community, what does it provide which isn't yet covered by existing
+        resources
+  - type: input
+    id: resource-affiliation
+    attributes:
+      label: Affiliation
+      description: >-
+        Are you associated with this website or resource in any way? Declaring
+        affiliation helps us keep things transparent.
+    validations:
+      required: true
+  - type: dropdown
+    id: worky
+    attributes:
+      label: Would you be up for submitting a PR for this?
+      options:
+        - 'No'
+        - Maybe
+        - Yes, but with support
+        - Hell yeah!
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Pre-Submission Checklist
+      options:
+        - label: I have checked this issue has [not already been raised](https://github.com/Lissy93/git-into-open-source/issues?q=is%3Aissue)
+          required: true
+        - label: I've searched the [docs](https://github.com/Lissy93/git-into-open-source/tree/main/.github) for an answer
+          required: true
+        - label: I agree to follow thr [Code of Conduct](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CODE_OF_CONDUCT.md)
+          required: true
+  - type: markdown
+    attributes:
+      value: >-
+        ![thanks](https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/web/public/favicon.png)
+        Thank you for taking the time to complete this ticket!
+        You should receive a response within 48 hours :)
+
