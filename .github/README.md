@@ -125,6 +125,16 @@ User-generated content is inserted automatically, using the Python scripts in th
 - [![📚 Inserts Guides & Resources into Readme](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
 - [![🪞 Mirror to Codeberg](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
 
+
+<details>
+  <summary>Third-Party Checks</summary>
+
+- [![Maintainability](https://api.codeclimate.com/v1/badges/e43b2610452e83a15c54/maintainability)](https://codeclimate.com/github/Lissy93/git-into-open-source/maintainability) - _Code maintainability, provided by Code Climate_
+- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source?ref=badge_small) - _License compliance, provided by FOSSA_
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/4a3243dc-4dc8-43e0-a2ea-a51ce4da782a/deploy-status)](https://app.netlify.com/sites/git-into-open-source/deploys) - _Deployment status, provided by Netlify_
+  
+</details>
+
 ### Service Credits
 This project would not be possible to keep running without the use of the following service providers and software authors:
 - Source code is managed on [GitHub](https://github.com/), and mirrored to [Codeberg](https://codeberg.org/)
@@ -246,6 +256,10 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     </td></tr>
 </table>
 <!-- readme: sponsors -end -->
+
+Consider supporting this repo, and my [other](https://github.com/Lissy93/) projects, by sponsoring me on GitHub 💖
+
+![Sponsor Lissy93's work on GitHub](https://img.shields.io/github/sponsors/lissy93?style=flat&logo=githubsponsors&label=Sponsor%20%7C%20Lissy93&color=EA4AAA)
 
 ### Contributors
 
@@ -378,6 +392,8 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTIO
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source?ref=badge_large&issueType=license)
 
 </details>
 

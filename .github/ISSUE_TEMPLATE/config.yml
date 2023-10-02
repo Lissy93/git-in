@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Support
+    url: https://github.com/Lissy93/git-into-open-source/discussions
+    about: 🫂 Need any help? We got you - check out our Discussions page
+  - name: Author Contact
+    url: https://aliciasykes.com/contact
+    about: 📨 Need to get in touch with the author? You can DM us here
+  - name: Sponsor us
+    url: https://github.com/sponsors/lissy93
+    about: 💖 If you've found this project helpful, consider sponsoring us on GitHub
