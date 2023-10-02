@@ -162,7 +162,7 @@ def build_markdown_content(
         response = contributor["response"]
         question_heading = map_question_to_heading(question)
         info = fetch_github_info(username)
-        name = info.get("name", username)
+        name = info["name"] if info["name"] else username
         picture = info.get("avatar_url", PLACEHOLDER_PROFILE_PICTURE)
         is_stargazer = "⭐ " if username.lower() in [sg.lower() for sg in stargazers] else ""
         md_content += (
