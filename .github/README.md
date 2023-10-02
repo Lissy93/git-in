@@ -118,7 +118,8 @@ We have a non-GitHub mirror available at: **[codeberg.org/alicia/git-into-open-s
 ### Automations
 User-generated content is inserted automatically, using the Python scripts in the [`lib/`](/lib) directory, and run using GitHub Actions.
 
-- [![📖 Copy guides to website](https://github.com/Lissy93/git-into-open-source/actions/workflows/copy-guides.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/copy-guides.yml) - _Combines `guides/` with metadata in `resources.yml`, to deploy site_
+- [![📖 Copy guides to website](https://github.com/Lissy93/git-into-open-source/actions/workflows/copy-guides.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/copy-guides.yml) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source?ref=badge_shield)
+- _Combines `guides/` with metadata in `resources.yml`, to deploy site_
 - [![🌍 Deploy to GitHub Pages](https://github.com/Lissy93/git-into-open-source/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/deploy-website.yml) - _Builds and deploys the latest version of `web/` to GitHub Pages_
 - [![👥 Insert Credits](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-credits.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-credits.yml) - _Inserts credits to helpful users, contributors and sponsors into the readme_
 - [![💬 Inserts Contributor Content](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `git-in-here.yml`_
@@ -404,3 +405,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source?ref=badge_large)
