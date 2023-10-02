@@ -36,5 +36,11 @@ contributors:
   response: >-
     The most rewarding aspect of my open-source journey has been witnessing my code
     being utilized and positively impacting the lives of countless developers and end users.
+- username: AntObi
+  question: *Q5
+  response: >-
+    I develop in Python for my academic research. 
+    I've had expereinces with machine learning using scikit-learn, tensorflow and pytorch.
+    I'm trying to use pytorch with lightning at the moment to simplify a lot of my workflows.
 
 # Leave a blank line at the end of the file :)
