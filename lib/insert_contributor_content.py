@@ -164,7 +164,7 @@ def build_markdown_content(
         info = fetch_github_info(username)
         name = info.get("name", username)
         picture = info.get("avatar_url", PLACEHOLDER_PROFILE_PICTURE)
-        is_stargazer = "⭐ " if username in stargazers else ""
+        is_stargazer = "⭐ " if username.lower() in [sg.lower() for sg in stargazers] else ""
         md_content += (
             f"<a href='https://github.com/{username}'>{is_stargazer}{name}<br />"
             f"<img src='{picture}' width='80' /></a> | "
