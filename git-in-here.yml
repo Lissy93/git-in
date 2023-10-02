@@ -80,5 +80,12 @@ contributors:
     It's declarative (intuitive Kotlin APIs) and Compose takes care of rendering it on the screen. 
     This makes it much easier to create complex and dynamic UIs, and it also makes your code more readable and maintainable. 
     Compose is also very fast and efficient, and it's easy to learn and use. 
+- username: sanchitaa14
+  question: *Q5
+  response: >-
+    I like to use three.js because it makes my websites look more eye-catching and also provides a 3D like experience to its users. Along
+    with this I am an AI/ML enthusiast and love to learn new things. I am a MERN stack developer and love to work on making websites using
+    react and express js. I like using java and am looking forward to learning springboot so as to gain experience in it. I have worked
+    with javascript and absolutely consider as one of my most sought after languages.
 
 # Leave a blank line at the end of the file :)
