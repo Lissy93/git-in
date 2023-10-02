@@ -42,11 +42,5 @@ contributors:
     I develop in Python for my academic research. 
     I've had expereinces with machine learning using scikit-learn, tensorflow and pytorch.
     I'm trying to use pytorch with lightning at the moment to simplify a lot of my workflows.
-- username: pratikumar399
-  question: *Q5
-  response: >-
-    I use React as a library for most of my projects.The tools that I use in most of my projects 
-    are VS Code, git and github. Javascript is my favourite language and I absolutely love it. 
-    It has infinite potential when it comes to developing web applications.
 
 # Leave a blank line at the end of the file :)
