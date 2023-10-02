@@ -72,5 +72,13 @@ contributors:
    also good for learning concepts. Going through documentation gives us a more clear and broad view.
    And lastly supportive friends from any social media platforms who encourages us to go forward. I 
    find these resources really helpful. 
+- username: dharamveer-gupta
+  question: *Q2
+  response: >-
+    Jetpack Compose is the coolest open source project I've come across & used. 
+    It is a modern UI toolkit for Android that makes it easier and faster to build beautiful and responsive user interfaces. 
+    It's declarative (intuitive Kotlin APIs) and Compose takes care of rendering it on the screen. 
+    This makes it much easier to create complex and dynamic UIs, and it also makes your code more readable and maintainable. 
+    Compose is also very fast and efficient, and it's easy to learn and use. 
 
 # Leave a blank line at the end of the file :)
