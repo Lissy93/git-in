@@ -42,11 +42,20 @@ contributors:
     I develop in Python for my academic research. 
     I've had expereinces with machine learning using scikit-learn, tensorflow and pytorch.
     I'm trying to use pytorch with lightning at the moment to simplify a lot of my workflows.
-- username: pratikkumar399
+- username: pratikumar399
   question: *Q5
   response: >-
     I use React as a library for most of my projects.The tools that I use in most of my projects 
     are VS Code, git and github. Javascript is my favourite language and I absolutely love it. 
     It has infinite potential when it comes to developing web applications.
+- username: taemochi12
+  question: *Q1
+  response: >-
+    I want to get into open source because it fascinates me a lot, how I can contribute in ohters' 
+    projects despite being a fresher. The best thing about open source, as its name suggests, is 
+    that it is open to all to see the source code, suggest chsnges to it and even make the projects
+    better by their contributions. When project initiated by one mind gets the expertise and ideas
+    of multiple minds, it always turns into something more fantastic and unique. 
+
 
 # Leave a blank line at the end of the file :)
