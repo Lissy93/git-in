@@ -81,4 +81,11 @@ contributors:
     This makes it much easier to create complex and dynamic UIs, and it also makes your code more readable and maintainable. 
     Compose is also very fast and efficient, and it's easy to learn and use. 
 
+- username: vaibhav67979
+  question: *Q5
+  response: >-
+    Python stands out as my preferred programming language due to its remarkable versatility and extensive library ecosystem.
+    Its dynamic capabilities enable me to tackle a wide range of tasks efficiently.
+    In particular, I frequently harness libraries like TensorFlow, OpenCV, and Scikit-learn for machine learning endeavors, harnessing Python's power to achieve my goals.
+
 # Leave a blank line at the end of the file :)
