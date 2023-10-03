@@ -125,12 +125,40 @@ const stargazerClass = (username) => stargazers.includes(username.toLowerCase())
       lg:grid-cols-2
       xl:grid-cols-3;
   }
+
   .user-response-block {
-    @apply relative;
-    @apply flex flex-row gap-2;
-    @apply rounded;
-    @apply flex flex-wrap md:flex-nowrap items-center p-4 bg-gray-100 rounded;
+    display: flex;
+    align-items: center;
+    position: relative;
     background-color: var(--neutral-background);
+    padding: 0.5rem;
+    .user {
+      flex: 0 0 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+      }
+
+      .full-name {
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 1rem;
+
+      .question, 
+      .response {
+        font-size: 1rem;
+      }
+    }
 
     &.stargazer {
       &::after {
@@ -145,29 +173,7 @@ const stargazerClass = (username) => stargazers.includes(username.toLowerCase())
         transform: scale(1.15) rotate(7deg);
       }
     }
+  }
 
-    
-    @include breakpoint(small-down) {
-      width: calc(100vw - 4rem);
-      justify-content: center;
-      .user { align-items: center; }
-    }
-
-    .user {
-      @apply w-64 gap-2 flex flex-col;
-      .full-name {
-        @apply font-semibold text-lg text-center;
-      }
-      .avatar {
-        @apply w-32 rounded-full;
-      }
-    }
-    .content {
-      @apply flex-grow p-2;
-      .question, .response {
-        @apply text-lg;
-      }
-    }
-}
 
 </style>

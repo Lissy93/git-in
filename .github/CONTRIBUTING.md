@@ -106,6 +106,13 @@ you must ensure that:
 - The response must not be spammy or low effort
 - The response should be between 64 and 512 characters
 - The response should be wrapped onto the next line if it's over 100 chars
+- The response must be in English, with correct spelling and grammar
+
+Top tips for adding a great response:
+- **Be imaginative!** Don't just say "I use JavaScript", but try and think about what might be interesting for future users to read
+- **Markdown is supported!** So feel free to link to your projects, website, helpful (SFW) content or whatever else.
+  - E.g. add a hyperlink with: `[text to display](https://example.com)`, or a new line with: `<br />`
+- **Get a gold star by your name!** If you're a stargazer of this repo, then the a star will automatically be displayed next to your response.
 
 When adding a resource to [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml),
 you must:
@@ -133,7 +140,7 @@ you must:
 - Ensure there are no regressions / no new bugs introduced
 - Ensure all lint checks, tests and build scripts still pass
 
-Other guidelines:
+There's a few no-go zones, where changes will be overridden by the dynamically inserted content. Therefore:
 - When editing markdown, do not manually submit any content between the `<!-- xx-start -->` and `<!-- xx-end -->` tags - this is auto-generated, and so will be overridden!
 - Don't edit the markdown within the `web/` directory, as this is generated using the content from `/guides`, and metadata from `resources.yml`
 - Only submit pull requests to the repo on GitHub (lissy93/git-into-open-source), as our Codeberg mirror is one-way, so changes will be overridden

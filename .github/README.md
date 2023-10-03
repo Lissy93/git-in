@@ -27,6 +27,9 @@ Join them by editing the [`git-in-here.yml`](/git-in-here.yml) file, and followi
 <!-- git-in-start -->
 User | Contribution
 ---|---
+<a href='https://github.com/yashwantaditya009'>Yashwant Aditya<br /><img src='https://avatars.githubusercontent.com/u/89299849?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />In my work, I have a strong affinity for Python and its powerful libraries like NumPy, pandas, and scikit-learn. I also rely on tools such as Microsoft Power BI and Tableau for interactive data visualization.  TensorFlow and scikit-learn are my go-to libraries for machine learning tasks. Additionally, I've explored deep learning with TensorFlow and PyTorch and have experience in text analysis using libraries like NLTK and spaCy.  These tools and libraries have been instrumental in my data-driven journey.
+<a href='https://github.com/destryptor'>⭐ Sharanya Chakraborty<br /><img src='https://avatars.githubusercontent.com/u/117581936?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />I love using Node.Js, Express and MongoDB for server-side programming, since I am a backend  enthusiast! I wish to become a MERN developer, so I plan on learning REACT in the coming months. Apart from that, my university necessitates the use of C, and I am most comfortable in using it. Also I like using C++ for competitive programming and DSA. I have also learnt Java, and have used frameworks like SPRING along with RDBMS like MySQL/ PostgreSQL for backend related stuff.
+<a href='https://github.com/alwenpy'>Arvind Srivastav<br /><img src='https://avatars.githubusercontent.com/u/94129388?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />My most preferred language is Python as it has the easiest syntax of all the major languages. Python is very versatile language as it can be used in Data Science ,Artificial Intelligence, Machine learning, Web Scraping and many more. Talking about frameworks I prefer Django for production level projects and Flask or FAST API for small projects. Threejs or Webgl for react is definitely a project that amazed me the most . I think it is cool if we can add renderers with few lines of code and it also with some tweaking offers ray tracing , with which we can design interactive websites and games too.
 <a href='https://github.com/MSaiKiran9'>⭐ M Sai Kiran<br /><img src='https://avatars.githubusercontent.com/u/116418856?v=4' width='80' /></a> | **What's the coolest open source project you've ever used or come across?**<br />Threejs or Webgl for react is definitely a project that amazed me the most . I think it is cool if we can add renderers with few lines of code and it also with some tweaking offers ray tracing , with which we can design interactive websites and games too. 
 <a href='https://github.com/vaibhav67979'>Vaibhav P<br /><img src='https://avatars.githubusercontent.com/u/95418676?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />Python stands out as my preferred programming language due to its remarkable versatility and extensive library ecosystem. Its dynamic capabilities enable me to tackle a wide range of tasks efficiently. In particular, I frequently harness libraries like TensorFlow, OpenCV, and Scikit-learn for machine learning endeavors, harnessing Python's power to achieve my goals.
 <a href='https://github.com/sanchitaa14'>⭐ sanchitaa14<br /><img src='https://avatars.githubusercontent.com/u/118709611?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />I like to use three.js because it makes my websites look more eye-catching and also provides a 3D like experience to its users. Along with this I am an AI/ML enthusiast and love to learn new things. I am a MERN stack developer and love to work on making websites using react and express js. I like using java and am looking forward to learning springboot so as to gain experience in it. I have worked with javascript and absolutely consider as one of my most sought after languages.
@@ -124,6 +127,16 @@ User-generated content is inserted automatically, using the Python scripts in th
 - [![💬 Inserts Contributor Content](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `git-in-here.yml`_
 - [![📚 Inserts Guides & Resources into Readme](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
 - [![🪞 Mirror to Codeberg](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
+
+
+<details>
+  <summary>Third-Party Checks</summary>
+
+- [![Maintainability](https://api.codeclimate.com/v1/badges/e43b2610452e83a15c54/maintainability)](https://codeclimate.com/github/Lissy93/git-into-open-source/maintainability) - _Code maintainability, provided by Code Climate_
+- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source?ref=badge_small) - _License compliance, provided by FOSSA_
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/4a3243dc-4dc8-43e0-a2ea-a51ce4da782a/deploy-status)](https://app.netlify.com/sites/git-into-open-source/deploys) - _Deployment status, provided by Netlify_
+  
+</details>
 
 ### Service Credits
 This project would not be possible to keep running without the use of the following service providers and software authors:
@@ -246,6 +259,10 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     </td></tr>
 </table>
 <!-- readme: sponsors -end -->
+
+Consider supporting this repo, and my [other](https://github.com/Lissy93/) projects, by sponsoring me on GitHub 💖
+
+![Sponsor Lissy93's work on GitHub](https://img.shields.io/github/sponsors/lissy93?style=flat&logo=githubsponsors&label=Sponsor%20%7C%20Lissy93&color=EA4AAA)
 
 ### Contributors
 
@@ -378,6 +395,8 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTIO
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fgit-into-open-source?ref=badge_large&issueType=license)
 
 </details>
 
