@@ -149,4 +149,8 @@ contributors:
     Balancing open-source work with a day job can be quite challenging, but it's also incredibly rewarding. First and foremost, time management is key. I make sure to allocate specific blocks of time for open-source contributions, usually during evenings or weekends, so it doesn't interfere with my primary responsibilities at work. 
     Prioritization is crucial too; I identify the most critical open-source projects or issues that align with my interests and expertise, focusing my efforts there. Communication is another vital aspect—I keep my colleagues and managers in the loop about my open-source commitments to ensure transparency and manage expectations. 
     It's also crucial to set realistic goals and not overcommit, as burnout is a real concern. Ultimately, finding the right balance takes time and trial and error, but it's all about passion, dedication, and effective time management to make it work harmoniously.
+- username: aryamon
+  question: *Q5
+  response: >-
+   As a fourth-year computer science engineering student, I have a deep appreciation for several tech tools and languages. At the top of my list is Python, thanks to its versatility and readability. When it comes to web development, JavaScript is my go-to, especially when paired with frameworks like React and Vue.js. Git is my trusty sidekick for version control, ensuring smooth collaboration with others. Docker simplifies deployment, and I'm a fan of AWS for cloud services.
 # Leave a blank line at the end of the file :)
