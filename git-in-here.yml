@@ -96,6 +96,11 @@ contributors:
 - username: MSaiKiran9
   question: *Q2
   response: >-
+    Threejs or Webgl for react is definitely a project that amazed me the most . I think it is cool if we can add renderers with few lines of code and it also with some tweaking offers ray tracing , with which we can design interactive websites and games too. 
+- username: alwenpy
+  question: *Q5
+  response: >-
+    My most preferred language is Python as it has the easiest syntax of all the major languages. Python is very versatile language as it can be used in Data Science ,Artificial Intelligence, Machine learning, Web Scraping and many more. Talking about frameworks I prefer Django for production level projects and Flask or FAST API for small projects.
     Threejs or Webgl for react is definitely a project that amazed me the most . I think it is cool if we can add renderers with few lines of code and it also with some tweaking offers ray tracing , with which we can design interactive websites and games too.
 - username: destryptor
   question: *Q5
@@ -106,7 +111,6 @@ contributors:
     Also I like using C++ for competitive programming and DSA.
     I have also learnt Java, and have used frameworks like SPRING along with RDBMS like MySQL/
     PostgreSQL for backend related stuff.
-
 - username: yashwantaditya009
   question: *Q5
   response: >-
