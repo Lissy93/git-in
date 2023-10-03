@@ -87,7 +87,6 @@ contributors:
     with this I am an AI/ML enthusiast and love to learn new things. I am a MERN stack developer and love to work on making websites using
     react and express js. I like using java and am looking forward to learning springboot so as to gain experience in it. I have worked
     with javascript and absolutely consider as one of my most sought after languages.
-
 - username: vaibhav67979
   question: *Q5
   response: >-
@@ -102,5 +101,22 @@ contributors:
   question: *Q5
   response: >-
     My most preferred language is Python as it has the easiest syntax of all the major languages. Python is very versatile language as it can be used in Data Science ,Artificial Intelligence, Machine learning, Web Scraping and many more. Talking about frameworks I prefer Django for production level projects and Flask or FAST API for small projects.
+    Threejs or Webgl for react is definitely a project that amazed me the most . I think it is cool if we can add renderers with few lines of code and it also with some tweaking offers ray tracing , with which we can design interactive websites and games too.
+- username: destryptor
+  question: *Q5
+  response: >-
+    I love using Node.Js, Express and MongoDB for server-side programming, since I am a backend 
+    enthusiast! I wish to become a MERN developer, so I plan on learning REACT in the coming months.
+    Apart from that, my university necessitates the use of C, and I am most comfortable in using it.
+    Also I like using C++ for competitive programming and DSA.
+    I have also learnt Java, and have used frameworks like SPRING along with RDBMS like MySQL/
+    PostgreSQL for backend related stuff.
+- username: yashwantaditya009
+  question: *Q5
+  response: >-
+    In my work, I have a strong affinity for Python and its powerful libraries like NumPy, pandas, and scikit-learn.
+    I also rely on tools such as Microsoft Power BI and Tableau for interactive data visualization. 
+    TensorFlow and scikit-learn are my go-to libraries for machine learning tasks. Additionally, I've explored deep learning with TensorFlow and PyTorch and have experience in text analysis using libraries like NLTK and spaCy. 
+    These tools and libraries have been instrumental in my data-driven journey.
 
 # Leave a blank line at the end of the file :)
