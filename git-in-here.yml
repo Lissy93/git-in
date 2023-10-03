@@ -143,5 +143,10 @@ contributors:
   question: *Q1
   response: >-
     I want to get into open source for several reasons that align with my personal and professional goals with a passion for coding and a growing interest in GitHub. By contributing to such open source projects, I can enhance my programming skills, learn, and also gain valuable hands-on experience in real-world software development. It is also really good for collaboration, getting to know so many like minded people and also enhances the profile!
-
+- username: omkarkirpan
+  question: *Q7
+  response: >-
+    Balancing open-source work with a day job can be quite challenging, but it's also incredibly rewarding. First and foremost, time management is key. I make sure to allocate specific blocks of time for open-source contributions, usually during evenings or weekends, so it doesn't interfere with my primary responsibilities at work. 
+    Prioritization is crucial too; I identify the most critical open-source projects or issues that align with my interests and expertise, focusing my efforts there. Communication is another vital aspect—I keep my colleagues and managers in the loop about my open-source commitments to ensure transparency and manage expectations. 
+    It's also crucial to set realistic goals and not overcommit, as burnout is a real concern. Ultimately, finding the right balance takes time and trial and error, but it's all about passion, dedication, and effective time management to make it work harmoniously.
 # Leave a blank line at the end of the file :)
