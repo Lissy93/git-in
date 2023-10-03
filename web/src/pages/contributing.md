@@ -10,6 +10,9 @@ title: Contributing Guidelines
 
 One of the biggest barriers to entry for first-time and newer contributors is the Git and GitHub process. The aim of this repo is to provide an easy and safe space for you to get more comfortable with the contribution process. We welcome PRs from developers of all levels and experiences, and we've tried to make the process as straightforward as possible.
 
+| ⚠️ <ins>Important</ins>: Before submitting your pull request, please ensure you're following [these Guidelines](#guidelines)! |
+|--|
+
 ---
 
 ## How 
@@ -95,6 +98,56 @@ There's plenty of other repositories on GitHub looking for contributors! Whateve
 
 ## Guidelines
 
-The below are a list of contributing guidlines, that you must follow.
+The below are a list of contributing guidelines, that you must follow.
 
-You must adhere 
+When submitting a pull request, you must:
+- Complete the PR template appropriately
+- Agree to follow the Code of Conduct
+
+When adding your name and response to [`git-in-here.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/git-in-here.yml),
+you must ensure that:
+- Your addition must be appended to the end of the file
+- The file must end in a single blank line
+- The username must match YOUR GitHub username
+- The question must exist in the list
+- The response must not be spammy or low effort
+- The response should be between 64 and 512 characters
+- The response should be wrapped onto the next line if it's over 100 chars
+- The response must be in English, with correct spelling and grammar
+
+Top tips for adding a great response:
+- **Be imaginative!** Don't just say "I use JavaScript", but try and think about what might be interesting for future users to read
+- **Markdown is supported!** So feel free to link to your projects, website, helpful (SFW) content or whatever else.
+  - E.g. add a hyperlink with: `[text to display](https://example.com)`, or a new line with: `<br />`
+- **Get a gold star by your name!** If you're a stargazer of this repo, then the a star will automatically be displayed next to your response.
+
+When adding a resource to [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml),
+you must:
+- Not submit blog posts or articles, unless they provide considerable value to the reader
+- Not submit anything which is duplicate content, or very similar to an existing resource
+- Disclose any association you may have to that website
+- Provide a short sentence of justification in your PR, explaining why it should be included
+
+When submitting additions or changes to the guides in [`guides/`](https://github.com/Lissy93/git-into-open-source/tree/main/guides),
+you must:
+- Ensure all new information is, to the best of your knowledge accurate and correct
+- Spell and grammar check your new additions, and ensure that any included links are functional
+- Not provide links to content you own, manage or are affiliated with, without disclosing your association when submitting the pull request
+- If you're adding a new guide, don't forget to also list it in the resources file, so it can be indexed
+
+When submitting changes to the website in [`web/`](https://github.com/Lissy93/git-into-open-source/tree/main/web),
+you must:
+- Ensure the application is still fully deployable
+- Ensure there are no regressions / no new bugs introduced
+- Ensure all lint checks, tests and build scripts still pass
+
+When submitting changes to the website in [`lib/`](https://github.com/Lissy93/git-into-open-source/tree/main/lib),
+you must:
+- Ensure that all scripts still run as expected
+- Ensure there are no regressions / no new bugs introduced
+- Ensure all lint checks, tests and build scripts still pass
+
+There's a few no-go zones, where changes will be overridden by the dynamically inserted content. Therefore:
+- When editing markdown, do not manually submit any content between the `<!-- xx-start -->` and `<!-- xx-end -->` tags - this is auto-generated, and so will be overridden!
+- Don't edit the markdown within the `web/` directory, as this is generated using the content from `/guides`, and metadata from `resources.yml`
+- Only submit pull requests to the repo on GitHub (lissy93/git-into-open-source), as our Codeberg mirror is one-way, so changes will be overridden
