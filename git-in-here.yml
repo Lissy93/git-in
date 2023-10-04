@@ -182,4 +182,9 @@ contributors:
     And if you are starting your own open source project, the same thing applies: Start
     with a simple idea that can be expanded upon, rather than expecting to be able to
     plan out and implement a complex program in one go.
+- username: arungop
+  question: *Q4
+  response: >-
+    I have created a wedding landing page for my friend. You can checkout: [Wedding Invitation](https://github.com/arungop/akhiarya).
+    Another feel good project is web scrapping of weather data from IMD for kerala state (India).
 # Leave a blank line at the end of the file :)
