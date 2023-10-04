@@ -40,7 +40,7 @@ const fetchContributorComments = async () => {
   return data.contributors.reverse();
 };
 
-const fetchStargazers = async (): Promise<string[]>  => {
+const fetchStargazers = async (): Promise<string[]> => {
   const headers = GITHUB_TOKEN ? { 'Authorization': `token ${GITHUB_TOKEN}` } : undefined;
   let url = `https://api.github.com/repos/${repo}/stargazers?per_page=100`;
   let stargazers = [];
@@ -52,12 +52,19 @@ const fetchStargazers = async (): Promise<string[]>  => {
     if (!nextLink) return null;
     const match = nextLink.match(/<(.*)>/);
     return match ? match[1] : null;
-    };
+  };
 
   while (url) {
     const response = await fetch(url, { headers });
     const data = await response.json();
-    stargazers = stargazers.concat(data.map(stargazer => stargazer.login.toLowerCase()));
+
+    if (Array.isArray(data)) {
+      stargazers = stargazers.concat(data.map(stargazer => stargazer.login.toLowerCase()));
+    } else if (data.message && data.message.includes('API rate limit exceeded')) {
+      console.warn("GitHub API rate limit exceeded");
+      break;
+    }
+
     url = getNextLink(response.headers.get('Link'));
   }
 
