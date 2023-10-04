@@ -87,4 +87,6 @@ resources:
     url: https://choosealicense.com/
   - title: Git Command Explorer
     url: https://gitexplorer.com/
+  -title: Improve commit messages for Open Source Contribution
+    url: https://medium.com/neudesic-innovation/conventional-commits-a-better-way-78d6785c2e08
     
