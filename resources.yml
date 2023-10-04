@@ -85,4 +85,6 @@ resources:
     url: https://martinfowler.com/articles/branching-patterns.html
   - title: Choose an open source license
     url: https://choosealicense.com/
+  - title: Git Command Explorer
+    url: https://gitexplorer.com/
     
