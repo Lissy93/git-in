@@ -154,4 +154,8 @@ contributors:
   response: >-
    To learn about open source concepts, you can watch YouTube videos or read GitHub repositories. By following the steps in these repositories, you can get an idea of what open source is and start your learning journey.
    You can also use social media platforms to find and connect with open source projects and start contributing.
+- username: robertlent
+  question: *Q3
+  response: >-
+   The best advice that I can give is to start small. Don't immediately feel like you have to try diving into fixing big bugs or implementing advanced features in order to contribute. Fixing typos or adding unit tests are a great way to begin contributing. And if you are starting your own open source project, the same thing applies: Start with a simple idea that can be expanded upon, rather than expecting to be able to plan out and implement a complex program in one go.
 # Leave a blank line at the end of the file :)
