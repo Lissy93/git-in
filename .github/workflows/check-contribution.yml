@@ -1,7 +1,7 @@
 name: 🚦 Check Contribution
 
 on:
-  pull_request:
+  pull_request_target:
     paths:
       - 'git-in-here.yml'
     types:
