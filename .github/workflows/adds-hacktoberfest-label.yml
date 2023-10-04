@@ -23,7 +23,7 @@ jobs:
       if: steps.check-date.outputs.october == 'true'
       uses: actions/github-script@v3
       with:
-        github-token: ${{ secrets.BOT_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
           github.issues.addLabels({
             issue_number: context.issue.number,
