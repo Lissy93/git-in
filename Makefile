@@ -15,6 +15,9 @@ copy_resources_to_site:
 insert_resource_list:
 	$(PYTHON) lib/insert_resource_list.py
 
+validate_pr:
+	$(PYTHON) lib/validate_pr.py
+
 # Targets for web/
 install_web_dependencies:
 	cd web && npm install
