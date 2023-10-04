@@ -1,0 +1,33 @@
+# If a PR is opened within October, then add Hacktoberfest label
+name: 🎃 Add Hacktoberfest Label
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 📆 Check if month is October
+      id: check-date
+      run: |
+        MONTH=$(date +'%m')
+        if [[ "$MONTH" == "10" ]]; then
+          echo "::set-output name=october::true"
+        else
+          echo "::set-output name=october::false"
+        fi
+    - name: 🏷️ Add label if October
+      if: steps.check-date.outputs.october == 'true'
+      uses: actions/github-script@v3
+      with:
+        github-token: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}
+        script: |
+          github.issues.addLabels({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            labels: ['hacktoberfest-accepted']
+          })
