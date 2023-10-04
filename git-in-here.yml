@@ -165,4 +165,8 @@ contributors:
   response: >-
    To learn about open source concepts, you can watch YouTube videos or read GitHub repositories. By following the steps in these repositories, you can get an idea of what open source is and start your learning journey.
    You can also use social media platforms to find and connect with open source projects and start contributing.
+- username: hiteshbandhu
+  question: *Q5
+  response: >-
+   My main tech stack involves using Python and Javascript as i have interest in fullstack development. I use Python in the backend for the app, while javascript for the frontend. Also, an avid AI fan, I have interest in making hobby AI projects and you know who's the boss for AI - Python, right ?
 # Leave a blank line at the end of the file :)
