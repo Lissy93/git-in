@@ -4,7 +4,7 @@ name: 🎃 Add Hacktoberfest Label
 on:
   pull_request:
     types:
-      - synchronize
+      - opened
 
 jobs:
   add-label:
@@ -23,7 +23,7 @@ jobs:
       if: steps.check-date.outputs.october == 'true'
       uses: actions/github-script@v3
       with:
-        github-token: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.BOT_TOKEN }}
         script: |
           github.issues.addLabels({
             issue_number: context.issue.number,

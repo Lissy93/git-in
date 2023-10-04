@@ -5,6 +5,7 @@ on:
     paths:
       - 'git-in-here.yml'
     types:
+      - opened
       - synchronize
 
 permissions:
@@ -37,6 +38,6 @@ jobs:
         run: make validate_pr
         env:
           GITHUB_ACTOR: ${{ github.actor }}
-          GH_ACCESS_TOKEN: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_ACCESS_TOKEN: ${{ secrets.BOT_TOKEN }}
           GITHUB_EVENT_PATH: ${{ github.event_path }}
 
