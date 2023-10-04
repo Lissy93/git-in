@@ -99,6 +99,7 @@ Finally, you can submit the pull request! Head back to the source repo, and you 
 - <img src='https://icon.horse/icon/githooks.com' width='20' /> [All about Git Hooks](https://githooks.com/)
 - <img src='https://icon.horse/icon/martinfowler.com' width='20' /> [Effective branching patterns of larger teams](https://martinfowler.com/articles/branching-patterns.html)
 - <img src='https://icon.horse/icon/choosealicense.com' width='20' /> [Choose an open source license](https://choosealicense.com/)
+- <img src='https://icon.horse/icon/gitexplorer.com' width='20' /> [Git Command Explorer](https://gitexplorer.com/)
 <!-- resources-end -->
 
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
