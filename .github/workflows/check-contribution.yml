@@ -18,8 +18,10 @@ jobs:
     steps:
 
       # Checkout users branch
-      - name: Checkout repository 🛎️
+      - name: Checkout PR 🛎️
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
             
       # Downloads + installs Python (used for running gen scripts)  
       - name: Set up Python 🐍

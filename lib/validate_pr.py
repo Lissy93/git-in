@@ -14,12 +14,8 @@ REPO_OWNER = os.environ.get("REPO_OWNER", "lissy93")
 REPO_NAME = os.environ.get("REPO_NAME", "git-into-open-source")
 """ A GitHub access token, required for higher rate-limit when fetching data """
 GH_ACCESS_TOKEN = os.environ.get("GH_ACCESS_TOKEN", None)
-""" Used for users who don't have a GitHub profile picture """
-PLACEHOLDER_PROFILE_PICTURE = "https://i.ibb.co/X231Rq8/octo-no-one.png"
 """ The directory where this script is located """
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-""" The relative path to the markdown file to update"""
-README_PATH = os.path.join(SCRIPT_DIR, "..", ".github/README.md")
 """ The relative path to the YAML file containing the user-contributed content """
 CONTRIBUTORS_FILE_PATH = os.path.join(SCRIPT_DIR, "..", "git-in-here.yml")
 
@@ -63,12 +59,13 @@ def username_matches_submission(username: str, data: Union[Dict, List]) -> bool:
     :param username: The username of the contributor.
     :return: Boolean indicating whether the provided username matches the submission.
     """
+    logger.info(f"Checking if {username} is included in the submission")
     contributors = data.get('contributors', [])
     for contributor in contributors:
-        if contributor.get('username') == username:
+        if contributor.get('username', '').lower() == username.lower():
+            logger.info(f"Found {username}")
             return True
     return False
-
     
 
 def has_appended_to_end(username: str, data: Union[Dict, List]) -> bool:
@@ -77,8 +74,10 @@ def has_appended_to_end(username: str, data: Union[Dict, List]) -> bool:
     :param username: The username of the contributor.
     :return: Boolean indicating whether the contribution is at the end of the array.
     """
+    logger.info(f"Checking if {username} has appended their contribution to the end of the array")
     contributors = data.get('contributors', [])
-    return contributors[-1].get('username') == username
+    return contributors[-1].get('username', '').lower() == username.lower()
+
 
 def question_is_valid(username: str, data: Union[Dict, List]) -> bool:
     """
@@ -86,13 +85,14 @@ def question_is_valid(username: str, data: Union[Dict, List]) -> bool:
     :param username: The username of the contributor.
     :return: Boolean indicating whether the question is valid.
     """
+    logger.info(f"Checking if {username} has answered a valid question")
     questions = {k: v for k, v in data.items() if k.startswith('Q')}
-    
     for contributor in data.get('contributors', []):
-        if contributor['username'] == username:
+        if contributor['username'].lower() == username.lower():
             question_ref = contributor.get('question', '')
             return question_ref in questions.values()
     return False # If the user is not in the contributors list
+
 
 def check_if_stargazer(username) -> bool:
     """
@@ -134,6 +134,7 @@ def response_length_is_valid(username: str, data: Union[Dict, List]) -> bool:
     :param username: The username of the contributor.
     :return: Boolean indicating whether the response length is within bounds.
     """
+    logger.info(f"Checking if {username} has a valid response length")
     for contributor in data.get('contributors', []):
         if contributor['username'] == username:
             response = contributor.get('response', '').strip()
@@ -171,19 +172,30 @@ def run_checks(user, contributor_data):
         logger.error("Error: GITHUB_ACTOR environment variable not set.")
         return []
 
+    if not check_if_stargazer(user):
+        errors.append(
+            "- Consider dropping this repo a star ."
+        )
+
     if not check_valid_yaml():
         errors.append(
             "- It looks like there is a syntax error in git-in-here.yml. "
-            "You'll need toå fix that before your PR can be reviewed. "
+            "You'll need to fix that before your PR can be reviewed. "
             "Using a [YAML Validator](https://appdevtools.com/yaml-validator) might help."
         )
         # We return early here, because can't continue if the YAML is invalid
         return errors
+    
+    if not username_matches_submission(user, contributor_data):
+        errors.append(
+            "- I couldn't find your response, ensure that your username matches your GitHub username. "
+        )
+        # If we don't have the users response, we can't continue
+        return errors
 
     if not question_is_valid(user, contributor_data):
         errors.append(
-            "- Please ensure that the question you've answered is. "
-            "Please ensure you have answered the question in your PR."
+            "- Please ensure that the question you've answered is in the list."
         )
 
     if not has_appended_to_end(user, contributor_data):
@@ -192,23 +204,11 @@ def run_checks(user, contributor_data):
             "Do not add it to the top or in between other entries."
         )
 
-    if not username_matches_submission(user, contributor_data):
-        errors.append(
-            "- The username in the contribution does not match your GitHub username. "
-            "Please ensure they are consistent."
-        )
-
     if not response_length_is_valid(user, contributor_data):
         errors.append(
             "- The length of your response should be between 64 and 512 characters."
         )
-
-    if not check_if_stargazer(user):
-        errors.append(
-            "- It looks like you haven't starred the repository yet. "
-            "Consider dropping us a star before your PR is reviewed."
-        )
-
+    
     return errors
 
 
