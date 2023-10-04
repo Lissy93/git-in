@@ -169,4 +169,7 @@ contributors:
   question: *Q5
   response: >-
    My main tech stack involves using Python and Javascript as i have interest in fullstack development. I use Python in the backend for the app, while javascript for the frontend. Also, an avid AI fan, I have interest in making hobby AI projects and you know who's the boss for AI - Python, right ?
+- username: Big-Pink
+  question: none
+  response: Potato
 # Leave a blank line at the end of the file :)
