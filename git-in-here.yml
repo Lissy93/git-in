@@ -144,15 +144,28 @@ contributors:
   response: >-
     I want to get into open source for several reasons that align with my personal and professional goals with a passion for coding and a growing interest in GitHub. By contributing to such open source projects, I can enhance my programming skills, learn, and also gain valuable hands-on experience in real-world software development. It is also really good for collaboration, getting to know so many like minded people and also enhances the profile!
 - username: omkarkirpan
-  question: *Q7
+  question: *Q8
   response: >-
     Balancing open-source work with a day job can be quite challenging, but it's also incredibly rewarding. First and foremost, time management is key. I make sure to allocate specific blocks of time for open-source contributions, usually during evenings or weekends, so it doesn't interfere with my primary responsibilities at work. 
     Prioritization is crucial too; I identify the most critical open-source projects or issues that align with my interests and expertise, focusing my efforts there. Communication is another vital aspect—I keep my colleagues and managers in the loop about my open-source commitments to ensure transparency and manage expectations. 
     It's also crucial to set realistic goals and not overcommit, as burnout is a real concern. Ultimately, finding the right balance takes time and trial and error, but it's all about passion, dedication, and effective time management to make it work harmoniously.
+- username: ananyasgit
+  question: *Q2
+  response: >-
+    The coolest open source project I've ever come across is the Ultralytics Yolov8 project. Ultralytics YOLOv8 is a cutting-edge, 
+    state-of-the-art (SOTA) model that builds upon the success of previous YOLO versions and introduces new features and 
+    improvements to further boost performance and flexibility as a Deep Learning model for tasks like object detection, segmentation,
+    classification. It also helped me ace my university project ;)
+- username: Aytida-dev
+  question: *Q1
+  response: >-
+    i want to get into open source beacuse i want to learn how the big projects are built and maintained,
+    i am also prepairing for Gsoc 24 and thats why i have started exploring open source and after completing my B.tech i want to get a remote job. 
 - username: Prashant Jagtap
   question: *Q6
   response: >-
-   To learn about open source concepts, you can watch YouTube videos or read GitHub repositories. By following the steps in these repositories, you can get an idea of what open source is and start your learning journey.
+   To learn about open source concepts, you can watch YouTube videos or read GitHub repositories.
+   By following the steps in these repositories, you can get an idea of what open source is and start your learning journey.
    You can also use social media platforms to find and connect with open source projects and start contributing.
 - username: hiteshbandhu
   question: *Q5
@@ -186,8 +199,11 @@ contributors:
   response: >-
    The language that i use the most and love using is JavaScript 
    But recently I came across Dart language and specific the Fluter Framework it is so much cool to work with it and the main benifit of using flutter framework is that we can create a cross platform app using a single code base(i.e. a single file ). Be it a Android application, IOS Application, Web Application, Desktop application, anything integration of theis code is done easily and also the managing of the software also becomes too easy.
+<<<<<<< HEAD
 - username : flickerbot
   question : *Q1
   response : >-
    Open Source is the Future , In my view open source will be playing a major role while applying for any role or to showcase our work in coming few years and ya I started open source because I want to contribute while learning and open source is the perfect way to do this .  
+=======
+>>>>>>> 64a18f4c9d808b77af0ebeb4703e21eda65763a9
 # Leave a blank line at the end of the file :)

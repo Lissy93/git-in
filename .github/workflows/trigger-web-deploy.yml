@@ -1,0 +1,19 @@
+name: 🚢 Trigger Deployment
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'web/**'
+      - 'git-in-here.yml'
+
+jobs:
+  # This will re-deploy git-into-open-source.as93.net on Netlify
+  trigger-netlify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger Netlify Build Hook
+      run: |
+        curl -X POST -d '{}' https://api.netlify.com/build_hooks/${{ secrets.NETLIFY_BUILD_HOOK_ID }}
