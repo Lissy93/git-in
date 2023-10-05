@@ -90,7 +90,7 @@ In conclusion, open source is a powerful force in the world of technology, promo
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-10-05 07:07:39.750438
+	This file was auto-generated at 2023-10-04 20:56:26.723335
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/why-open-source.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->
