@@ -7,7 +7,7 @@ icon: 'ion:git-branch'
 tags: 'None'
 index: '3'
 created: None
-updated: 2023-10-04
+updated: 2023-10-05
 ---
 
 <!--
@@ -125,7 +125,7 @@ Once your PR is merged, you've made a successful contribution!
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-10-04 11:01:42.661791
+	This file was auto-generated at 2023-10-05 07:07:39.752735
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/submit-your-first-pr-cli.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->

@@ -193,4 +193,16 @@ contributors:
     I love using JavaScript and Python for coding, and I'm particularly fond of JavaScript frameworks like Next.js and 
     Python frameworks like Django. These tools and frameworks enhance my development experience and allow me to build 
     efficient and robust applications.
+- username: Keshav-Aneja
+  question: *Q3
+  response: >-
+      For freshers stepping into the world of tech and exploring the realm of Open Source, I would
+      sincerely advise them to focus on learning the basics first and strengthening that. After that,
+      you can learn various frameworks or functional features on the go while understanding the
+      project. This can help greatly in the long run when contributing to Open Source.
+- username: TechoChat
+  question: *Q5
+  response: >-
+   The language that i use the most and love using is JavaScript 
+   But recently I came across Dart language and specific the Fluter Framework it is so much cool to work with it and the main benifit of using flutter framework is that we can create a cross platform app using a single code base(i.e. a single file ). Be it a Android application, IOS Application, Web Application, Desktop application, anything integration of theis code is done easily and also the managing of the software also becomes too easy.
 # Leave a blank line at the end of the file :)
