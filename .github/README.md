@@ -32,18 +32,20 @@ User | Contribution
 <a href='https://github.com/ravneet1805'>Ravneet Singh<br /><img src='https://avatars.githubusercontent.com/u/97474782?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />I have a great interest in Application Development. So my Main tech stack is Flutter and Firebase.  Currently, I am getting into Java and Spring/SpringBoot.
 <a href='https://github.com/Amarnath-Rao'>Amar<br /><img src='https://avatars.githubusercontent.com/u/96937608?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />Python serves as my primary coding tool for academic research endeavors. I have hands-on experience in machine learning, utilizing scikit-learn, TensorFlow, and PyTorch. Presently, I am actively incorporating PyTorch with Lightning to enhance and simplify my research workflows.
 <a href='https://github.com/Aryan-Bhargav8'>⭐ Aryan Bhargav<br /><img src='https://avatars.githubusercontent.com/u/108352122?v=4' width='80' /></a> | **Where do you see open source going in the future?**<br />In the Future Open Source will have:-
-   - Broad Adoption: Open source spans industries, cutting costs and sparking innovation.
-   - Innovation Hubs: AI, blockchain, and quantum computing flourish in open source centers.
-   - Digital Inclusion: Accessibility improvements bridge the digital divide.
-   - Security Priority: Open source projects prioritize enhanced security.
-   - Diversity & Inclusion: Emphasis on diversity enriches project ecosystems.
-   - Cross-Industry Collaboration: Open source fosters cross-industry innovation.
-   - Decentralization: Beyond blockchain, tech embraces decentralization.
-   - Sustainability: Supported projects thrive, ensuring long-term success.
-   - Evolving Licensing: Open source adapts to AI and data challenges.
-   - Education Vitality: Open source remains crucial for education and training.
-   - Global Collaboration: Diverse contributors strengthen global collaboration.
-   - AI-Driven Development: AI and automation enhance open-source workflows.
+   <ul>
+     <li>Broad Adoption: Open source spans industries, cutting costs and sparking innovation.</li>
+     <li>Innovation Hubs: AI, blockchain, and quantum computing flourish in open source centers.</li>
+     <li>Digital Inclusion: Accessibility improvements bridge the digital divide.</li>
+     <li>Security Priority: Open source projects prioritize enhanced security.</li>
+     <li>Diversity &amp; Inclusion: Emphasis on diversity enriches project ecosystems.</li>
+     <li>Cross-Industry Collaboration: Open source fosters cross-industry innovation.</li>
+     <li>Decentralization: Beyond blockchain, tech embraces decentralization.</li>
+     <li>Sustainability: Supported projects thrive, ensuring long-term success.</li>
+     <li>Evolving Licensing: Open source adapts to AI and data challenges.</li>
+     <li>Education Vitality: Open source remains crucial for education and training.</li>
+     <li>Global Collaboration: Diverse contributors strengthen global collaboration.</li>
+     <li>AI-Driven Development: AI and automation enhance open-source workflows.</li>
+   </ul>
  
 <a href='https://github.com/TechoChat'>⭐ Kevin shah<br /><img src='https://avatars.githubusercontent.com/u/87111195?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />The language that i use the most and love using is JavaScript  But recently I came across Dart language and specific the Fluter Framework it is so much cool to work with it and the main benifit of using flutter framework is that we can create a cross platform app using a single code base(i.e. a single file ). Be it a Android application, IOS Application, Web Application, Desktop application, anything integration of theis code is done easily and also the managing of the software also becomes too easy.
 <a href='https://github.com/Keshav-Aneja'>⭐ Keshav Aneja<br /><img src='https://avatars.githubusercontent.com/u/119158790?v=4' width='80' /></a> | **The advice I would give to someone new to open source is:**<br />For freshers stepping into the world of tech and exploring the realm of Open Source, I would sincerely advise them to focus on learning the basics first and strengthening that. After that, you can learn various frameworks or functional features on the go while understanding the project. This can help greatly in the long run when contributing to Open Source.
