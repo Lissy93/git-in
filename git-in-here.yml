@@ -245,6 +245,13 @@ contributors:
       - Education Vitality: Open source remains crucial for education and training.
       - Global Collaboration: Diverse contributors strengthen global collaboration.
       - AI-Driven Development: AI and automation enhance open-source workflows.
+    
+- username: Amarnath-Rao
+  question: *Q5
+  response: >-
+    Python serves as my primary coding tool for academic research endeavors.
+    I have hands-on experience in machine learning, utilizing scikit-learn, TensorFlow, and PyTorch.
+    Presently, I am actively incorporating PyTorch with Lightning to enhance and simplify my research workflows.
 
 - username: ravneet1805
   question: *Q5
