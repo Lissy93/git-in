@@ -199,4 +199,10 @@ contributors:
   response: >-
    The language that i use the most and love using is JavaScript 
    But recently I came across Dart language and specific the Fluter Framework it is so much cool to work with it and the main benifit of using flutter framework is that we can create a cross platform app using a single code base(i.e. a single file ). Be it a Android application, IOS Application, Web Application, Desktop application, anything integration of theis code is done easily and also the managing of the software also becomes too easy.
+- username: AlefiyaAbbas
+  question: *Q3
+  response: >-
+    Start by finding open source projects that genuinely interest you. Don't feel pressured to make substantial contributions right away. 
+    Begin with small tasks like fixing typos in documentation, suggesting improvements to README files, or helping with bug triage.
+    Don't forget to celebrate your contributions, no matter how small they may seem. It's a significant accomplishment to contribute to open source.   
 # Leave a blank line at the end of the file :)
