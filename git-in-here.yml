@@ -199,4 +199,10 @@ contributors:
   response: >-
    The language that i use the most and love using is JavaScript 
    But recently I came across Dart language and specific the Fluter Framework it is so much cool to work with it and the main benifit of using flutter framework is that we can create a cross platform app using a single code base(i.e. a single file ). Be it a Android application, IOS Application, Web Application, Desktop application, anything integration of theis code is done easily and also the managing of the software also becomes too easy.
+- username: Amarnath-Rao
+  question: *Q5
+  response: >-
+    Python serves as my primary coding tool for academic research endeavors.
+    I have hands-on experience in machine learning, utilizing scikit-learn, TensorFlow, and PyTorch.
+    Presently, I am actively incorporating PyTorch with Lightning to enhance and simplify my research workflows.
 # Leave a blank line at the end of the file :)
