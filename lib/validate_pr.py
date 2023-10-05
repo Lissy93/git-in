@@ -1,4 +1,19 @@
+"""
+Assortment of checks run against new PRs, when git-in-here.yml is appended to
+The script formats results into markdown, and posts as a comment on the PR
+It checks:
+- The YAML is still valid and parsable
+- The users username matches submission
+- A valid question was selected
+- The response was appended to the end of the list
+- The length of the response is within recommended bounds
+- PR template has not been deleted
+- PR type has been filled in
+- PR checklist has been completed
+- The user has starred the repo
+"""
 
+# Dependency imports
 import os
 import yaml
 import json
@@ -136,7 +151,7 @@ def response_length_is_valid(username: str, data: Union[Dict, List]) -> bool:
     """
     logger.info(f"Checking if {username} has a valid response length")
     for contributor in data.get('contributors', []):
-        if contributor['username'] == username:
+        if contributor['username'].lower() == username.lower():
             response = contributor.get('response', '').strip()
             return 64 <= len(response) <= 512
     return False  # Return False if username is not found
@@ -145,18 +160,16 @@ def make_final_comment(user: str, errors: []) -> str:
     result = ""
     if user:
         result += f"Hello @{user}! 👋\n\n"
-    result += (
-        f"Thanks for contributing to {REPO_NAME}! 🎉\n"
-        "Your PR will be reviewed shortly :)"
-    )
+    result += f"Thanks for contributing to {REPO_NAME}! 🎉\n"
     if errors:
         result += "\n\nIn the meantime, I've spotted a few possible issues for you to address:\n"
         result += '\n'.join(errors)
-    
-    result += (
-        "\n\nPlease ensure you've read and followed the "
-        "[Contributing Guidelines](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CONTRIBUTING.md#guidelines)"
-    )
+        result += (
+            "\n\nPlease ensure you've read and followed the "
+            "[Contributing Guidelines](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CONTRIBUTING.md#guidelines)"
+        )
+    else:
+        result += "\n\nAll automated checks have passed, a human will review your PR soon :)"
 
     result += (
         "\n\n<sup>🤖 I'm a bot, and this message was automated. "
@@ -164,7 +177,7 @@ def make_final_comment(user: str, errors: []) -> str:
     )
     return result
 
-def run_checks(user, contributor_data):
+def run_checks(user, contributor_data, pr_body):
     errors = []
 
     if not user:
@@ -174,7 +187,7 @@ def run_checks(user, contributor_data):
 
     if not check_if_stargazer(user):
         errors.append(
-            "- Consider dropping this repo a star ."
+            "- Consider dropping this repo a star."
         )
 
     if not check_valid_yaml():
@@ -188,7 +201,7 @@ def run_checks(user, contributor_data):
     
     if not username_matches_submission(user, contributor_data):
         errors.append(
-            "- I couldn't find your response, ensure that your username matches your GitHub username. "
+            "- I couldn't find your response, ensure that your `username` matches your GitHub username."
         )
         # If we don't have the users response, we can't continue
         return errors
@@ -206,10 +219,47 @@ def run_checks(user, contributor_data):
 
     if not response_length_is_valid(user, contributor_data):
         errors.append(
-            "- The length of your response should be between 64 and 512 characters."
+            "- Ideally, the length of your response should be between 64 and 512 characters."
         )
+
+    if not pr_body:
+        # Skipping future checks, as don't have PR body
+        logger.info("Skipping PR checks, as no PR body passed")
+        return errors
     
+    if len(pr_body) < 200:
+        errors.append("- The PR body seems to be missing some content. Please make sure you didn't delete the PR template.")
+        # If PR body is so short, no point checking for the rest...
+        return errors
+    
+    if '___' in pr_body:
+        errors.append("- Please specify the PR type (and delete the `___` placeholder).")
+    
+    if not any(box_checked in pr_body for box_checked in ['[x]', '[X]']):
+        errors.append("- Please ensure you've checked the boxes in the PR template (use `[x]`).")
+
     return errors
+
+
+def get_pr_body(pr_number: int) -> Optional[str]:
+    """
+    Fetch the body of the PR using the GitHub API.
+    """
+    url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/pulls/{pr_number}"
+    headers = {
+        "Accept": "application/vnd.github.v3+json",
+        "Authorization": f"token {GH_ACCESS_TOKEN}"
+    }
+    try:
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            return response.json().get("body")
+        else:
+            logger.error(f"Failed to fetch PR body for PR #{pr_number}.")
+            return None
+    except RequestException:
+        logger.error(f"Request error while fetching PR body for PR #{pr_number}.")
+        return None
 
 
 def get_pr_number_from_event() -> Optional[int]:
@@ -246,7 +296,9 @@ def main():
     pr_number = get_pr_number_from_event()
     if not pr_number:
         logger.error("Could not get PR number from GitHub event.")
-        return
+
+    # Get the body of the pull request (the description completed by user)
+    pr_body = get_pr_body(pr_number) if pr_number else None
 
     # Get the username of the user who submitted the PR
     user = os.getenv('GITHUB_ACTOR')
@@ -255,7 +307,7 @@ def main():
     contributor_data = read_yaml_data(CONTRIBUTORS_FILE_PATH)
 
     # Run the checks
-    errors = run_checks(user, contributor_data)
+    errors = run_checks(user, contributor_data, pr_body)
     
     # Generate the markdown comment
     markdown = make_final_comment(user, errors)
