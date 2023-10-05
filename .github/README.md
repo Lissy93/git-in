@@ -142,6 +142,9 @@ User-generated content is inserted automatically, using the Python scripts in th
 - [![💬 Inserts Contributor Content](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `git-in-here.yml`_
 - [![📚 Inserts Guides & Resources into Readme](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
 - [![🪞 Mirror to Codeberg](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
+- [![🚢 Trigger Deployment](https://github.com/Lissy93/git-into-open-source/actions/workflows/trigger-web-deploy.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/trigger-web-deploy.yml) - _After changes merged into `main` branch, deploy site to Netlify_
+- [![🚦 Check Contribution](https://github.com/Lissy93/git-into-open-source/actions/workflows/check-contribution.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/check-contribution.yml) - _Validates PRs where changes made to `git-in-here.yml`_
+- [![🎃 Add Hacktoberfest Label](https://github.com/Lissy93/git-into-open-source/actions/workflows/adds-hacktoberfest-label.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/adds-hacktoberfest-label.yml) - _Adds Hacktoberfest-accepted tag to valid PRs opened during October_
 
 
 <details>
