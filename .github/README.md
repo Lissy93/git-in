@@ -27,6 +27,10 @@ Join them by editing the [`git-in-here.yml`](/git-in-here.yml) file, and followi
 <!-- git-in-start -->
 User | Contribution
 ---|---
+<a href='https://github.com/TechoChat'>⭐ Kevin shah<br /><img src='https://avatars.githubusercontent.com/u/87111195?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />The language that i use the most and love using is JavaScript  But recently I came across Dart language and specific the Fluter Framework it is so much cool to work with it and the main benifit of using flutter framework is that we can create a cross platform app using a single code base(i.e. a single file ). Be it a Android application, IOS Application, Web Application, Desktop application, anything integration of theis code is done easily and also the managing of the software also becomes too easy.
+<a href='https://github.com/Keshav-Aneja'>⭐ Keshav Aneja<br /><img src='https://avatars.githubusercontent.com/u/119158790?v=4' width='80' /></a> | **The advice I would give to someone new to open source is:**<br />For freshers stepping into the world of tech and exploring the realm of Open Source, I would sincerely advise them to focus on learning the basics first and strengthening that. After that, you can learn various frameworks or functional features on the go while understanding the project. This can help greatly in the long run when contributing to Open Source.
+<a href='https://github.com/iamharshkr'>⭐ Harsh Kumar<br /><img src='https://avatars.githubusercontent.com/u/54257619?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />I love using JavaScript and Python for coding, and I'm particularly fond of JavaScript frameworks like Next.js and  Python frameworks like Django. These tools and frameworks enhance my development experience and allow me to build  efficient and robust applications.
+<a href='https://github.com/Avineesh28'>⭐ Avineesh Sathyakumar<br /><img src='https://avatars.githubusercontent.com/u/79737929?v=4' width='80' /></a> | **Where do you see open source going in the future?**<br />As a beginner in open source, I see a bright future ahead. Open source communities will likely continue to grow, fostering collaboration and innovation.  More projects will emerge, addressing diverse needs and encouraging skill development. Increased inclusivity and accessibility will draw in a broader range  of contributors, making open source a melting pot of ideas and cultures. Tools for collaboration, like Git and platforms such as GitHub, will become even more  user-friendly, attracting newcomers. With rising awareness about the benefits of open source, both in technology and beyond, its adoption will expand into new sectors, enhancing transparency and cooperation globally.
 <a href='https://github.com/arungop'>Arun Gopinath<br /><img src='https://avatars.githubusercontent.com/u/53209422?v=4' width='80' /></a> | **Have you ever built or contributed to a project that you'd like to share with us here?**<br />I have created a wedding landing page for my friend. You can checkout: [Wedding Invitation](https://github.com/arungop/akhiarya). Another feel good project is web scrapping of weather data from IMD for kerala state (India).
 <a href='https://github.com/robertlent'>Robert Lent<br /><img src='https://avatars.githubusercontent.com/u/7595802?v=4' width='80' /></a> | **The advice I would give to someone new to open source is:**<br />The best advice that I can give is to start small. Don't immediately feel like you have to try diving into fixing big bugs or implementing advanced features in order to contribute. Fixing typos or adding unit tests are a great way to begin contributing. And if you are starting your own open source project, the same thing applies: Start with a simple idea that can be expanded upon, rather than expecting to be able to plan out and implement a complex program in one go.
 <a href='https://github.com/hiteshbandhu'>Hitesh Bandhu<br /><img src='https://avatars.githubusercontent.com/u/90546635?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />My main tech stack involves using Python and Javascript as i have interest in fullstack development. I use Python in the backend for the app, while javascript for the frontend. Also, an avid AI fan, I have interest in making hobby AI projects and you know who's the boss for AI - Python, right ?
@@ -54,7 +58,7 @@ User | Contribution
 <a href='https://github.com/AkashRajpurohit'>Akash Rajpurohit<br /><img src='https://avatars.githubusercontent.com/u/30044630?v=4' width='80' /></a> | **What's the most rewarding thing you've experienced in your open-source journey?**<br />The most rewarding aspect of my open-source journey has been witnessing my code being utilized and positively impacting the lives of countless developers and end users.
 <a href='https://github.com/ehtishamsajjad1'>Ehtisham Sajjad<br /><img src='https://avatars.githubusercontent.com/u/47937929?v=4' width='80' /></a> | **Which tech (tools, languages, libraries, etc) do you most use or love?**<br />I use JavaScript for work and fun. I plan to contribute to open source when possible.
 <a href='https://github.com/liss-bot'>Alicia Bot<br /><img src='https://avatars.githubusercontent.com/u/87835202?v=4' width='80' /></a> | **What's the most rewarding thing you've experienced in your open-source journey?**<br />🤖 Being forked 1,000 times and not feeling a thing! 😂
-<a href='https://github.com/lissy93'>⭐ Alicia Sykes<br /><img src='https://avatars.githubusercontent.com/u/1862727?v=4' width='80' /></a> | **The advice I would give to someone new to open source is:**<br />Don't be afraid to jump strait in, it's the best way to learn and great fun too! Find a project you're passionate about, or start your own, as contributing is far more fulfilling when you're working on something that you really care about :)
+<a href='https://github.com/lissy93'>Alicia Sykes<br /><img src='https://avatars.githubusercontent.com/u/1862727?v=4' width='80' /></a> | **The advice I would give to someone new to open source is:**<br />Don't be afraid to jump strait in, it's the best way to learn and great fun too! Find a project you're passionate about, or start your own, as contributing is far more fulfilling when you're working on something that you really care about :)
 <!-- git-in-end -->
 
 <sub><sup>⭐ = Stargazer</sup></sub>
@@ -140,6 +144,9 @@ User-generated content is inserted automatically, using the Python scripts in th
 - [![💬 Inserts Contributor Content](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `git-in-here.yml`_
 - [![📚 Inserts Guides & Resources into Readme](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
 - [![🪞 Mirror to Codeberg](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
+- [![🚢 Trigger Deployment](https://github.com/Lissy93/git-into-open-source/actions/workflows/trigger-web-deploy.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/trigger-web-deploy.yml) - _After changes merged into `main` branch, deploy site to Netlify_
+- [![🚦 Check Contribution](https://github.com/Lissy93/git-into-open-source/actions/workflows/check-contribution.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/check-contribution.yml) - _Validates PRs where changes made to `git-in-here.yml`_
+- [![🎃 Add Hacktoberfest Label](https://github.com/Lissy93/git-into-open-source/actions/workflows/adds-hacktoberfest-label.yml/badge.svg)](https://github.com/Lissy93/git-into-open-source/actions/workflows/adds-hacktoberfest-label.yml) - _Adds Hacktoberfest-accepted tag to valid PRs opened during October_
 
 
 <details>
@@ -269,6 +276,13 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>Null</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/aldrich8">
+            <img src="https://avatars.githubusercontent.com/u/106362981?v=4" width="60;" alt="aldrich8"/>
+            <br />
+            <sub><b>Aldrich</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: sponsors -end -->
@@ -297,10 +311,31 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/TechoChat">
+            <img src="https://avatars.githubusercontent.com/u/87111195?v=4" width="60;" alt="TechoChat"/>
+            <br />
+            <sub><b>Kevin Shah</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Aryan-Bhargav8">
+            <img src="https://avatars.githubusercontent.com/u/108352122?v=4" width="60;" alt="Aryan-Bhargav8"/>
+            <br />
+            <sub><b>Aryan Bhargav</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/AkashRajpurohit">
             <img src="https://avatars.githubusercontent.com/u/30044630?v=4" width="60;" alt="AkashRajpurohit"/>
             <br />
             <sub><b>Akash Rajpurohit</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Avineesh28">
+            <img src="https://avatars.githubusercontent.com/u/79737929?v=4" width="60;" alt="Avineesh28"/>
+            <br />
+            <sub><b>Avineesh Sathyakumar</b></sub>
         </a>
     </td>
     <td align="center">
@@ -311,6 +346,14 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/RahulBRB">
+            <img src="https://avatars.githubusercontent.com/u/86495244?v=4" width="60;" alt="RahulBRB"/>
+            <br />
+            <sub><b>Rahul Baskey</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/MSaiKiran9">
             <img src="https://avatars.githubusercontent.com/u/116418856?v=4" width="60;" alt="MSaiKiran9"/>
             <br />
@@ -318,10 +361,38 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Rohithv07">
+            <img src="https://avatars.githubusercontent.com/u/36880893?v=4" width="60;" alt="Rohithv07"/>
+            <br />
+            <sub><b>Rohith V</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Aytida-dev">
+            <img src="https://avatars.githubusercontent.com/u/92716638?v=4" width="60;" alt="Aytida-dev"/>
+            <br />
+            <sub><b>Aditya Raj</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/ananyasgit">
+            <img src="https://avatars.githubusercontent.com/u/109452550?v=4" width="60;" alt="ananyasgit"/>
+            <br />
+            <sub><b>Ananya Agrawal</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/AntObi">
             <img src="https://avatars.githubusercontent.com/u/30937913?v=4" width="60;" alt="AntObi"/>
             <br />
             <sub><b>Anthony Onwuli</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/arungop">
+            <img src="https://avatars.githubusercontent.com/u/53209422?v=4" width="60;" alt="arungop"/>
+            <br />
+            <sub><b>Arun Gopinath</b></sub>
         </a>
     </td>
     <td align="center">
@@ -368,10 +439,46 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/hiteshbandhu">
+            <img src="https://avatars.githubusercontent.com/u/90546635?v=4" width="60;" alt="hiteshbandhu"/>
+            <br />
+            <sub><b>Hitesh Bandhu</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Kaniz-Fatma">
             <img src="https://avatars.githubusercontent.com/u/146003237?v=4" width="60;" alt="Kaniz-Fatma"/>
             <br />
             <sub><b>Null</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Keshav-Aneja">
+            <img src="https://avatars.githubusercontent.com/u/119158790?v=4" width="60;" alt="Keshav-Aneja"/>
+            <br />
+            <sub><b>Keshav Aneja</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/OmkarKirpan">
+            <img src="https://avatars.githubusercontent.com/u/14964401?v=4" width="60;" alt="OmkarKirpan"/>
+            <br />
+            <sub><b>Omkar Kirpan</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/prashantjagtap2909">
+            <img src="https://avatars.githubusercontent.com/u/93985255?v=4" width="60;" alt="prashantjagtap2909"/>
+            <br />
+            <sub><b>Prashant Jagtap</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/robertlent">
+            <img src="https://avatars.githubusercontent.com/u/7595802?v=4" width="60;" alt="robertlent"/>
+            <br />
+            <sub><b>Robert Lent</b></sub>
         </a>
     </td>
     <td align="center">
@@ -394,8 +501,7 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Shriganesh Gupta</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Vaibhav67979">
             <img src="https://avatars.githubusercontent.com/u/95418676?v=4" width="60;" alt="Vaibhav67979"/>
@@ -416,12 +522,20 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Arvind Srivastav</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/sanchitaa14">
             <img src="https://avatars.githubusercontent.com/u/118709611?v=4" width="60;" alt="sanchitaa14"/>
             <br />
             <sub><b>Null</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/srshah27">
+            <img src="https://avatars.githubusercontent.com/u/83776946?v=4" width="60;" alt="srshah27"/>
+            <br />
+            <sub><b>Snehil Shah</b></sub>
         </a>
     </td></tr>
 </table>
