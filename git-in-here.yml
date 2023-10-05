@@ -233,18 +233,20 @@ contributors:
   question: *Q9
   response: >-
    In the Future Open Source will have:-
-      - Broad Adoption: Open source spans industries, cutting costs and sparking innovation.
-      - Innovation Hubs: AI, blockchain, and quantum computing flourish in open source centers.
-      - Digital Inclusion: Accessibility improvements bridge the digital divide.
-      - Security Priority: Open source projects prioritize enhanced security.
-      - Diversity & Inclusion: Emphasis on diversity enriches project ecosystems.
-      - Cross-Industry Collaboration: Open source fosters cross-industry innovation.
-      - Decentralization: Beyond blockchain, tech embraces decentralization.
-      - Sustainability: Supported projects thrive, ensuring long-term success.
-      - Evolving Licensing: Open source adapts to AI and data challenges.
-      - Education Vitality: Open source remains crucial for education and training.
-      - Global Collaboration: Diverse contributors strengthen global collaboration.
-      - AI-Driven Development: AI and automation enhance open-source workflows.
+      <ul>
+        <li>Broad Adoption: Open source spans industries, cutting costs and sparking innovation.</li>
+        <li>Innovation Hubs: AI, blockchain, and quantum computing flourish in open source centers.</li>
+        <li>Digital Inclusion: Accessibility improvements bridge the digital divide.</li>
+        <li>Security Priority: Open source projects prioritize enhanced security.</li>
+        <li>Diversity &amp; Inclusion: Emphasis on diversity enriches project ecosystems.</li>
+        <li>Cross-Industry Collaboration: Open source fosters cross-industry innovation.</li>
+        <li>Decentralization: Beyond blockchain, tech embraces decentralization.</li>
+        <li>Sustainability: Supported projects thrive, ensuring long-term success.</li>
+        <li>Evolving Licensing: Open source adapts to AI and data challenges.</li>
+        <li>Education Vitality: Open source remains crucial for education and training.</li>
+        <li>Global Collaboration: Diverse contributors strengthen global collaboration.</li>
+        <li>AI-Driven Development: AI and automation enhance open-source workflows.</li>
+      </ul>
     
 - username: Amarnath-Rao
   question: *Q5
