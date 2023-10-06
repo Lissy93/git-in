@@ -4,7 +4,7 @@ Q2: &Q2 What's the coolest open source project you've ever used or come across?
 Q3: &Q3 What advice would you give to someone new to open source?
 Q4: &Q4 Have you ever built or contributed to a project that you'd like to share with us here?
 Q5: &Q5 Which tech (tools, languages, libraries, etc) do you most use or love?
-Q6: &Q6 What are your go-to resources, for learning new things in open source? 
+Q6: &Q6 What are your go-to resources, for learning new things in open source?
 Q7: &Q7 What's the most rewarding thing you've experienced in your open-source journey?
 Q8: &Q8 How do you balance open source work, alongside your day job?
 Q9: &Q9 Where do you see open source going in the future?
@@ -55,23 +55,23 @@ contributors:
     projects despite being a fresher. The best thing about open source, as its name suggests, is 
     that it is open to all to see the source code, suggest chsnges to it and even make the projects
     better by their contributions. When project initiated by one mind gets the expertise and ideas
-    of multiple minds, it always turns into something more fantastic and unique. 
+    of multiple minds, it always turns into something more fantastic and unique.
 - username: 5hr1ganesh
   question: *Q1
-  response: >-    
+  response: >-
     I want to get into open source because I want to be a part of a community of developers who are passionate about building and improving software. 
     I also want to be able to understand large codebases, and I believe that contributing to open source projects is the best way to achieve this. Additionally, 
     I am interested in learning more about the ways in which open source helps developers. For example, 
     I am curious to learn more about how open source projects can provide developers with access to new technologies, best practices, and feedback from other developers.
-    In short, I want to get into open source because I want to learn, grow, and contribute to the development community. 
+    In short, I want to get into open source because I want to learn, grow, and contribute to the development community.
 - username: Kaniz-Fatma
   question: *Q6
   response: >-
-   The first go-to resource for learning open source concepts alongside contributing to it is 'GitHub'
-   . GitHub provides us convenience for contributing , raising issues and more things. YouTube is 
-   also good for learning concepts. Going through documentation gives us a more clear and broad view.
-   And lastly supportive friends from any social media platforms who encourages us to go forward. I 
-   find these resources really helpful. 
+    The first go-to resource for learning open source concepts alongside contributing to it is 'GitHub'
+    . GitHub provides us convenience for contributing , raising issues and more things. YouTube is 
+    also good for learning concepts. Going through documentation gives us a more clear and broad view.
+    And lastly supportive friends from any social media platforms who encourages us to go forward. I 
+    find these resources really helpful.
 - username: dharamveer-gupta
   question: *Q2
   response: >-
@@ -79,7 +79,7 @@ contributors:
     It is a modern UI toolkit for Android that makes it easier and faster to build beautiful and responsive user interfaces. 
     It's declarative (intuitive Kotlin APIs) and Compose takes care of rendering it on the screen. 
     This makes it much easier to create complex and dynamic UIs, and it also makes your code more readable and maintainable. 
-    Compose is also very fast and efficient, and it's easy to learn and use. 
+    Compose is also very fast and efficient, and it's easy to learn and use.
 - username: sanchitaa14
   question: *Q5
   response: >-
@@ -96,11 +96,11 @@ contributors:
 - username: MSaiKiran9
   question: *Q2
   response: >-
-    Threejs or Webgl for react is definitely a project that amazed me the most . I think it is cool if we can add renderers with few lines of code and it also with some tweaking offers ray tracing , with which we can design interactive websites and games too. 
+    Threejs or Webgl for react is definitely a project that amazed me the most . I think it is cool if we can add renderers with few lines of code and it also with some tweaking offers ray tracing , with which we can design interactive websites and games too.
 - username: Avinesh Rathore
   question: *Q3
   response: >-
-    To begin, select an open source project that aligns with your interests and skills. Pay careful attention to the project's documentation, including the README, CONTRIBUTING, and CODE_OF_CONDUCT files, to understand its objectives and guidelines. 
+    To begin, select an open source project that aligns with your interests and skills. Pay careful attention to the project's documentation, including the README, CONTRIBUTING, and CODE_OF_CONDUCT files, to understand its objectives and guidelines.
 - username: debanath
   question: *Q5
   response: >-
@@ -160,13 +160,13 @@ contributors:
   question: *Q1
   response: >-
     i want to get into open source beacuse i want to learn how the big projects are built and maintained,
-    i am also prepairing for Gsoc 24 and thats why i have started exploring open source and after completing my B.tech i want to get a remote job. 
+    i am also prepairing for Gsoc 24 and thats why i have started exploring open source and after completing my B.tech i want to get a remote job.
 - username: Prashant Jagtap
   question: *Q6
   response: >-
-   To learn about open source concepts, you can watch YouTube videos or read GitHub repositories.
-   By following the steps in these repositories, you can get an idea of what open source is and start your learning journey.
-   You can also use social media platforms to find and connect with open source projects and start contributing.
+    To learn about open source concepts, you can watch YouTube videos or read GitHub repositories.
+    By following the steps in these repositories, you can get an idea of what open source is and start your learning journey.
+    You can also use social media platforms to find and connect with open source projects and start contributing.
 - username: hiteshbandhu
   question: *Q5
   response: >-
@@ -187,6 +187,30 @@ contributors:
   response: >-
     I have created a wedding landing page for my friend. You can checkout: [Wedding Invitation](https://github.com/arungop/akhiarya).
     Another feel good project is web scrapping of weather data from IMD for kerala state (India).
+- username: sumaiya2908
+  question: *Q2
+  response: >-
+    I recently found an interesting open-source repository called [Hacker Scripts](https://github.com/NARKOZ/hacker-scripts). It's a collection of clever and entertaining scripts created by a former employee of a company. 
+    These scripts automate various tasks, like sending a "hangover" email or scheduling coffee brewing. Check it out, and if you have cool scripts to share, join in and contribute to the creative mix!
+- username: yiquu
+  question: *Q1
+  response: >-
+    I would like to work on open-source projects to learn new technologies and new ways to develop software. 
+    I also hope to expand my skills and think that it will help me in my professional life..
+- username: Avineesh28
+  question: *Q9
+  response: >-
+   As a beginner in open source, I see a bright future ahead. Open source communities will likely continue to grow, fostering collaboration and innovation. 
+   More projects will emerge, addressing diverse needs and encouraging skill development. Increased inclusivity and accessibility will draw in a broader range 
+   of contributors, making open source a melting pot of ideas and cultures. Tools for collaboration, like Git and platforms such as GitHub, will become even more 
+   user-friendly, attracting newcomers. With rising awareness about the benefits of open source, both in technology and beyond, its adoption will expand into new
+   sectors, enhancing transparency and cooperation globally.
+- username: iamharshkr
+  question: *Q5
+  response: >-
+    I love using JavaScript and Python for coding, and I'm particularly fond of JavaScript frameworks like Next.js and 
+    Python frameworks like Django. These tools and frameworks enhance my development experience and allow me to build 
+    efficient and robust applications.
 - username: Keshav-Aneja
   question: *Q3
   response: >-
@@ -194,15 +218,79 @@ contributors:
       sincerely advise them to focus on learning the basics first and strengthening that. After that,
       you can learn various frameworks or functional features on the go while understanding the
       project. This can help greatly in the long run when contributing to Open Source.
+- username: seblex9
+  question: *Q1
+  response: >-
+    Because I appreciate being part of the larger conversation. Programmers
+    can use their knowledge to build things that are beneficial or that have 
+    real-world impact. Or that are maybe just cool. :) I like the idea that 
+    I can be a small part of that. That is its own reward.
+    
 - username: TechoChat
   question: *Q5
   response: >-
    The language that i use the most and love using is JavaScript 
-   But recently I came across Dart language and specific the Fluter Framework it is so much cool to work with it and the main benifit of using flutter framework is that we can create a cross platform app using a single code base(i.e. a single file ). Be it a Android application, IOS Application, Web Application, Desktop application, anything integration of theis code is done easily and also the managing of the software also becomes too easy.
+   But recently I came across Dart language and specific the Fluter Framework it is so much cool
+   to work with it and the main benifit of using flutter framework is that we can create a cross
+   platform app using a single code base(i.e. a single file ). Be it a Android application, IOS
+   Application, Web Application, Desktop application, anything integration of theis code is done
+   easily and also the managing of the software also becomes too easy.
+
 - username: AlefiyaAbbas
   question: *Q3
   response: >-
     Start by finding open source projects that genuinely interest you. Don't feel pressured to make substantial contributions right away. 
     Begin with small tasks like fixing typos in documentation, suggesting improvements to README files, or helping with bug triage.
-    Don't forget to celebrate your contributions, no matter how small they may seem. It's a significant accomplishment to contribute to open source.   
+    Don't forget to celebrate your contributions, no matter how small they may seem. It's a significant accomplishment to contribute to open source. 
+
+- username: Aryan-Bhargav8
+  question: *Q9
+  response: >-
+    In the Future Open Source will have:<br>
+    Broad Adoption: Open source spans industries, cutting costs and sparking innovation.<br>
+    Innovation Hubs: AI, blockchain, and quantum computing flourish in open source centers.<br>
+    Digital Inclusion: Accessibility improvements bridge the digital divide.<br>
+    Security Priority: Open source projects prioritize enhanced security.<br>
+    Diversity &amp; Inclusion: Emphasis on diversity enriches project ecosystems.<br>
+    Cross-Industry Collaboration: Open source fosters cross-industry innovation.<br>
+    Decentralization: Beyond blockchain, tech embraces decentralization.<br>
+    Sustainability: Supported projects thrive, ensuring long-term success.<br>
+    Evolving Licensing: Open source adapts to AI and data challenges.<br>
+    Education Vitality: Open source remains crucial for education and training.<br>
+    Global Collaboration: Diverse contributors strengthen global collaboration.<br>
+    AI-Driven Development: AI and automation enhance open-source workflows.
+    
+- username: Amarnath-Rao
+  question: *Q5
+  response: >-
+    Python serves as my primary coding tool for academic research endeavors.
+    I have hands-on experience in machine learning, utilizing scikit-learn, TensorFlow, and PyTorch.
+    Presently, I am actively incorporating PyTorch with Lightning to enhance and simplify my research workflows.
+
+- username: ravneet1805
+  question: *Q5
+  response: >-
+    I have a great interest in Application Development. So my Main tech stack is Flutter and Firebase. 
+    Currently, I am getting into Java and Spring/SpringBoot.
+
+- username: prixroxx
+  question: *Q5
+  response: >-
+    I have been a .NET MVC developer working on Enterprise applications for over 8 years. I recently
+    started working with python modules and found it so cool what opensource community is doing for
+    development in general. This is my first step towards Open Source.
+
+- username : flickerbot
+  question : *Q1
+  response : >-
+    Open Source is the Future , In my view open source will be playing a major role while applying for any
+    role or to showcase our work in coming few years and ya I started open source because I want to contribute
+    while learning and open source is the perfect way to do this.
+
+- username: gabrielmccallin-and
+  question: *Q5
+  response: >-
+    CSS 2.1 is the second wonder of the world, a more expressive language does not exist 😻
+
 # Leave a blank line at the end of the file :)
+
