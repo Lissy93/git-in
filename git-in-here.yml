@@ -278,5 +278,13 @@ contributors:
   response: >-
     CSS 2.1 is the second wonder of the world, a more expressive language does not exist 😻
 
+- username: UKJaagadhep
+  question: *Q5
+  response: >-
+    As a aspiring data scientist, Python is my most used and most loved programming language.
+    I love to use Numpy, Pandas, Matplotlib, Seaborn and OpenCV libraries in python. I am yet to 
+    learn scikit learn and ntlk libraries but I am greatly fascinated by them. I mostly
+    use google colab for executing my python program because I like its interface.
+    
 # Leave a blank line at the end of the file :)
 
