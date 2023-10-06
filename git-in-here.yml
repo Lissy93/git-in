@@ -150,10 +150,13 @@ contributors:
     Prioritization is crucial too; I identify the most critical open-source projects or issues that align with my interests and expertise, focusing my efforts there. Communication is another vital aspect—I keep my colleagues and managers in the loop about my open-source commitments to ensure transparency and manage expectations. 
     It's also crucial to set realistic goals and not overcommit, as burnout is a real concern. Ultimately, finding the right balance takes time and trial and error, but it's all about passion, dedication, and effective time management to make it work harmoniously.
 
- - username: Appy-007
-    question: *Q9
-    response: >-
-      In the near future open source contribution will become more global to the students just like any other domain of technology.College students will use open source projects to know how working in community happens in real world.Also small to medium scale projects could be accomplished using open source projects where individuals will contribute to the project  and company or the organization will provide stipends based on the work.
+- username: Appy-007
+  question: *Q9
+  response: >-
+      In the near future open source contribution will become more global to the students just like any other domain of technology.
+      College students will use open source projects to know how working in community happens in real world.
+      Also small to medium scale projects could be accomplished using open source projects where individuals
+      will contribute to the project and company or the organization will provide stipends based on the work.
 
 - username: ananyasgit
   question: *Q2
