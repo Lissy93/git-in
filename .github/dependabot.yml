@@ -10,7 +10,6 @@ updates:
     open-pull-requests-limit: 10
     commit-message:
       prefix: "[SECURITY] - Website Dependencies: "
-    security-advisories-only: true
 
   # pip updates for Python scripts
   - package-ecosystem: "pip"
@@ -22,4 +21,3 @@ updates:
     open-pull-requests-limit: 10
     commit-message:
       prefix: "[SECURITY] - Python Dependencies: "
-    security-advisories-only: true
