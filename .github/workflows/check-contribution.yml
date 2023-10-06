@@ -15,6 +15,7 @@ permissions:
 jobs:
   check-contribution:
     runs-on: ubuntu-latest
+    if: github.actor != 'lissy93' && github.actor != 'liss-bot'
     steps:
 
       # Checkout users branch
@@ -42,4 +43,3 @@ jobs:
           GITHUB_ACTOR: ${{ github.actor }}
           GH_ACCESS_TOKEN: ${{ secrets.BOT_TOKEN }}
           GITHUB_EVENT_PATH: ${{ github.event_path }}
-
