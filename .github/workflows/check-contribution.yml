@@ -6,6 +6,7 @@ on:
       - 'git-in-here.yml'
     types:
       - opened
+      - synchronize
 
 permissions:
   pull-requests: write

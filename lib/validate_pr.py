@@ -163,7 +163,7 @@ def make_final_comment(user: str, errors: []) -> str:
     result += f"Thanks for contributing to {REPO_NAME}! 🎉\n"
     if errors:
         errors.reverse()
-        result += "\n\nIn the meantime, I've spotted a few possible issues for you to address:\n"
+        result += "\n\nI've spotted a few possible issues for you to address:\n"
         result += '\n'.join(errors)
         result += (
             "\n\nPlease ensure you've read and followed the "
