@@ -1,0 +1,35 @@
+version: 2
+updates:
+  # NPM updates for astro site
+  - package-ecosystem: "npm"
+    directory: "/web"
+    schedule:
+      interval: "daily"
+    target-branch: "main"
+    versioning-strategy: "widen"
+    allow:
+      - dependency-type: "direct"
+    ignore:
+      - dependency-name: "*"
+        versions: ["< 0"]
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "[SECURITY] - Website Dependencies: "
+    security-advisories-only: true
+
+  # pip updates for Python scripts
+  - package-ecosystem: "pip"
+    directory: "/lib"
+    schedule:
+      interval: "daily"
+    target-branch: "main"
+    versioning-strategy: "widen"
+    allow:
+      - dependency-type: "direct"
+    ignore:
+      - dependency-name: "*"
+        versions: ["< 0"]
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "[SECURITY] - Python Dependencies: "
+    security-advisories-only: true
