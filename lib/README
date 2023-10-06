@@ -12,6 +12,7 @@ SCRIPTS
 - insert_contributor_content.py - Parses and inserts content from git-in-here.yml into the README.md
 - insert_resource_list.py - Inserts list of guides, and external resources into the README.md
 - copy_resources_to_site.py - Copies resources from /guides to the website, combining with metadata
+- validate_pr.py - Checks newly updated git-in-here.yml to ensure it meets some of the guidelines
 
 DOCS
 ----
