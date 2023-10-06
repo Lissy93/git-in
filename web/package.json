@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^0.19.7",
-    "@astrojs/partytown": "^1.0.3",
+    "@astrojs/partytown": "^2.0.1",
     "@astrojs/tailwind": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
