@@ -162,6 +162,7 @@ def make_final_comment(user: str, errors: []) -> str:
         result += f"Hello @{user}! 👋\n\n"
     result += f"Thanks for contributing to {REPO_NAME}! 🎉\n"
     if errors:
+        errors.reverse()
         result += "\n\nIn the meantime, I've spotted a few possible issues for you to address:\n"
         result += '\n'.join(errors)
         result += (
@@ -171,10 +172,7 @@ def make_final_comment(user: str, errors: []) -> str:
     else:
         result += "\n\nAll automated checks have passed, a human will review your PR soon :)"
 
-    result += (
-        "\n\n<sup>🤖 I'm a bot, and this message was automated. "
-        "Follow me for updates.</sup>"
-    )
+    result += "\n\n<sup>🤖 I'm a bot, and this message was automated. Follow me for updates.</sup>"
     return result
 
 def run_checks(user, contributor_data, pr_body):
@@ -187,7 +185,7 @@ def run_checks(user, contributor_data, pr_body):
 
     if not check_if_stargazer(user):
         errors.append(
-            "- Consider dropping this repo a star."
+            "- You've not yet starred the repo. Dropping us a ⭐ helps other users find us :)"
         )
 
     if not check_valid_yaml():
