@@ -12,19 +12,19 @@ const guides = await Astro.glob('./guides/*.md');
 
 <DefaultLayout title="Home">
   <Hero />
-  <section class="mt-64 mb-32">
-    <h2 class="mb-16 text-6xl">Contributors</h2>
+  <section class="mt-64 mb-32 content-center">
+    <h2 class="mb-16 text-6xl content-center">Contributors</h2>
     <Contributors />
   </section>
-  <section class="my-64">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">Guides</h2>
+  <section class="my-64 content-center">
+    <div class="container content-center">
+      <h2 class="mb-16 text-6xl content-center">Guides</h2>
       <GuideList guides={guides} />
     </div>
   </section>
-  <section class="my-64">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">External Resources</h2>
+  <section class="my-64 content-center">
+    <div class="container content-center">
+      <h2 class="mb-16 text-6xl content-center">External Resources</h2>
       <ExternalResources />
     </div>
   </section>
