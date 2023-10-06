@@ -278,5 +278,11 @@ contributors:
   response: >-
     CSS 2.1 is the second wonder of the world, a more expressive language does not exist 😻
 
+- username: ARCHITABHATTAD
+  question: *Q5
+  response: >-
+    I use Python and Django as backend technologies to develop applications and also have significant experience with AI/ML.
+    I am also familier with cloud technologies like AWS, Jenkins, and Docker. 
+
 # Leave a blank line at the end of the file :)
 
