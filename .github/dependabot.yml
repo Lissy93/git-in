@@ -6,12 +6,7 @@ updates:
     schedule:
       interval: "daily"
     target-branch: "main"
-    versioning-strategy: "widen"
-    allow:
-      - dependency-type: "direct"
-    ignore:
-      - dependency-name: "*"
-        versions: ["< 0"]
+    versioning-strategy: "auto"
     open-pull-requests-limit: 10
     commit-message:
       prefix: "[SECURITY] - Website Dependencies: "
@@ -23,12 +18,7 @@ updates:
     schedule:
       interval: "daily"
     target-branch: "main"
-    versioning-strategy: "widen"
-    allow:
-      - dependency-type: "direct"
-    ignore:
-      - dependency-name: "*"
-        versions: ["< 0"]
+    versioning-strategy: "auto"
     open-pull-requests-limit: 10
     commit-message:
       prefix: "[SECURITY] - Python Dependencies: "
