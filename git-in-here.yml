@@ -330,8 +330,8 @@ contributors:
 
 
 - username: GettingWeirdKnowledge
-   question: *Q1
-   response: >-
+  question: *Q1
+  response: >-
      I've always been fond of the way open-source indicates the strength of the masses. Making contributions together not only helps numerous people develop their skills but also ends up 
      creating a beautiful end product and providing a sense of community and togetherness to programming. 
      I couldn't manage to find time earlier but now that I have some, I'm excited and eager to play my part in providing contributions and sharing my knowledge.
