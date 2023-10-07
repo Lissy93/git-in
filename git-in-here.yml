@@ -17,6 +17,11 @@ Q9: &Q9 Where do you see open source going in the future?
 #     Markdown is supported! Lines breaks are not preserved, so you can wrap lines
 
 contributors:
+- username: shivamk23
+  question: *Q3
+  response: >-
+    Start with small issues and then move on to bigger ones. Don't be afraid to ask for help. 
+    Everyone is here to help you. And most importantly, have fun!
 - username: lissy93
   question: *Q3
   response: >-
