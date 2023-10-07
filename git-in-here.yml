@@ -299,7 +299,12 @@ contributors:
 - username : astin-47
   question : *Q1
   response : >-
-    Getting into open source is like joining a vibrant and diverse community of tech enthusiasts. It's a chance to team up with talented people from around the world, learn new skills, and work on exciting projects that can truly make a difference. Plus, it's rewarding to know that your contributions are helping to create better software that's freely accessible to everyone. It's about growth, camaraderie, and being a part of something bigger than yourself.
+    Getting into open source is like joining a vibrant and diverse community of tech enthusiasts.
+    It's a chance to team up with talented people from around the world, learn new skills,
+    and work on exciting projects that can truly make a difference.
+    Plus, it's rewarding to know that your contributions are
+    helping to create better software that's freely accessible to everyone.
+    It's about growth, camaraderie, and being a part of something bigger than yourself.
     
 - username : Midhilesh2003
   question : *Q5
@@ -310,6 +315,12 @@ contributors:
   question: *Q5
   response: >-
     CSS 2.1 is the second wonder of the world, a more expressive language does not exist 😻
+    
+- username : Dhiman-Nayak
+  question : *Q6
+  response : >-
+    Open Source is a great thing to do something for the community. For learning about open source YouTube is the
+    best resource for me .
 
 - username: ARCHITABHATTAD
   question: *Q5
@@ -355,7 +366,6 @@ contributors:
     projects and connect with the community of passionate individuals.It's a great chance to make a 
     positive impact on the world-all while learning from experienced developers.
 
-
 - username: GettingWeirdKnowledge
   question: *Q1
   response: >-
@@ -363,15 +373,12 @@ contributors:
      creating a beautiful end product and providing a sense of community and togetherness to programming. 
      I couldn't manage to find time earlier but now that I have some, I'm excited and eager to play my part in providing contributions and sharing my knowledge.
 
-
 - username: haxybaxy
   question: *Q3
   response: >-
      My advice for someone who wants to get into open source is to JUST START. Even if you don't know anything about anything, learning will be 
      so much easier when you are doing hands on work. We often think that acquiring new skills or learning something new is going to take us a lot
      of time, which discourages us, but the thing is that timewill pass anyways. Keep at it and you will achieve something great!
-
-
 
 # Leave a blank line at the end of the file :)
 
