@@ -1,4 +1,4 @@
-name: 📚 Inserts Guides & Resources into Readme
+name: 📚 Inserts Guides & Resources
 
 on:
   workflow_dispatch:
