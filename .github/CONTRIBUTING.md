@@ -92,7 +92,7 @@ There's plenty of other repositories on GitHub looking for contributors! Whateve
 ## Guidelines
 
 > ‼️ Please familiarise yourself with this checklist **before** submitting your pull request.<br>
-> ❌ PRs which do not follow these guidelines, or that are low-effort will **not be merged**.<br>
+> ❌ PRs which <ins>do not follow these guidelines</ins>, or that are <ins>low-effort</ins> will <ins>**not be merged**</ins>.<br>
 > ⭕ These requirements are in place in order to keep the content in this repo high quality :)
 
 When submitting a pull request, you must:
@@ -112,11 +112,11 @@ you must ensure that:
 - The response must be in English, with correct spelling and grammar
 
 Top tips for adding a great response:
-- **Be imaginative!** Make your response interesting for other users to read
-  - Insightful thoughts, jokes and fun facts are all awesome
+- **Be imaginative!** Ensure your response is something that will engage, educate, or delight those who read it in the future ![important](https://img.shields.io/badge/Important!-F6094E)
+  - Great advice, insightful thoughts, jokes and fun facts are all awesome
 - **Markdown is supported!** So you can include links and basic formatting
   - Feel free to link to your projects, website or helpful (SFW) resources
-  - Hyperlinks (`[text to display](https://example.com)`), new lines (`<br />`) as well as `**bold**` and `_italic_` work
+  - Hyperlinks (`[text to display](https://example.com)`), new lines (`<br />`) as well as `**bold**` and `_italic_` all work
 - **Get a gold star by your name!** Drop a star on this repo, and you'll automatically get a star next to your response
 
 When adding a resource to [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml),
