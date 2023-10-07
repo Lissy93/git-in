@@ -98,11 +98,14 @@ There's plenty of other repositories on GitHub looking for contributors! Whateve
 
 ## Guidelines
 
-The below are a list of contributing guidelines, that you must follow.
+> ‼️ Please familiarise yourself with this checklist **before** submitting your pull request.<br>
+> ❌ PRs which <ins>do not follow these guidelines</ins>, or that are <ins>low-effort</ins> will <ins>**not be merged**</ins>.<br>
+> ⭕ These requirements are in place in order to keep the content in this repo high quality :)
 
 When submitting a pull request, you must:
 - Complete the PR template appropriately
 - Agree to follow the Code of Conduct
+- Not submit low-effort or AI-generated content
 
 When adding your name and response to [`git-in-here.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/git-in-here.yml),
 you must ensure that:
@@ -110,16 +113,18 @@ you must ensure that:
 - The file must end in a single blank line
 - The username must match YOUR GitHub username
 - The question must exist in the list
-- The response must not be spammy or low effort
 - The response should be between 64 and 512 characters
 - The response should be wrapped onto the next line if it's over 100 chars
+- The response must not be spammy, low effort or AI-generated (important!)
 - The response must be in English, with correct spelling and grammar
 
 Top tips for adding a great response:
-- **Be imaginative!** Don't just say "I use JavaScript", but try and think about what might be interesting for future users to read
-- **Markdown is supported!** So feel free to link to your projects, website, helpful (SFW) content or whatever else.
-  - E.g. add a hyperlink with: `[text to display](https://example.com)`, or a new line with: `<br />`
-- **Get a gold star by your name!** If you're a stargazer of this repo, then the a star will automatically be displayed next to your response.
+- **Be imaginative!** Ensure your response is something that will engage, educate, or delight those who read it in the future ![important](https://img.shields.io/badge/Important!-F6094E)
+  - Great advice, insightful thoughts, jokes and fun facts are all awesome
+- **Markdown is supported!** So you can include links and basic formatting
+  - Feel free to link to your projects, website or helpful (SFW) resources
+  - Hyperlinks (`[text to display](https://example.com)`), new lines (`<br />`) as well as `**bold**` and `_italic_` all work
+- **Get a gold star by your name!** Drop a star on this repo, and you'll automatically get a star next to your response
 
 When adding a resource to [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml),
 you must:
