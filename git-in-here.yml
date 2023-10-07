@@ -311,6 +311,28 @@ contributors:
   response: >-
     CSS 2.1 is the second wonder of the world, a more expressive language does not exist 😻
 
+- username: ARCHITABHATTAD
+  question: *Q5
+  response: >-
+    I use Python and Django as backend technologies to develop applications and also have significant experience with AI/ML.
+    I am also familier with cloud technologies like AWS, Jenkins, and Docker. 
+
+- username: UKJaagadhep
+  question: *Q5
+  response: >-
+    As a aspiring data scientist, Python is my most used and most loved programming language.
+    I love to use Numpy, Pandas, Matplotlib, Seaborn and OpenCV libraries in python. I am yet to 
+    learn scikit learn and ntlk libraries but I am greatly fascinated by them. I mostly
+    use google colab for executing my python program because I like its interface.
+    
+- username: AaadityaG
+  question: *Q3
+  response: >-
+    As beginner some times we get exhuast with big code that we don't understand🙁. But we don't have to
+    worry about it😀. Just start with the small project, repos or code. So how to find good first issues
+    or tasks that we can do as a beginner. Just go to - https://goodfirstissue.dev and thank me later...😄
+    You can also checkout https://www.firstissue.dev for level up the game. Hope this helps!
+
 - username: VivekChatterjee
   question: *Q8
   response: >-
@@ -332,6 +354,14 @@ contributors:
     Getting into the open source is an amazing opportunity to expand our skills,work on real-world
     projects and connect with the community of passionate individuals.It's a great chance to make a 
     positive impact on the world-all while learning from experienced developers.
+
+
+- username: GettingWeirdKnowledge
+  question: *Q1
+  response: >-
+     I've always been fond of the way open-source indicates the strength of the masses. Making contributions together not only helps numerous people develop their skills but also ends up 
+     creating a beautiful end product and providing a sense of community and togetherness to programming. 
+     I couldn't manage to find time earlier but now that I have some, I'm excited and eager to play my part in providing contributions and sharing my knowledge.
 
 # Leave a blank line at the end of the file :)
 
