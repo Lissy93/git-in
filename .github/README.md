@@ -834,6 +834,13 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/enterbrianup">
+            <img src="https://avatars.githubusercontent.com/u/69416990?v=4" width="60;" alt="enterbrianup"/>
+            <br />
+            <sub><b>Enterbrianup</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/gabrielmccallin-and">
             <img src="https://avatars.githubusercontent.com/u/146741657?v=4" width="60;" alt="gabrielmccallin-and"/>
             <br />
