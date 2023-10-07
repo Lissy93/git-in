@@ -1,4 +1,5 @@
 # If a PR is opened within October, then add Hacktoberfest label
+# Also supports other challenges, like NovemberSoftwareChallenge and 24PR-December
 name: 🎃 Add Hacktoberfest Label
 
 on:
@@ -14,24 +15,41 @@ jobs:
   add-label:
     runs-on: ubuntu-latest
     steps:
-    - name: 📆 Check if month is October
+    - name: 📆 Check current month
       id: check-date
       run: |
         MONTH=$(date +'%m')
         if [[ "$MONTH" == "10" ]]; then
-          echo "::set-output name=october::true"
+          echo "::set-output name=month::october"
+        elif [[ "$MONTH" == "11" ]]; then
+          echo "::set-output name=month::november"
+        elif [[ "$MONTH" == "12" ]]; then
+          echo "::set-output name=month::december"
         else
-          echo "::set-output name=october::false"
+          echo "::set-output name=month::other"
         fi
-    - name: 🏷️ Add label if October
-      if: steps.check-date.outputs.october == 'true'
+    - name: 🏷️ Add labels based on month
       uses: actions/github-script@v3
       with:
         github-token: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}
         script: |
-          github.issues.addLabels({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            labels: ['hacktoberfest-accepted']
-          })
+          let labelsToAdd = [];
+          switch ("${{ steps.check-date.outputs.month }}") {
+            case "october":
+              labelsToAdd.push('hacktoberfest-accepted');
+              break;
+            case "november":
+              labelsToAdd.push('NovemberSoftwareChallenge');
+              break;
+            case "december":
+              labelsToAdd.push('24PR-December');
+              break;
+          }
+          if (labelsToAdd.length) {
+            github.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: labelsToAdd
+            });
+          }
