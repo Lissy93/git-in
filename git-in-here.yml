@@ -296,10 +296,22 @@ contributors:
     role or to showcase our work in coming few years and ya I started open source because I want to contribute
     while learning and open source is the perfect way to do this.
 
+- username : aneeshd27
+  question : *Q1
+  response : >-
+    I was interested to contribute and understand the flow of git due to which contributing to open-source projects
+    was a stepping stone to do the same.Open Source is the future as many companies are shifting to open-source
+    due to which Open Source becomes an important skill in this era.
+
 - username : astin-47
   question : *Q1
   response : >-
-    Getting into open source is like joining a vibrant and diverse community of tech enthusiasts. It's a chance to team up with talented people from around the world, learn new skills, and work on exciting projects that can truly make a difference. Plus, it's rewarding to know that your contributions are helping to create better software that's freely accessible to everyone. It's about growth, camaraderie, and being a part of something bigger than yourself.
+    Getting into open source is like joining a vibrant and diverse community of tech enthusiasts.
+    It's a chance to team up with talented people from around the world, learn new skills,
+    and work on exciting projects that can truly make a difference.
+    Plus, it's rewarding to know that your contributions are
+    helping to create better software that's freely accessible to everyone.
+    It's about growth, camaraderie, and being a part of something bigger than yourself.
     
 - username : Midhilesh2003
   question : *Q5
@@ -310,6 +322,34 @@ contributors:
   question: *Q5
   response: >-
     CSS 2.1 is the second wonder of the world, a more expressive language does not exist 😻
+    
+- username : Dhiman-Nayak
+  question : *Q6
+  response : >-
+    Open Source is a great thing to do something for the community. For learning about open source YouTube is the
+    best resource for me .
+
+- username: ARCHITABHATTAD
+  question: *Q5
+  response: >-
+    I use Python and Django as backend technologies to develop applications and also have significant experience with AI/ML.
+    I am also familier with cloud technologies like AWS, Jenkins, and Docker. 
+
+- username: UKJaagadhep
+  question: *Q5
+  response: >-
+    As a aspiring data scientist, Python is my most used and most loved programming language.
+    I love to use Numpy, Pandas, Matplotlib, Seaborn and OpenCV libraries in python. I am yet to 
+    learn scikit learn and ntlk libraries but I am greatly fascinated by them. I mostly
+    use google colab for executing my python program because I like its interface.
+    
+- username: AaadityaG
+  question: *Q3
+  response: >-
+    As beginner some times we get exhuast with big code that we don't understand🙁. But we don't have to
+    worry about it😀. Just start with the small project, repos or code. So how to find good first issues
+    or tasks that we can do as a beginner. Just go to - https://goodfirstissue.dev and thank me later...😄
+    You can also checkout https://www.firstissue.dev for level up the game. Hope this helps!
 
 - username: VivekChatterjee
   question: *Q8
@@ -336,8 +376,22 @@ contributors:
 - username: entrerbrianup 
   question: *Q1
   response: >- 
-  I want to get into open source to learn, contribute, and collaborate with others in the community and get good connection in the field of Computer science world.
+    I want to get into open source to learn, contribute, and collaborate with others in the community
+    and get good connection in the field of Computer science world.
     
+- username: GettingWeirdKnowledge
+  question: *Q1
+  response: >-
+     I've always been fond of the way open-source indicates the strength of the masses. Making contributions together not only helps numerous people develop their skills but also ends up 
+     creating a beautiful end product and providing a sense of community and togetherness to programming. 
+     I couldn't manage to find time earlier but now that I have some, I'm excited and eager to play my part in providing contributions and sharing my knowledge.
+
+- username: haxybaxy
+  question: *Q3
+  response: >-
+     My advice for someone who wants to get into open source is to JUST START. Even if you don't know anything about anything, learning will be 
+     so much easier when you are doing hands on work. We often think that acquiring new skills or learning something new is going to take us a lot
+     of time, which discourages us, but the thing is that timewill pass anyways. Keep at it and you will achieve something great!
 
 # Leave a blank line at the end of the file :)
 
