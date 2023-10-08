@@ -117,7 +117,7 @@ Next we need to add the public key to your GitHub profile.
 
 Copy the contents of your newly generated SSH public key (the one ending in `.pub`). You can view the file by running `cat ~/.ssh/id_ed25519.pub` (if you named your key something else, update that accordingly)
 
-Next head over to GitHub, and log into your account
+Next head over to GitHub, and log into your account:
 1. Click on your profile photo, then click on Settings.
 2. In the left sidebar, click on SSH and GPG keys.
 3. Click the New SSH key button.
