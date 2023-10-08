@@ -1,0 +1,107 @@
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#d494ff',
+      'primaryTextColor': '#161618',
+      'primaryBorderColor': '#161618',
+      'lineColor': '#6befe0',
+      'secondaryColor': '#5F54D5',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
+
+graph LR
+
+    style A fill:#759ad5;
+    style B fill:#9c86ee;
+    style C fill:#9c86ee;
+    style D fill:#9c86ee;
+    style E fill:#9c86ee;
+    style F fill:#9c86ee;
+    style G fill:#9c86ee;
+    style H fill:#9c86ee;
+    
+    A(fa:fa-code-branch Open Source Developer Roadmap)
+
+    %% Stage 1
+    A ==> B(fa:fa-play Stage 1: Introduction)
+    B ==> B1(What is Open Source?)
+    B1 --> B1a(Philosophy & Principles)
+    B1 --> B1b(Benefits - Collaboration, Transparency, Community)
+    B1 --> B1c(Challenges - Licensing, Governance, Sustainability)
+
+    %% Stage 2
+    A ==> C(fa:fa-wrench Stage 2: Fundamental Tools)
+    C ==> C1(Version Control with Git)
+    C1 --> C1a(Basics - Init, Add, Commit, Push, Pull)
+    C1 --> C1b(Branching & Merging)
+    C1 --> C1c(Handling Conflicts)
+    C1 --> C1d(Best Practices)
+
+    C ==> C2(Using GitHub/GitLab/Bitbucket)
+    C2 --> C2a(Repositories, Issues & PRs)
+    C2 --> C2b(Forking vs Cloning)
+    C2 --> C2c(GitHub Actions - CI/CD Basics)
+
+    %% Stage 3
+    A ==> D(fa:fa-code Stage 3: Dive into Coding)
+    D --> D1(Pick a Language)
+    D1 --> D1a(Basics & Advanced Topics)
+    D1 --> D1b(Libraries & Frameworks)
+    D1 --> D1c(Community & Support)
+
+    D ==> D2(Project Structure & Design Patterns)
+    D2 --> D2a(Understanding Open Source Codebase)
+    D2 --> D2b(Common Architectural Patterns)
+    D2 --> D2c(Code Quality & Standards)
+
+    %% Stage 4
+    A ==> E(fa:fa-people-line Stage 4: Engaging with the Community)
+    E ==> E1(Finding the Right Project)
+    E1 --> E1a(Good First Issue & Beginner Friendly)
+    E1 --> E1b(Project's Vision, Goals, and Roadmap)
+
+    E ==> E2(Communication Skills)
+    E2 --> E2a(Engaging in Discussions)
+    E2 --> E2b(Reporting Bugs & Enhancements)
+    E2 --> E2c(Code Review Ethics & Best Practices)
+
+    %% Stage 5
+    A ==> F(fa:fa-hands-holding-child Stage 5: Make Contributions)
+    F ==> F1(Documentation & Testing)
+    F1 --> F1a(Writing Clear Documentation)
+    F1 --> F1b(Unit Testing & Test-Driven Development)
+
+    F ==> F2(Bug Fixes & Feature Enhancements)
+    F2 --> F2a(Debugging Strategies)
+    F2 --> F2b(Collaborating with Project Maintainers)
+
+    F ==> F3(Project Governance & Management)
+    F3 --> F3a(Understanding Project's Governance Model)
+    F3 --> F3b(Role of Maintainers, Contributors, and Users)
+
+    %% Stage 6
+    A ==> G(fa:fa-brain Stage 6: Advanced Topics)
+    G ==> G1(Open Source Licensing)
+    G1 --> G1a(Common Licenses - MIT, GPL, Apache)
+    G1 --> G1b(Choosing a License for Your Project)
+
+    G ==> G2(Sustainability & Monetization)
+    G2 --> G2a(Donations, Crowdfunding, Grants)
+    G2 --> G2b(Open Core, Dual Licensing, Paid Support Models)
+
+    %% Stage 7
+    A ==> H(fa:fa-rocket Stage 7: Your Own Project)
+    H ==> H1(Starting a New Project)
+    H1 --> H1a(Defining Vision & Scope)
+    H1 --> H1b(Community Building & Management)
+
+    H ==> H2(Continuous Integration & Deployment)
+    H2 --> H2a(CI/CD Pipelines for Open Source)
+    H2 --> H2b(Tools - Travis CI, CircleCI, GitHub Actions)
+
+    H ==> H3(Project Leadership & Mentoring)
+    H3 --> H3a(Nurturing New Contributors)
+    H3 --> H3b(Setting & Managing Expectations)
