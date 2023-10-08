@@ -382,9 +382,11 @@ contributors:
 - username: GettingWeirdKnowledge
   question: *Q1
   response: >-
-     I've always been fond of the way open-source indicates the strength of the masses. Making contributions together not only helps numerous people develop their skills but also ends up 
+     I've always been fond of the way open-source indicates the strength of the masses.
+     Making contributions together not only helps numerous people develop their skills but also ends up 
      creating a beautiful end product and providing a sense of community and togetherness to programming. 
-     I couldn't manage to find time earlier but now that I have some, I'm excited and eager to play my part in providing contributions and sharing my knowledge.
+     I couldn't manage to find time earlier but now that I have some,
+     I'm excited and eager to play my part in providing contributions and sharing my knowledge.
 
 - username: haxybaxy
   question: *Q3
@@ -396,11 +398,20 @@ contributors:
 - username: kiddjsh
   question: *Q1
   response: >-
-	Open Source Projects will allow me to get involved within different communities 
-	giving me an opportunity to further develop skills, by contributing to source
-	code in areas of development, documentation, bug fixes, and testing, that will 
-	be recognized by community members and hiring managers, which will help in 
-	advancing my software development career.
+    Open Source Projects will allow me to get involved within different communities 
+    giving me an opportunity to further develop skills, by contributing to source
+    code in areas of development, documentation, bug fixes, and testing, that will 
+    be recognized by community members and hiring managers, which will help in 
+    advancing my software development career.
 
+- username: YashkShrivas4491
+  question: *Q3
+  response: >-
+     Hey Folks 👋🏻💻, if don't know about open-source and how to contribute,
+     don't worry you will get there just by learning,
+     doing hands-on practice and sharing knowledge with others,
+     I also want to say that learning in public plays a very significant
+     role because it can create lots of opportunities for you.
+  
 # Leave a blank line at the end of the file :)
 

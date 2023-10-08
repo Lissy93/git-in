@@ -64,7 +64,7 @@ On Linux, the best method for installing git is using your system's native packa
 When you push to a repo, or make any changes from your local machine, you've got two options for auth, HTTPS or SSH. With HTTPS you'll be prompted to enter a username + password each time you push, whereas with SSH you are authenticated automatically if once your key is setup.
 
 #### What is SSH Auth?
-SSH (or Secure SHell) authentication is a method used to establish a secure connection between a client and a server using cryptographic key pairs: a public key (which you share) and a private key (kept secret on your machine).
+SSH (or Secure Shell) authentication is a method used to establish a secure connection between a client and a server using cryptographic key pairs: a public key (which you share) and a private key (kept secret on your machine).
 
 #### How It Works:
 1. You generate an SSH key pair (a public key and a private key).
@@ -117,7 +117,7 @@ Next we need to add the public key to your GitHub profile.
 
 Copy the contents of your newly generated SSH public key (the one ending in `.pub`). You can view the file by running `cat ~/.ssh/id_ed25519.pub` (if you named your key something else, update that accordingly)
 
-Next head over to GitHub, and log into your account
+Next head over to GitHub, and log into your account:
 1. Click on your profile photo, then click on Settings.
 2. In the left sidebar, click on SSH and GPG keys.
 3. Click the New SSH key button.
@@ -141,6 +141,6 @@ git config --global user.name "Your Full Name"
 git config --global user.email "youremail@example.com"
 ```
 
-That's all you need for now, but there's many other setting which can be tweaked here, such as setting aliases shorthands, default editor/ conflict / diff programs, enabling features, using plugins, etc. It's also possible (and sometimes preferable) to have different git configurations for different projects.
+That's all you need for now, but there's many other settings which can be tweaked here, such as setting shorthand aliases, default editor/ conflict / diff programs, enabling features, using plugins, etc. It's also possible (and sometimes preferable) to have different git configurations for different projects.
 
 To learn about those, see the [Git Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration).
