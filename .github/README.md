@@ -292,6 +292,58 @@ Next you'll need to either fork and clone the repo, or if it's a small change yo
 
 Finally, you can submit the pull request! Head back to the source repo, and you should see a new button, saying "Create Pull Request". If the author has set a PR template, be sure it's filled in properly.
 
+
+<details>
+  <summary>Contribution Flow</summary>
+
+```mermaid
+sequenceDiagram
+
+    participant Dev as Developer
+    participant Repo as Upstream Repository
+    participant Forked as Forked Repository
+    participant Reviewer
+
+    Dev->>+Repo: Explore projects
+    Note over Dev: Find a project of interest
+
+    Dev->>+Repo: Fork Project
+    Repo->>Forked: Create Fork for Developer
+    Note over Dev: Has personal copy now
+
+    Dev->>Forked: Clone forked repo locally
+    Note over Dev: Work on local machine
+
+    Dev->>Dev: Create new branch
+    Note over Dev: Best practice for feature/fix
+
+    loop Development Loop
+        Dev->>Dev: Add changes
+        Dev->>Dev: Commit changes
+    end
+
+    Dev->>Forked: Push changes to forked repo
+    Note over Dev: Ready to contribute back
+
+    Dev->>Repo: Submit Pull Request (PR)
+    Note over Dev, Repo: Awaiting Review
+
+    Reviewer->>Repo: Review PR
+    alt PR is good
+        Reviewer->>Dev: Approve PR
+        Repo->>Repo: Merge PR changes
+    else PR needs changes
+        Reviewer->>Dev: Request Changes
+        Dev->>Dev: Make requested changes
+        Note over Dev: Return to Development Loop
+    end
+
+    Note over Dev, Repo: PR is eventually merged or closed
+```
+
+  
+</details>
+
 <p align="right"><sup><a href="#git-into-open-source">⬆️ Back to Top</a></sup></p>
 
 ---
