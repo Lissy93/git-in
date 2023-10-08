@@ -1,22 +1,26 @@
----
-const { title, description, url, image, author } = Astro.props
+const { title, description, url, image, author } = Astro.props;
+const subtitle = 'Accessible Astro Starter';
 
-let subtitle = 'Accessible Astro Starter'
----
+// General meta tags
+const pageTitle = `${title} - ${subtitle}`;
+const metaTags = {
+  title: pageTitle,
+  description: description,
+  author: author,
+};
 
-<!-- general meta -->
-<meta name="title" content={`${title} - ${subtitle}`} />
-<meta name="description" content={description} />
-<meta name="author" content={author} />
+// Open Graph tags
+const ogTags = {
+  title: pageTitle,
+  description: description,
+  type: 'website',
+  url: url,
+  image: Astro.site ? `${Astro.site}${image}` : image,
+};
 
-<!-- open graph -->
-<meta property="og:title" content={`${title} - ${subtitle}`} />
-<meta property="og:description" content={description} />
-<meta property="og:type" content="website" />
-<meta property="og:url" content={url} />
-<meta property="og:image" content={Astro.site ? `${Astro.site}${image}` : image} />
+// Twitter Card tags (if needed)
 
-<!-- twitter card -->
+// Page title
+const pageTitleElement = <title>{pageTitle}</title>;
 
-<!-- page title -->
-<title>{title} - {subtitle}</title>
+// Now you can use these variables in your HTML meta tags or template engine, e.g. React, JSX, etc.
