@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    paths: ['guides/roadmap.mermaid']
+    paths: ['guides/roadmap.mmd']
     
 jobs:
   build:

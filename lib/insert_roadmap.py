@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 # Determine the project root based on the script's location
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-mermaid_file = os.path.join(project_root, 'guides/roadmap.mermaid')
+mermaid_file = os.path.join(project_root, 'guides/roadmap.mmd')
 readme_path = os.path.join(project_root, '.github/README.md')
 
 
