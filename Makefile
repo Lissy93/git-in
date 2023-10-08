@@ -18,6 +18,9 @@ insert_resource_list:
 validate_pr:
 	$(PYTHON) lib/validate_pr.py
 
+insert_roadmap:
+	$(PYTHON) lib/insert_roadmap.py
+
 # Targets for web/
 install_web_dependencies:
 	cd web && npm install
