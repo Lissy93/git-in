@@ -7,7 +7,7 @@ icon: 'raphael:opensource'
 tags: 'None'
 index: '0'
 created: None
-updated: 2023-10-06
+updated: 2023-10-08
 ---
 
 <!--
@@ -37,7 +37,7 @@ updated: 2023-10-06
 
 | **Advantages**              | **Description**                                               |
 |-----------------------------|---------------------------------------------------------------|
-| Hands-On Learning           | Open source serves as an invaluable educational resource. Developers can study the code, learn best practices, and enhance their skills through hands-on experience. |
+| Hands-On Learning           | Open source services as an invaluable educational resource. Developers can study the code, learn best practices, and enhance their skills through hands-on experience. |
 | Community Mentorship        | The open source community often provides mentorship and guidance to newcomers, fostering a culture of continuous learning. |
 
 ## Cost Reduction 💰📉
@@ -90,7 +90,7 @@ In conclusion, open source is a powerful force in the world of technology, promo
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-10-06 22:10:00.378153
+	This file was auto-generated at 2023-10-08 10:47:47.128843
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/why-open-source.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->

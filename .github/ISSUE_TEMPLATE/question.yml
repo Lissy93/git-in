@@ -23,7 +23,7 @@ body:
           required: true
         - label: I've searched the [docs](https://github.com/Lissy93/git-into-open-source/tree/main/.github) for an answer
           required: true
-        - label: I agree to follow thr [Code of Conduct](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CODE_OF_CONDUCT.md)
+        - label: I agree to follow the [Code of Conduct](https://github.com/Lissy93/git-into-open-source/blob/main/.github/CODE_OF_CONDUCT.md)
           required: true
   - type: markdown
     attributes:
