@@ -16,7 +16,7 @@
     "@astrojs/partytown": "^2.0.1",
     "@astrojs/tailwind": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/parser": "^6.7.5",
     "accessible-astro-components": "^2.2.1",
     "astro": "^2.0.1",
     "astro-compress": "^2.0.6",
