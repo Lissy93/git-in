@@ -91,6 +91,7 @@ There's plenty of other repositories on GitHub looking for contributors! Whateve
 
 ## Guidelines
 
+> [!IMPORTANT]
 > ‼️ Please familiarise yourself with this checklist **before** submitting your pull request.<br>
 > ❌ PRs which <ins>do not follow these guidelines</ins>, or that are <ins>low-effort</ins> will <ins>**not be merged**</ins>.<br>
 > ⭕ These requirements are in place in order to keep the content in this repo high quality :)
