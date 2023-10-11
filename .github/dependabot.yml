@@ -1,15 +1,19 @@
 version: 2
 updates:
-  # NPM updates for astro site
+  # NPM updates for astro site - only security critical
   - package-ecosystem: "npm"
     directory: "/web"
     schedule:
       interval: "daily"
     target-branch: "main"
-    versioning-strategy: "auto"
+    versioning-strategy: "increase"
     open-pull-requests-limit: 10
     commit-message:
       prefix: "[SECURITY] - Website Dependencies: "
+    allowed-updates:
+      - match:
+          update-type: "security"
+          dependency-type: "all"
 
   # pip updates for Python scripts
   - package-ecosystem: "pip"
