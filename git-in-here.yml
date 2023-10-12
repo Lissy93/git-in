@@ -20,7 +20,7 @@ contributors:
 - username: lissy93
   question: *Q3
   response: >-
-    Don't be afraid to jump strait in, it's the best way to learn and great fun too!
+    Don't be afraid to jump straight in, it's the best way to learn and great fun too!
     Find a project you're passionate about, or start your own, as contributing is far
     more fulfilling when you're working on something that you really care about :)
 - username: liss-bot
@@ -419,6 +419,16 @@ contributors:
      For me, it has always been the people I get to meet, or the ideas that
      are shared while working on the open source projects. Seeing your code
      implemented is always a cherry on top
+
+- username: lavanderhoney
+  question: *Q1
+  response: >-
+      I want to get started to open source contribution so that I can learn
+      contributing to projects and get some hands-on experience in development.
+      I also get to learn version control skills like Git, and hope to shine my coding
+      skills and learn new language by contributing to projects. Open source contributions 
+      will also decorate my CV, and increase my chances of getting a remote job or better off-campus
+      placements, and I'm also aiming for next year's GSoc, so this is a great way for me to practice.
 
 - username: scd-02
   question: *Q7
