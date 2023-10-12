@@ -4,6 +4,7 @@ import tailwind from '@astrojs/tailwind'
 import compress from 'astro-compress'
 import dotenv from 'dotenv';
 import sitemap from '@astrojs/sitemap';
+import svelte from '@astrojs/svelte';
 
 dotenv.config();
 
@@ -14,5 +15,8 @@ export default defineConfig({
   site,
   base,
   compressHTML: true,
-  integrations: [mdx(), tailwind(), compress(), sitemap()],
+  integrations: [svelte(), mdx(), tailwind(), compress(), sitemap()],
+  buildOptions: {
+    jsxImportSource: '@webcomponents/element',
+  }
 })

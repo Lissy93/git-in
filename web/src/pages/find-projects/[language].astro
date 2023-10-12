@@ -1,0 +1,50 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import fetch from 'node-fetch';
+import { languages } from './languages'
+import RepoList from './RepoList.svelte';
+import LanguageHeader from './LanguageHeader.svelte';
+
+const { language } = Astro.params;
+
+let repos = [];
+
+const currentLanguage = languages.find((lang) => lang.identifier === language);
+
+export async function getStaticPaths() {
+  return languages.map((lang) => {
+    return { params: { language: lang.identifier } }
+  });
+}
+
+const API_KEY = process.env.GH_ACCESS_TOKEN;
+
+const fetchRepos = async () => {
+  const url = `https://api.github.com/search/repositories?q=language:${language}&sort=stars&order=desc`;
+  const data = fetch(url, { headers: { 'Authorization': `token ${API_KEY}`}} );
+  const result = await (await data).json();
+  return result?.items || [];
+};
+
+repos = await fetchRepos();
+
+---
+
+<DefaultLayout name="Find a Project">
+  <section class="wrapper">
+    { language && 
+    <>
+      <LanguageHeader language={currentLanguage} />
+      <RepoList repos={repos} />
+    </>
+    }
+  </section>
+</DefaultLayout>
+
+<style>
+  .wrapper {
+    max-width: 90vw;
+    margin: 1rem auto;
+  }
+
+</style>

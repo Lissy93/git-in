@@ -1,0 +1,10 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { languages } from './languages'
+
+---
+<DefaultLayout name="Find a Project">
+<section>
+{ languages.map((lang) => (<a href={`find-projects/${lang.identifier}`}>{lang.name}</a>)) }
+</section>
+</DefaultLayout>
