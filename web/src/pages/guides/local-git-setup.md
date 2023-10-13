@@ -7,7 +7,7 @@ icon: 'mdi:git'
 tags: 'None'
 index: '2'
 created: None
-updated: 2023-10-08
+updated: 2023-10-13
 ---
 
 <!--
@@ -30,7 +30,19 @@ This document covers:
 
 ## Creating a GitHub Account
 
----
+Creating a GitHub account is very easy. To create a GitHub account, follow these steps:
+
+1. Open your web browser and go to [GitHub's website](https://github.com).
+2. On the GitHub homepage, click on the "Sign up" button to start the registration process.
+3. Choose a unique username for your account.
+4. Provide a valid email address that you have access to.
+5. Create a strong and secure password for your GitHub account.
+6. Complete the CAPTCHA.
+7. Once you've filled your details, click the "Create Account" button.
+8. Open your email inbox and click on the verification link sent by GitHub.
+9. Select the GitHub plan that suits your needs and click "Continue."
+10. (Optional) Customize your GitHub account by adding a profile picture and filling out your profile information.
+12. Once your account is set up, you are good to go!
 
 ## Installing Git
 
@@ -167,7 +179,7 @@ To learn about those, see the [Git Configuration](https://git-scm.com/book/en/v2
 	Article sourced from https://github.com/lissy93/git-into-opensource
 	Licensed under MIT License, (C) Alicia Sykes <alicia@as93.net> 2023
 	---
-	This file was auto-generated at 2023-10-08 20:31:55.399536
+	This file was auto-generated at 2023-10-13 16:03:48.931500
 	from /home/runner/work/git-into-open-source/git-into-open-source/guides/local-git-setup.md
 	using /home/runner/work/git-into-open-source/git-into-open-source/lib/copy_resources_to_site.py
 -->
