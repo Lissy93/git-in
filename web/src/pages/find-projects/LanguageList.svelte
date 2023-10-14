@@ -1,9 +1,8 @@
 <script>
   export let languages = [];
 
-  const iconUrl = (icon, color) => {
+  const iconUrl = (icon) => {
     const iconSize = 48;
-    // const iconColor = (color || '').replace('#', '') || '161618';
     const iconColor = 'ffffff';
     return `https://api.iconify.design/${icon}.svg?height=${iconSize}&color=%23${iconColor}`;
   };
@@ -13,14 +12,14 @@
 <section>
   <h1>Pick a language, any language</h1>
   <p class="intro">
-    Choose a language, to see a list of repositories that have
-    been as marked as welcoming for first-time contributors
+    Choose a programming language below, to see a list of repositories
+    that have been as marked as welcoming for first-time contributors.
   </p>
   <ul>
   {#each languages as language}
     <li style={`--language-color: ${language.color}`}>
       <a href={`find-projects/${language.identifier}`}>
-      <img src={iconUrl(language.icon, language.color)} />
+      <img src={iconUrl(language.icon)} />
       <h2>{language.name}</h2>
       </a>
     </li>

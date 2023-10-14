@@ -1,4 +1,12 @@
 
+export const repoTags = [
+  'first-timers-only',
+  'hacktoberfest',
+  'good-first-issue',
+  'your-first-pr',
+  'up-for-grabs',
+];
+
 export const languages = [
   {
     identifier: 'javascript',
