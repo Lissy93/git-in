@@ -1,47 +1,41 @@
 ---
-import DefaultLayout from '../../layouts/DefaultLayout.astro'
+// Importing modules
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
 import fetch from 'node-fetch';
-import { languages, repoTags } from './languages'
+import { languages, repoTags } from './languages';
 import RepoList from './RepoList.svelte';
 import LanguageHeader from './LanguageHeader.svelte';
 
-const { language } = Astro.params;
+// Constants
+const API_KEY = process.env.GH_ACCESS_TOKEN;
 
-let repos = [];
-
-const currentLanguage = languages.find((lang) => lang.identifier === language);
-
+// Define the options for paths (from available languages)
 export async function getStaticPaths() {
   return languages.map((lang) => {
     return { params: { language: lang.identifier } }
   });
 }
 
-const API_KEY = process.env.GH_ACCESS_TOKEN;
+// Fetch the current language
+const { language } = Astro.params;
+const currentLanguage = languages.find((lang) => lang.identifier === language);
 
-// const fetchRepos = async () => {
-//   // first-timers-only
-//   const url = `https://api.github.com/search/repositories?q=language:${language}&sort=stars&order=desc`;
-//   const data = fetch(url, { headers: { 'Authorization': `token ${API_KEY}`}} );
-//   const result = await (await data).json();
-//   return result?.items || [];
-// };
-
-const fetchRepos = async (language) => {
-    if (!language || !API_KEY) {
+// Fetch repositories based on language and topics
+async function fetchRepos(lang) {
+    if (!lang || !API_KEY) {
         throw new Error("Both language and API_KEY are required.");
     }
 
     const TIMEOUT = 10000;
+    const fetchedRepos = new Set();
+    const combinedRepos = [];
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
-    
-    const fetchedRepos = new Set(); // to track unique repositories based on their ID
-    const combinedRepos = [];
 
     for (const topic of repoTags) {
-        const url = `https://api.github.com/search/repositories?q=language:${language}+topic:${topic}&sort=stars&order=desc`;
-        
+        const url = `https://api.github.com/search/repositories?q=language`
+        + `:${lang}+topic:${topic}&sort=stars&order=desc`;
+
         try {
             const response = await fetch(url, {
                 headers: {
@@ -50,14 +44,14 @@ const fetchRepos = async (language) => {
                 },
                 signal: controller.signal
             });
-            
+
             if (!response.ok) {
-                throw new Error(`GitHub API returned status code ${response.status}: ${response.statusText}`);
+                throw new Error(`GitHub API returned ${response.status}: ${response.statusText}`);
             }
 
             const result = await response.json();
             for (const repo of result?.items || []) {
-                if (!fetchedRepos.has(repo.id)) { // check if we have seen this repo ID before
+                if (!fetchedRepos.has(repo.id)) {
                     fetchedRepos.add(repo.id);
                     combinedRepos.push(repo);
                 }
@@ -66,30 +60,24 @@ const fetchRepos = async (language) => {
             if (error.name === 'AbortError') {
                 throw new Error("Request timed out.");
             }
-            throw error; // Re-throw other errors
+            throw error;
         }
     }
 
     clearTimeout(timeoutId);
-
-    // Sort the combined repos based on stars
     return combinedRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
 };
 
-
-repos = await fetchRepos(currentLanguage.identifier, process.env.GH_ACCESS_TOKEN);
+// Fetch repositories
+let repos = await fetchRepos(currentLanguage.identifier);
 
 ---
 
 <DefaultLayout name="Find a Project">
   <section class="wrapper">
     <a href="/find-projects" class="back">↩ Back</a>
-    { language && 
-    <>
-      <LanguageHeader language={currentLanguage} />
-      <RepoList repos={repos} />
-    </>
-    }
+    <LanguageHeader language={currentLanguage} />
+    <RepoList repos={repos} />
   </section>
 </DefaultLayout>
 
@@ -107,11 +95,11 @@ repos = await fetchRepos(currentLanguage.identifier, process.env.GH_ACCESS_TOKEN
       display: block;
       width: fit-content;
       transition: 0.15s all ease-in-out;
+
       &:hover {
         background: var(--font-color-pale);
         color: var(--background);
       }
     }
   }
-
 </style>

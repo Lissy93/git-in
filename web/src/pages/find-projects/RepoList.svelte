@@ -48,7 +48,7 @@
         </p>
 
         <p class="repo-stats">
-          <span class="star-count">🟊 {repo.stargazers_count}</span>
+          <span class="star-count"><b>★</b> {repo.stargazers_count}</span>
           {#if repo.license}
             <span class="license">{repo.license.name}</span>
           {/if}
@@ -115,6 +115,9 @@
         display: flex;
         span:not(:last-child) {
           margin-right: 1rem;
+        }
+        .star-count {
+          b { font-size: 2rem; line-height: 1rem; }
         }
         .license {
           border: 1px solid var(--font-color-pale);
