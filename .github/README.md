@@ -756,13 +756,20 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/AryanSaxenaa">
+            <img src="https://avatars.githubusercontent.com/u/100140924?v=4" width="60;" alt="AryanSaxenaa"/>
+            <br />
+            <sub><b>Aryan Saxena</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/Avinesh2">
             <img src="https://avatars.githubusercontent.com/u/136051099?v=4" width="60;" alt="Avinesh2"/>
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/debanath">
             <img src="https://avatars.githubusercontent.com/u/57856461?v=4" width="60;" alt="debanath"/>
@@ -811,15 +818,15 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Jagaadhep U K</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Kaniz-Fatma">
             <img src="https://avatars.githubusercontent.com/u/146003237?v=4" width="60;" alt="Kaniz-Fatma"/>
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Keshav-Aneja">
             <img src="https://avatars.githubusercontent.com/u/119158790?v=4" width="60;" alt="Keshav-Aneja"/>
@@ -832,6 +839,13 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <img src="https://avatars.githubusercontent.com/u/24761035?v=4" width="60;" alt="Midhilesh2003"/>
             <br />
             <sub><b>Midhilesh Chinta</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Odeyiany2">
+            <img src="https://avatars.githubusercontent.com/u/108756842?v=4" width="60;" alt="Odeyiany2"/>
+            <br />
+            <sub><b>Miriam </b></sub>
         </a>
     </td>
     <td align="center">
@@ -861,7 +875,8 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Ravneet Singh</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/robertlent">
             <img src="https://avatars.githubusercontent.com/u/7595802?v=4" width="60;" alt="robertlent"/>
@@ -875,8 +890,7 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Robin</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/destryptor">
             <img src="https://avatars.githubusercontent.com/u/117581936?v=4" width="60;" alt="destryptor"/>
@@ -918,7 +932,8 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Vivek Chatterjee</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/YashkShrivas4491">
             <img src="https://avatars.githubusercontent.com/u/87111197?v=4" width="60;" alt="YashkShrivas4491"/>
@@ -932,8 +947,7 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Yashwant Aditya</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/alwenpy">
             <img src="https://avatars.githubusercontent.com/u/94129388?v=4" width="60;" alt="alwenpy"/>
