@@ -13,7 +13,19 @@ This document covers:
 
 ## Creating a GitHub Account
 
----
+Creating a GitHub account is very easy. To create a GitHub account, follow these steps:
+
+1. Open your web browser and go to [GitHub's website](https://github.com).
+2. On the GitHub homepage, click on the "Sign up" button to start the registration process.
+3. Choose a unique username for your account.
+4. Provide a valid email address that you have access to.
+5. Create a strong and secure password for your GitHub account.
+6. Complete the CAPTCHA.
+7. Once you've filled your details, click the "Create Account" button.
+8. Open your email inbox and click on the verification link sent by GitHub.
+9. Select the GitHub plan that suits your needs and click "Continue."
+10. (Optional) Customize your GitHub account by adding a profile picture and filling out your profile information.
+12. Once your account is set up, you are good to go!
 
 ## Installing Git
 

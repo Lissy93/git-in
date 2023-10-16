@@ -1,10 +1,11 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { languages } from './languages'
+import LanguageList from './LanguageList.svelte';
 
 ---
 <DefaultLayout name="Find a Project">
 <section>
-{ languages.map((lang) => (<a href={`find-projects/${lang.identifier}`}>{lang.name}</a>)) }
+  <LanguageList languages={languages} />
 </section>
 </DefaultLayout>

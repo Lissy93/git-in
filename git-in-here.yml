@@ -436,5 +436,36 @@ contributors:
     The most rewarding thing I have experienced is that open source helps me enhance my skills,  
     and I can seek help from this diverse and large community anytime I am stuck.
 
+- username: sassy-bugs
+  question: *Q3
+  response: >-
+    Trust me when I say that you get the true feels
+    of a developer is not when you deploy your project
+    but when you give back to the community and solve
+    the issues of open source techstacks you actually used
+    in your project. In the beginning all of it can seem a bit
+    overwhelming but truly just trust the process, your are definitely onto something great.
+    
+- username: AryanSaxenaa
+  question: *Q1
+  response: >-
+    I want to contribute to open source to gain hands-on experience, and
+    work on substantial projects. It's a valuable opportunity to enhance my
+    technical skills, collaborate with a global community, and give back to the 
+    software development world. Open source contributions serve as a
+    portfolio, showcasing real-world experience and dedication to continuous
+    learning, making it a win-win for personal and professional growth.
+
+- username: Odeyiany2
+  question: *Q5
+  response: >-
+    One tech tool I really love is the Jupyter Notebook. It so easy to use and navigate. 
+    As a noob in Data science and Machine Learning and this tool has definitely helped make
+    my work fun and easy to handle. I most especially love how I get error messages and also 
+    a prompt as to where the error occured. I have always loved coding in python and one library
+    I use a lot when working on projects is the Seaborn library. For me, it just gives a different
+    feel to my visualizations.
+
+
 # Leave a blank line at the end of the file :)
 
