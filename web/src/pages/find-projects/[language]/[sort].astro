@@ -1,0 +1,29 @@
+---
+import DefaultLayout from '../../../layouts/DefaultLayout.astro';
+import fetch from 'node-fetch';
+import { languages, repoTags } from './../languages';
+import RepoList from './../RepoList.svelte';
+import LanguageHeader from './../LanguageHeader.svelte';
+
+type SortMethod = 'popular' | 'forks' | 'most-help-wanted' | 'recently-updated';
+
+const sortMethod: SortMethod = 'popular';
+
+
+export const getStaticPaths = async () => {
+  const sortMethods = ['popular', 'forks', 'most-help-wanted', 'recently-updated'];
+
+  const paths = [];
+
+  for (const lang of languages) {
+    paths.push({ params: { language: lang.identifier } }); // Default route
+    for (const method of sortMethods) {
+      paths.push({ params: { language: lang.identifier, sortMethod: method } });
+    }
+  }
+  return paths;
+}
+
+---
+
+<p>Hello</p>

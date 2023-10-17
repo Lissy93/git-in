@@ -1,19 +1,37 @@
 ---
 // Importing modules
-import DefaultLayout from '../../layouts/DefaultLayout.astro';
+import DefaultLayout from '../../../layouts/DefaultLayout.astro';
 import fetch from 'node-fetch';
-import { languages, repoTags } from './languages';
-import RepoList from './RepoList.svelte';
-import LanguageHeader from './LanguageHeader.svelte';
+import { languages, repoTags } from './../languages';
+import RepoList from './../RepoList.svelte';
+import LanguageHeader from './../LanguageHeader.svelte';
+
+type SortMethod = 'popular' | 'forks' | 'most-help-wanted' | 'recently-updated';
+
+const sortMethod: SortMethod = 'popular';
 
 // Constants
 const API_KEY = process.env.GH_ACCESS_TOKEN;
 
 // Define the options for paths (from available languages)
-export async function getStaticPaths() {
-  return languages.map((lang) => {
-    return { params: { language: lang.identifier } }
-  });
+// export async function getStaticPaths() {
+//   return languages.map((lang) => {
+//     return { params: { language: lang.identifier } }
+//   });
+// }
+
+export const getStaticPaths = async () => {
+  const sortMethods = ['popular', 'forks', 'most-help-wanted', 'recently-updated'];
+
+  const paths = [];
+
+  for (const lang of languages) {
+    paths.push({ params: { language: lang.identifier } }); // Default route
+    for (const method of sortMethods) {
+      paths.push({ params: { language: lang.identifier, sortMethod: method } });
+    }
+  }
+  return paths;
 }
 
 // Fetch the current language
@@ -31,6 +49,13 @@ async function fetchRepos(lang) {
     const combinedRepos = [];
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
+
+    const sortStrategy: { [key in SortMethod]: string } = {
+        'popular': 'stars',
+        'forks': 'forks',
+        'most-help-wanted': 'help-wanted-issues',
+        'recently-updated': 'updated'
+    };
 
     for (const topic of repoTags) {
         const url = `https://api.github.com/search/repositories?q=language`
