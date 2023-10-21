@@ -13,8 +13,10 @@ Environment Variables (all optional)
 # Imports
 import os
 import yaml
+import json
 import requests
 import logging
+import time
 from typing import Dict, List, Union, Optional
 from requests.exceptions import RequestException
 
@@ -33,6 +35,42 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 README_PATH = os.path.join(SCRIPT_DIR, "..", ".github/README.md")
 """ The relative path to the YAML file containing the user-contributed content """
 CONTRIBUTORS_FILE_PATH = os.path.join(SCRIPT_DIR, "..", "git-in-here.yml")
+""" Need to use a cache file to avoid hitting the rate limit """
+CACHE_FILE = os.path.join(SCRIPT_DIR, "cache.json")
+
+
+def read_cache() -> dict:
+    """
+    Read cached GitHub data from the local file.
+    """
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, 'r') as f:
+            return json.load(f)
+    return {}
+
+
+def write_cache(cache: dict) -> None:
+    """
+    Write GitHub data to cache file.
+    """
+    with open(CACHE_FILE, 'w') as f:
+        json.dump(cache, f)
+
+
+def handle_rate_limit(response) -> None:
+    if response.status_code == 429 or response.status_code == 403:
+        try:
+            reset_time = int(response.headers.get('X-RateLimit-Reset'))
+        except ValueError:
+            logger.error("Rate limit likely exceeded, but no reset time provided.")
+            return
+        sleep_duration = reset_time - int(time.time()) + 1
+        if sleep_duration > 30:
+            logger.warning(f"Rate limit exceeded - quota will reset in {sleep_duration} seconds. "
+                           "Skipping, as this is too long to wait.")
+        else:
+            logger.info(f"Sleeping for {sleep_duration} seconds")
+            time.sleep(sleep_duration)
 
 # Configure Logging
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
@@ -68,6 +106,19 @@ def write_file(file_path: str, content: str, mode: str = "w") -> None:
         f.write(content)
 
 
+def get_profile_picture(username: str) -> str:
+    """
+    Returns either the URL to a users profile, or a placeholder image.
+    :param username: The username of the GitHub user.
+    :return: The URL of the profile picture of the GitHub user.
+    """
+    url_to_check = f"https://github.com/{username}.png"
+    response = requests.get(url_to_check)
+    if response.status_code == 200:
+        return url_to_check
+    return PLACEHOLDER_PROFILE_PICTURE
+
+
 def fetch_github_info(username: str) -> Dict[str, Union[str, None]]:
     """
     Fetches the name and avatar URL of a GitHub user.
@@ -81,10 +132,11 @@ def fetch_github_info(username: str) -> Dict[str, Union[str, None]]:
 
     url = f"https://api.github.com/users/{username}"
     response = requests.get(url, headers=headers)
-    print(response)
+    handle_rate_limit(response)
     if response.status_code != 200:
         logger.error(f"GitHub API returned status code {response.status_code} for user {username}.")
-        return {"name": username, "avatar_url": PLACEHOLDER_PROFILE_PICTURE}
+        return { "name": username, "avatar_url": get_profile_picture(username) }
+    logger.info(f"Successfully fetched GitHub info for user: {username}")
     return response.json()
     
 
@@ -140,6 +192,17 @@ def fetch_all_stargazers(
     return stargazers
 
 
+def format_url(url: str) -> str:
+    """
+    Makes URLs to users blogs and twitter profiles look nicer.
+    Removes www., http://, https:// and trailing slashes from a URL.
+    Also limits to 25 characters and replaces with ellipse if longer
+    """
+    url = url.replace("www.", "").replace("http://", "").replace("https://", "")
+    url = url.rstrip("/")
+    return url[:25] + (url[25:] and "...")
+
+
 def build_markdown_content(
     contributors: List[Dict[str, str]], stargazers: List[str]
 ) -> str:
@@ -165,11 +228,33 @@ def build_markdown_content(
         name = info["name"] if info["name"] else username
         picture = info.get("avatar_url", PLACEHOLDER_PROFILE_PICTURE)
         is_stargazer = "⭐ " if username.lower() in [sg.lower() for sg in stargazers] else ""
+        blog = f"<br /><sup>🌐 [{format_url(info['blog'])}]({info['blog']})</sup>" if info.get("blog") else ""
+        bio = info["bio"] if info.get("bio") else ""
+
+        if info.get("public_repos") and info.get("followers") and info.get("following"):
+            stats = (
+                f"<br /><kbd>👣 {info['following']} ┃ "
+                f"🫂 {info['followers']} ┃ "
+                f"🗃 {info['public_repos']}</kbd>"
+            )
+        else:
+            stats = ""
+        
+        if info.get("twitter_username") and not blog:
+            twitter = (
+                f"<br /><sup>🐦 [@{format_url(info['twitter_username'])}]"
+                "(https://x.com/{info['twitter_username']})</sup>"
+            )
+        else:
+            twitter = ""
+
+        # Put it all together!
         md_content += (
-            f"<a href='https://github.com/{username}'>{is_stargazer}{name}<br />"
-            f"<img src='{picture}' width='80' /></a> | "
+            f"<a href='https://github.com/{username}' title='{bio}'>{name}{is_stargazer}<br />"
+            f"<img src='{picture}' width='80' /></a> {stats} {blog} {twitter} | "
             f"**{question_heading}**<br />{response}\n"
         )
+        time.sleep(0.5) # Reduce rate-limiting from GitHub API
     return md_content
 
 
