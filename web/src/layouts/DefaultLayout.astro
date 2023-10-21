@@ -10,6 +10,7 @@ const {
   url,
   image = '/social-preview-image.png',
   author = 'Alicia Sykes',
+  hideContinue = false,
 } = Astro.props
 ---
 
@@ -27,7 +28,7 @@ const {
       description={description.substring(0, 100)}
       url={Astro.site
         ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(' ', '-')}`}
+        : `https://git-in.to/${title.toLowerCase().replaceAll(' ', '-')}`}
       image={image}
       author={author}
     />
@@ -38,7 +39,7 @@ const {
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
+    <Footer hideContinue={hideContinue}/>
     <style lang="scss" is:global>
       // theme settings
       :root {

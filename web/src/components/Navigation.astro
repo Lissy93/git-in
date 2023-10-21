@@ -1,12 +1,14 @@
 ---
 import ResponsiveToggle from './ResponsiveToggle.astro'
 import { DarkMode } from 'accessible-astro-components'
+
+import gitInLogo from '../assets/img/octocat-colored.svg';
 ---
 
 <div id="main-navigation" class="is-desktop py-8">
   <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
-      <img src={`${(await import('../assets/img/octocat-colored.svg')).default}`} alt="Git In!" width="36" height="36" />
+      <img src={gitInLogo.src} alt="Git In!" width="36" height="36" />
       <span class="font-bold">Git into Open Source</span>
     </a>
     <div class="wrapper">

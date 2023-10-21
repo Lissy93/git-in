@@ -105,6 +105,10 @@ const stargazerClass = (username) => stargazers.includes(username.toLowerCase())
 
 <style lang="scss">
   @use '../assets/scss/base/breakpoint' as *;
+  section {
+    width: 96vw;
+    margin: 0 auto;
+  }
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));

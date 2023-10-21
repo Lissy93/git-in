@@ -1,5 +1,39 @@
 ---
 import { Icon } from 'astro-icon'
+
+const callToActionLinks = [
+  {
+    href: 'guestbook',
+    icon: 'edit-twotone',
+    text: 'Guestbook',
+    description: 'Sign the guestbook, by submitting a PR',
+  },
+  {
+    href: 'guides',
+    icon: 'laptop-twotone',
+    text: 'Guides',
+    description: 'Tutorials to help you get started',
+  },
+  {
+    href: 'find-projects',
+    icon: 'search-twotone',
+    text: 'Find Projects',
+    description: 'Browse open source projects welcoming to first-time contributors',
+  },
+  // {
+  //   href: 'roadmap',
+  //   icon: 'arrows-horizontal-alt',
+  //   text: 'Roadmap',
+  //   description: 'A roadmap to help you go from zero to hero in open source',
+  // },
+  {
+    href: 'https://github.com/lissy93/git-into-open-source',
+    icon: 'github-twotone',
+    text: 'Continue on GitHub',
+    description: 'Discover more, and contribute via our GitHub repository',
+  },
+];
+
 ---
 
 <section class="hero my-24">
@@ -13,25 +47,20 @@ import { Icon } from 'astro-icon'
         </h1>
         <div class="subtitle">
           <p class="l1">Tools, guides and resources to help you kickstart your open source journey</p>
-          <p class="l2">
+          <p class="l2 opacity-75">
             Not sure where to start? Why not submit a PR adding your username to
             <a href="https://github.com/lissy93/git-into-open-source/blob/main/git-in-here.yml">
               <code>git-in-here.yml</code>
             </a>!
           </p>
         </div>
-        <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" href="https://github.com/lissy93/git-into-open-source">
-            <Icon pack="fa" name="github" />
-            Get Started on GitHub
-          </a>
-          <a
-            class="button has-icon color-secondary"
-            href="guides"
-          >
-            <Icon pack="fa" name="graduation-cap" />
-            Learn How
-          </a>
+        <div class="flex flex-col gap-3 min-[500px]:flex-row flex-wrap">
+          { callToActionLinks.map((link, indx) => (
+            <a href={link.href} class={`button has-icon ${indx !== callToActionLinks.length -1 ? 'color-secondary' : '' }`}>
+              <Icon pack="line-md" name={link.icon} />
+              {link.text}
+            </a>
+          ))}
         </div>
       </div>
       <img class="swim" src="octocat-swim.png" alt="Git In!" />
