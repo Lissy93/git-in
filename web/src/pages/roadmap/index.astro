@@ -2,11 +2,53 @@
 import BaseLayout from '../../layouts/DefaultLayout.astro';
 import ExternalResources from '../../components/ExternalResources.astro'
 
-
 const pageTitle = "Roadmap";
+
+const pathToMermaid = 'https://raw.githubusercontent.com/Lissy93/git-into-open-source/main/guides/roadmap.mmd';
+
+const getMermaidCode = async () => {
+  const response = await fetch(pathToMermaid);
+  return await response.text();
+}
+
+const mermaidCode = await getMermaidCode();
+
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
 
-  <ExternalResources />
+<BaseLayout pageTitle={pageTitle}>
+  <section>
+    <h2>{pageTitle}</h2>
+    <p>
+      This is a roadmap for how to get into open source. It is not a linear path, and you can jump in at any point. The
+      most important thing is to get started, and to keep going.
+    </p>
+    <blockquote>
+      The chart is written as a Mermaid diagram. You can make changes by editing the code in:
+      <a href="https://github.com/Lissy93/git-into-open-source/blob/main/guides/roadmap.mmd"><code>guides/roadmap.mmd</code></a>
+    </blockquote>
+    <pre class="roadmap mermaid">{mermaidCode}</pre>
+    <ExternalResources />
+  </section>
 </BaseLayout>
+
+<style lang="scss">
+  section {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  blockquote {
+    background: var(--neutral-background);
+    border-radius: 4px;
+    border-left: 2px solid var(--primary);
+    padding: 0.25rem 0.5rem;
+    margin: 1rem 0;
+  }
+  pre.roadmap.mermaid {
+    margin: 1rem auto;
+  }
+</style>

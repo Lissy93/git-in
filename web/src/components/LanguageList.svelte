@@ -18,7 +18,7 @@
   <ul>
   {#each languages as language}
     <li style={`--language-color: ${language.color}`}>
-      <a href={`find-projects/${language.identifier}`}>
+      <a href={`/find-projects/${language.identifier}`}>
       <img src={iconUrl(language.icon)} />
       <h2>{language.name}</h2>
       </a>
