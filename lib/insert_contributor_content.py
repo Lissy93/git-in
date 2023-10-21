@@ -12,12 +12,13 @@ Environment Variables (all optional)
 
 # Imports
 import os
+import re
 import yaml
 import json
 import html
-import requests
-import logging
 import time
+import logging
+import requests
 from typing import Dict, List, Union, Optional
 from requests.exceptions import RequestException
 
@@ -73,6 +74,7 @@ def handle_rate_limit(response) -> None:
             logger.info(f"Sleeping for {sleep_duration} seconds")
             time.sleep(sleep_duration)
 
+
 # Configure Logging
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
 logging.basicConfig(level=LOG_LEVEL)
@@ -113,6 +115,7 @@ def get_profile_picture(username: str) -> str:
     :param username: The username of the GitHub user.
     :return: The URL of the profile picture of the GitHub user.
     """
+    logger.info(f"Using backup method to fetch profile picture for user: {username}")
     url_to_check = f"https://github.com/{username}.png"
     response = requests.get(url_to_check)
     if response.status_code == 200:
@@ -135,7 +138,7 @@ def fetch_github_info(username: str) -> Dict[str, Union[str, None]]:
     response = requests.get(url, headers=headers)
     handle_rate_limit(response)
     if response.status_code != 200:
-        logger.error(f"GitHub API returned status code {response.status_code} for user {username}.")
+        logger.error(f"GitHub API returned {response.status_code} for @{username}.")
         return { "name": username, "avatar_url": get_profile_picture(username) }
     logger.info(f"Successfully fetched GitHub info for user: {username}")
     return response.json()
@@ -148,9 +151,15 @@ def map_question_to_heading(question: str) -> str:
     :return: The mapped question.
     """
     question_mappings = {
-        "What's your 'Aha!' moment with open source?": "My 'Aha!' moment in open source was:",
-        "What's the coolest open source project you've ever used or contributed to?": "The coolest open source project I've ever used or contributed to is:",
+        "Why do you want to get into open source?": "I want to get into open source because:",
+        "What's the coolest open source project you've ever used or come across?": "The coolest open source project I've ever come across is:",
         "What advice would you give to someone new to open source?": "The advice I would give to someone new to open source is:",
+        "Have you ever built or contributed to a project that you'd like to share with us here?": "I've built or contributed to a project that I'd like to share here, which is:",
+        "Which tech (tools, languages, libraries, etc) do you most use or love?": "The tech (tools, languages, libraries, etc) I most use and love is:",
+        "What are your go-to resources, for learning new things in open source?": "My go-to resources for learning new things in open source are:",
+        "What's the most rewarding thing you've experienced in your open-source journey?": "The most rewarding thing I've experienced in my open-source journey is:",
+        "How do you balance open source work, alongside your day job?": "I balance open source work alongside my day job by:",
+        "Where do you see open source going in the future?": "I see open source going in the direction of:"
     }
     return question_mappings.get(question, question)
 
@@ -204,6 +213,13 @@ def format_url(url: str) -> str:
     return url[:25] + (url[25:] and "...")
 
 
+def format_bio_text(bio: str) -> str:
+    """
+    Returns only a-z, A-Z, 0-9, spaces, and basic punctuation.
+    """
+    return html.escape(re.sub(r"[^a-zA-Z0-9 ]", "", bio).strip())
+
+
 def build_markdown_content(
     contributors: List[Dict[str, str]], stargazers: List[str]
 ) -> str:
@@ -228,14 +244,15 @@ def build_markdown_content(
         info = fetch_github_info(username)
         name = info["name"] if info["name"] else username
         picture = info.get("avatar_url", PLACEHOLDER_PROFILE_PICTURE)
-        is_stargazer = "⭐ " if username.lower() in [sg.lower() for sg in stargazers] else ""
+        is_stargazer = " ⭐" if username.lower() in [sg.lower() for sg in stargazers] else ""
         blog = f"<br /><sup>🌐 [{format_url(info['blog'])}]({info['blog']})</sup>" if info.get("blog") else ""
-        bio =  html.escape(info["bio"]) if info.get("bio") else ""
+        bio =  format_bio_text(info["bio"]) if info.get("bio") else ""
 
         if info.get("public_repos") and info.get("followers") and info.get("following"):
             stats = (
-                f"<br /><kbd>👣 {info['following']} ┃ "
+                f"<br /><kbd title='Followers, following and repo count for {username}'>"
                 f"🫂 {info['followers']} ┃ "
+                f"👣 {info['following']} ┃ "
                 f"🗃 {info['public_repos']}</kbd>"
             )
         else:
@@ -257,7 +274,6 @@ def build_markdown_content(
         )
         time.sleep(0.5) # Reduce rate-limiting from GitHub API
     return md_content
-
 
 
 """ The main entrypoint of the script """
