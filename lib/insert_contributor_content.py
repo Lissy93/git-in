@@ -14,6 +14,7 @@ Environment Variables (all optional)
 import os
 import yaml
 import json
+import html
 import requests
 import logging
 import time
@@ -229,7 +230,7 @@ def build_markdown_content(
         picture = info.get("avatar_url", PLACEHOLDER_PROFILE_PICTURE)
         is_stargazer = "⭐ " if username.lower() in [sg.lower() for sg in stargazers] else ""
         blog = f"<br /><sup>🌐 [{format_url(info['blog'])}]({info['blog']})</sup>" if info.get("blog") else ""
-        bio = info["bio"] if info.get("bio") else ""
+        bio =  html.escape(info["bio"]) if info.get("bio") else ""
 
         if info.get("public_repos") and info.get("followers") and info.get("following"):
             stats = (
