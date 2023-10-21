@@ -19,75 +19,77 @@ export const getStaticPaths = async () => {
   return paths;
 }
 
-
-// Fetch repositories based on language and topics
 export async function fetchRepos(lang: string, sort: string) {
-    if (!lang || !API_KEY) {
-        throw new Error("Both language and API_KEY are required.");
-    }
+  if (!lang || !API_KEY) {
+      throw new Error("Both language and API_KEY are required.");
+  }
 
-    const TIMEOUT = 10000;
-    const fetchedRepos = new Set();
-    const combinedRepos = [];
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
+  const TIMEOUT = 10000;
+  const fetchedRepos = new Set();
+  const combinedRepos = [];
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
 
-    const sortDict: { [key in SortMethod]: string } = {
-        'popular': 'stars',
-        'forks': 'forks',
-        'most-help-wanted': 'help-wanted-issues',
-        'recently-updated': 'updated'
-    };
+  const sortDict: { [key in SortMethod]: string } = {
+      'popular': 'stars',
+      'forks': 'forks',
+      'most-help-wanted': 'help-wanted-issues',
+      'recently-updated': 'updated'
+  };
 
-    const sortMethod = sortDict[sort];
-    const sortOrder = 'desc';
+  const sortMethod = sortDict[sort];
+  const sortOrder = 'desc';
 
-    for (const topic of repoTags) {
-        const url = 'https://api.github.com/search/repositories?q=language'
-        + `:${lang}+topic:${topic}&sort=${sortMethod}&order=${sortOrder}`;
+  for (const topic of repoTags) {
+      const url = 'https://api.github.com/search/repositories?q=language'
+      + `:${lang}+topic:${topic}&sort=${sortMethod}&order=${sortOrder}`;
 
-        try {
-            const response = await fetch(url, {
-                headers: {
-                    'Authorization': `token ${API_KEY}`,
-                    'Accept': 'application/vnd.github.mercy-preview+json'
-                },
-                signal: controller.signal
-            });
+      try {
+          const response = await fetch(url, {
+              headers: {
+                  'Authorization': `token ${API_KEY}`,
+                  'Accept': 'application/vnd.github.mercy-preview+json'
+              },
+              signal: controller.signal
+          });
 
-            if (!response.ok) {
-                throw new Error(`GitHub API returned ${response.status}: ${response.statusText}`);
-            }
+          if (response.status === 403) {
+              console.warn(`Rate limit hit for topic ${topic}`);
+              continue; // Skip the current iteration, move on to the next topic
+          }
 
-            const result = await response.json();
-            for (const repo of result?.items || []) {
-                if (!fetchedRepos.has(repo.id)) {
-                    fetchedRepos.add(repo.id);
-                    combinedRepos.push(repo);
-                }
-            }
-        } catch (error) {
-            if (error.name === 'AbortError') {
-                throw new Error("Request timed out.");
-            }
-            throw error;
-        }
-    }
+          if (!response.ok) {
+              throw new Error(`GitHub API returned ${response.status}: ${response.statusText}`);
+          }
 
-    clearTimeout(timeoutId);
+          const result = await response.json();
+          for (const repo of result?.items || []) {
+              if (!fetchedRepos.has(repo.id)) {
+                  fetchedRepos.add(repo.id);
+                  combinedRepos.push(repo);
+              }
+          }
+      } catch (error) {
+          if (error.name === 'AbortError') {
+              throw new Error("Request timed out.");
+          }
+          console.error(`Error fetching for topic ${topic}: ${error.message}`);
+      }
+  }
 
-    let sortedRepos = combinedRepos;
+  clearTimeout(timeoutId);
 
-    if (sort === 'recently-updated') {
-      sortedRepos = combinedRepos.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
-    } else if (sort === 'forks') {
-      sortedRepos = combinedRepos.sort((a, b) => b.forks - a.forks);
-    } else {
-      sortedRepos = combinedRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
-    }
 
-    return sortedRepos
+  let sortedRepos = combinedRepos;
+
+  if (sort === 'recently-updated') {
+    sortedRepos = combinedRepos.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
+  } else if (sort === 'forks') {
+    sortedRepos = combinedRepos.sort((a, b) => b.forks - a.forks);
+  } else {
+    sortedRepos = combinedRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+  }
+  return sortedRepos;
 }
-
 
 
