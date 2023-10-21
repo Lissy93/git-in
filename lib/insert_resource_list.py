@@ -46,6 +46,11 @@ for resource in data.get("resources", []):
     icon_tag = f"<img src='https://icon.horse/icon/{resource_host}' width='{icon_size}' />"
     resource_links.append(f"- {icon_tag} [{resource['title']}]({resource['url']})")
 
+logger.info("Preparing to insert project links...")
+project_links = []
+for project in data.get("projects", []):
+    project_links.append(f"- [{project.get('title', project['repo'])}]({project['repo']})")
+
 # Update the README.md between markers
 logger.info("Reading README.md file...")
 with open(readme_path, 'r') as file:
@@ -68,6 +73,7 @@ def update_content_between_markers(content, start_marker, end_marker, new_conten
 # Update guides and resources in README.md
 readme_content = update_content_between_markers(readme_content, "<!-- guides-start -->", "<!-- guides-end -->", guide_links)
 readme_content = update_content_between_markers(readme_content, "<!-- resources-start -->", "<!-- resources-end -->", resource_links)
+readme_content = update_content_between_markers(readme_content, "<!-- projects-start -->", "<!-- projects-end -->", project_links)
 
 # Write back the updated content to README.md
 logger.info("Writing back to README.md...")

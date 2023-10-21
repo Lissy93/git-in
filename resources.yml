@@ -88,3 +88,6 @@ resources:
   - title: Git Command Explorer
     url: https://gitexplorer.com/
     
+# A list of GitHub repositories that are welcoming to first-time contributors
+projects:
+  - repo: https://github.com/lissy93/git-into-open-source

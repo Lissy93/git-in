@@ -42,6 +42,12 @@ If you know of any sites that are not already listed, which you think could be h
 
 Keep in mind - I would ideally like to keep the resources list short, with only the best tools and websites listed, so if you're adding something ensure it meets this criteria, and provide justification.
 
+### Repos for First-Time Contributors
+
+There's a section on our website<sup>[here](https://www.git-in.to/find-projects)</sup>, and within the readme<sup>[here](https://github.com/Lissy93/git-into-open-source#finding-projects)</sup> that links to repositories that are welcoming to first-time contributors.
+
+If you know of a project that you think should be included here, you can add it by editing [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml), appending the repo to the `projects` section.
+
 ### Website
 
 We've also got a simple static site, that makes it easier to read some of the guides; it's hosted on GitHub Pages, at [lissy93.github.io/git-into-open-source](https://lissy93.github.io/git-into-open-source/)
@@ -118,7 +124,9 @@ Top tips for adding a great response:
 - **Markdown is supported!** So you can include links and basic formatting
   - Feel free to link to your projects, website or helpful (SFW) resources
   - Hyperlinks (`[text to display](https://example.com)`), new lines (`<br />`) as well as `**bold**` and `_italic_` all work
-- **Get a gold star by your name!** Drop a star on this repo, and you'll automatically get a star next to your response
+- **Get a gold star by your name!** The script will add some extra flair to your response, if you meet the following criteria:
+  - Drop a star on this repo, and you'll automatically get a star next to your response!
+  - Your personal website / X.com profile will be automatically included, if you've included it on your GH profile
 
 When adding a resource to [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml),
 you must:
@@ -126,6 +134,16 @@ you must:
 - Not submit anything which is duplicate content, or very similar to an existing resource
 - Disclose any association you may have to that website
 - Provide a short sentence of justification in your PR, explaining why it should be included
+
+When adding a repo to `projects` in [`resources.yml`](https://github.com/Lissy93/git-into-open-source/blob/main/resources.yml),
+the repository you are adding must:
+- Be welcoming to first-time contributors
+- Have clear documentation for development and contributing
+- Be a "useful" project, code-based, with real-world use-cases
+- Be actively maintained
+- Be at least 3 months old
+- Have at least 10 prior contributors
+- Have a minimum of 100 stars or 50 forks
 
 When submitting additions or changes to the guides in [`guides/`](https://github.com/Lissy93/git-into-open-source/tree/main/guides),
 you must:
