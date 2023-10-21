@@ -17,6 +17,7 @@ jobs:
     env:
       SITE_URL: 'https://lissy93.github.io'
       BASE_PATH: '/git-into-open-source'
+      GH_ACCESS_TOKEN: ${{ secrets.GH_WEB_PROD }}
     steps:
       - name: Checkout your repository 🛎️
         uses: actions/checkout@v3
