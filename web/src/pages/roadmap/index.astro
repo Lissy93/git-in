@@ -1,13 +1,12 @@
 ---
 import BaseLayout from '../../layouts/DefaultLayout.astro';
-import GuideList from '../../components/GuideList.astro'
 import ExternalResources from '../../components/ExternalResources.astro'
 
-const guides = await Astro.glob('./*.md');
-const pageTitle = "Tag Index";
+
+const pageTitle = "Roadmap";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <GuideList title="Guides" guides={guides} />
+
   <ExternalResources />
 </BaseLayout>

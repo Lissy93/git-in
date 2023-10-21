@@ -26,6 +26,7 @@ const getHostname = (url) => {
 
 
 <section>
+  <h2>Resources</h2>
   <ul class="resource-wrapper">
     { resources && resources.map((resource) => (
       <li>
@@ -40,11 +41,18 @@ const getHostname = (url) => {
 <style lang="scss">
   @use '../assets/scss/base/breakpoint' as *;
 
+
+  h2 {
+    @apply mx-auto max-w-screen-xl m-3 mt-12;
+  }
+
   .resource-wrapper {
-    @apply
-      mx-auto
-      max-w-screen-2xl
-      px-4;
+
+      @apply
+        mx-auto
+        max-w-screen-xl
+        px-4;
+        
       li {
         display: flex;
         align-items: center;
