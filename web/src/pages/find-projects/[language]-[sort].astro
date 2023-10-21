@@ -1,41 +1,34 @@
 ---
 // Importing modules
-import DefaultLayout from '../../../layouts/DefaultLayout.astro';
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
 import fetch from 'node-fetch';
-import { languages, repoTags } from './../languages';
-import RepoList from './../RepoList.svelte';
-import LanguageHeader from './../LanguageHeader.svelte';
+import { languages, repoTags } from '../../utils/languages';
+import RepoList from './RepoList.svelte';
+import LanguageHeader from './LanguageHeader.svelte';
 
-type SortMethod = 'popular' | 'forks' | 'most-help-wanted' | 'recently-updated';
+type SortMethod = 'popular' | 'forks' | 'most_help_wanted' | 'recently_updated';
 
 const sortMethod: SortMethod = 'popular';
 
 // Constants
 const API_KEY = process.env.GH_ACCESS_TOKEN;
 
-// Define the options for paths (from available languages)
-// export async function getStaticPaths() {
-//   return languages.map((lang) => {
-//     return { params: { language: lang.identifier } }
-//   });
-// }
-
 export const getStaticPaths = async () => {
-  const sortMethods = ['popular', 'forks', 'most-help-wanted', 'recently-updated'];
+  const sortMethods: SortMethod[] = ['popular', 'forks', 'most_help_wanted', 'recently_updated'];
 
-  const paths = [];
+  const paths: {}[] = [];
 
-  for (const lang of languages) {
-    paths.push({ params: { language: lang.identifier } }); // Default route
-    for (const method of sortMethods) {
-      paths.push({ params: { language: lang.identifier, sortMethod: method } });
-    }
-  }
+  languages.forEach((lang) => {
+    sortMethods.forEach((method) => {
+      paths.push({ params: { language: lang.identifier, sort: method } });
+    });
+  });
   return paths;
 }
 
+
 // Fetch the current language
-const { language } = Astro.params;
+const { language, sort } = Astro.params;
 const currentLanguage = languages.find((lang) => lang.identifier === language);
 
 // Fetch repositories based on language and topics
@@ -53,8 +46,8 @@ async function fetchRepos(lang) {
     const sortStrategy: { [key in SortMethod]: string } = {
         'popular': 'stars',
         'forks': 'forks',
-        'most-help-wanted': 'help-wanted-issues',
-        'recently-updated': 'updated'
+        'most_help_wanted': 'help-wanted-issues',
+        'recently_updated': 'updated'
     };
 
     for (const topic of repoTags) {
@@ -97,7 +90,6 @@ async function fetchRepos(lang) {
 let repos = await fetchRepos(currentLanguage.identifier);
 
 ---
-
 <DefaultLayout name="Find a Project">
   <section class="wrapper">
     <a href="/find-projects" class="back">↩ Back</a>
