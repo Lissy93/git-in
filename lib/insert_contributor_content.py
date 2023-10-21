@@ -244,7 +244,7 @@ def build_markdown_content(
         if info.get("twitter_username") and not blog:
             twitter = (
                 f"<br /><sup>🐦 [@{format_url(info['twitter_username'])}]"
-                "(https://x.com/{info['twitter_username']})</sup>"
+                f"(https://x.com/{info['twitter_username']})</sup>"
             )
         else:
             twitter = ""
