@@ -1,0 +1,51 @@
+---
+// Importing modules
+import DefaultLayout from '../../../layouts/DefaultLayout.astro';
+import fetch from 'node-fetch';
+import { languages } from '../../../utils/languages';
+import { fetchRepos, getStaticPaths as paths } from '../../../utils/find-repos';
+import RepoList from '../../../components/RepoList.svelte';
+import LanguageHeader from '../../../components/LanguageHeader.svelte';
+
+export const getStaticPaths = paths;
+
+
+// Fetch the current language
+const { language, sort } = Astro.params;
+const currentLanguage = languages.find((lang) => lang.identifier === language);
+const langIdentifier = currentLanguage.identifier;
+
+// Fetch repositories
+let repos = await fetchRepos(langIdentifier, sort);
+
+---
+<DefaultLayout name="Find a Project">
+  <section class="wrapper">
+    <a href="/find-projects" class="back">↩ Back</a>
+    <LanguageHeader language={currentLanguage} />
+    <RepoList repos={repos} />
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  .wrapper {
+    max-width: 90vw;
+    margin: 1rem auto;
+    .back {
+      color: var(--font-color-pale);
+      border: 1px solid var(--font-color-pale);
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 0.1rem 0.25rem;
+      margin-bottom: 0.5rem;
+      display: block;
+      width: fit-content;
+      transition: 0.15s all ease-in-out;
+
+      &:hover {
+        background: var(--font-color-pale);
+        color: var(--background);
+      }
+    }
+  }
+</style>

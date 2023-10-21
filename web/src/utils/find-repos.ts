@@ -2,12 +2,12 @@
 import fetch from 'node-fetch';
 import { languages, repoTags } from './languages';
 
-type SortMethod = 'popular' | 'forks' | 'most_help_wanted' | 'recently_updated';
+type SortMethod = 'popular' | 'forks' | 'most-help-wanted' | 'recently-updated';
 
 const API_KEY = process.env.GH_ACCESS_TOKEN;
 
 export const getStaticPaths = async () => {
-  const sortMethods: SortMethod[] = ['popular', 'forks', 'most_help_wanted', 'recently_updated'];
+  const sortMethods: SortMethod[] = ['popular', 'forks', 'most-help-wanted', 'recently-updated'];
 
   const paths: object[] = [];
 
@@ -21,7 +21,7 @@ export const getStaticPaths = async () => {
 
 
 // Fetch repositories based on language and topics
-export async function fetchRepos(lang) {
+export async function fetchRepos(lang: string, sort: string) {
     if (!lang || !API_KEY) {
         throw new Error("Both language and API_KEY are required.");
     }
@@ -32,16 +32,19 @@ export async function fetchRepos(lang) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
 
-    const sortStrategy: { [key in SortMethod]: string } = {
+    const sortDict: { [key in SortMethod]: string } = {
         'popular': 'stars',
         'forks': 'forks',
-        'most_help_wanted': 'help-wanted-issues',
-        'recently_updated': 'updated'
+        'most-help-wanted': 'help-wanted-issues',
+        'recently-updated': 'updated'
     };
 
+    const sortMethod = sortDict[sort];
+    const sortOrder = 'desc';
+
     for (const topic of repoTags) {
-        const url = `https://api.github.com/search/repositories?q=language`
-        + `:${lang}+topic:${topic}&sort=stars&order=desc`;
+        const url = 'https://api.github.com/search/repositories?q=language'
+        + `:${lang}+topic:${topic}&sort=${sortMethod}&order=${sortOrder}`;
 
         try {
             const response = await fetch(url, {
@@ -72,7 +75,18 @@ export async function fetchRepos(lang) {
     }
 
     clearTimeout(timeoutId);
-    return combinedRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+
+    let sortedRepos = combinedRepos;
+
+    if (sort === 'recently-updated') {
+      sortedRepos = combinedRepos.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
+    } else if (sort === 'forks') {
+      sortedRepos = combinedRepos.sort((a, b) => b.forks - a.forks);
+    } else {
+      sortedRepos = combinedRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+    }
+
+    return sortedRepos
 }
 
 
