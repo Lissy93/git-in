@@ -485,6 +485,15 @@ contributors:
   response: >-
     I love Python and am always amazed at how easy it is to solve projects with the 
     almost countless libraries like Tensorflow, OpenCV and also the bandwidth like
-    Micropython always impresses me. 
+    Micropython always impresses me.
+
+- username: AKSHATH99
+  question: *Q1
+  response: >-
+    I am into open-source to explore and contrubute into real world examples of what i am learning .
+    It gives me immense pleasure when i am able to bring changes/improvements into someone's application , be it small or    big changes, using my little knowledge. I am mostly into web development and as i dive deep into 
+    repositories in Open Source , I am learning new stuffs everyday. 
+
+    
     
 # Leave a blank line at the end of the file :)
