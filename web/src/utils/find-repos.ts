@@ -20,8 +20,8 @@ export const getStaticPaths = async () => {
 }
 
 export async function fetchRepos(lang: string, sort: string) {
-  if (!lang || !API_KEY) {
-      throw new Error("Both language and API_KEY are required.");
+  if (!API_KEY) {
+      throw new Error("You need to specify a GitHub PAT in the `GH_ACCESS_TOKEN` env var");
   }
 
   const TIMEOUT = 10000;
