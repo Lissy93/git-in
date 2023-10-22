@@ -18,9 +18,7 @@ web/.env
 # library test caches
 lib/__pycache__
 lib/tests/__pycache__
-
-
-
+lib/cache
 
 # macOS-specific files
 .DS_Store

@@ -492,13 +492,16 @@ contributors:
   response: >-
     I am into open-source to explore and contrubute into real world examples of what i am learning .
     It gives me immense pleasure when i am able to bring changes/improvements into someone's application , be it small or    big changes, using my little knowledge. I am mostly into web development and as i dive deep into 
-    repositories in Open Source , I am learning new stuffs everyday. 
+    repositories in Open Source , I am learning new stuffs everyday.
+
+- username: aeejaz
+  question: *Q3
+  response: >-
+    Start with projects you're passionate about and begin with small, well-documented contributions to ease your entry into the open source community.
 
 - username: Sanchitbajaj02
   question: *Q4
   response: >-
-    I am currently developing an open-source project called 'Palettegram.' The idea for this project originated a few months ago when I was working on a client's project. I had to design a website based on the client's unique needs, which sometimes didn't align with standard design practices. During that project, I felt the need for a platform where design professionals could review my work, and I could draw inspiration from other designers. I realized that such a platform would be immensely valuable. 
-
-    
+    I am currently developing an open-source project called 'Palettegram.' The idea for this project originated a few months ago when I was working on a client's project. I had to design a website based on the client's unique needs, which sometimes didn't align with standard design practices. During that project, I felt the need for a platform where design professionals could review my work, and I could draw inspiration from other designers. I realized that such a platform would be immensely valuable.     
     
 # Leave a blank line at the end of the file :)
