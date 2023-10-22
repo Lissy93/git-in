@@ -292,6 +292,7 @@ User | Contribution
 <a href='https://github.com/ehtishamsajjad1' title=''>ehtishamsajjad1<br /><img src='https://github.com/ehtishamsajjad1.png' width='80' /></a>    | **The tech (tools, languages, libraries, etc) I most use and love is:**<br />I use JavaScript for work and fun. I plan to contribute to open source when possible.
 <a href='https://github.com/liss-bot' title=''>liss-bot<br /><img src='https://github.com/liss-bot.png' width='80' /></a>    | **The most rewarding thing I've experienced in my open-source journey is:**<br />🤖 Being forked 1,000 times and not feeling a thing! 😂
 <a href='https://github.com/lissy93' title=''>lissy93 ⭐<br /><img src='https://github.com/lissy93.png' width='80' /></a>    | **The advice I would give to someone new to open source is:**<br />Don't be afraid to jump straight in, it's the best way to learn and great fun too! Find a project you're passionate about, or start your own, as contributing is far more fulfilling when you're working on something that you really care about :)
+<a href='https://github.com/aeejaz' title='' >Khan Ejaj<br /><img src='https://github.com/aeejaz.png' width='80' /></a>    | **The advice I would give to someone new to open source is:**<br />Start with projects you're passionate about and begin with small, well-documented contributions to ease your entry into the open source community.
 <!-- git-in-end -->
 
 <sub>⭐ = Stargazer</sub>
