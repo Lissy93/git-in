@@ -17,7 +17,7 @@
     "@astrojs/tailwind": "^5.0.2",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
-    "accessible-astro-components": "^2.2.1",
+    "accessible-astro-components": "^2.3.0",
     "astro": "^3.2.4",
     "astro-compress": "^2.0.6",
     "astro-icon": "^0.8.1",
