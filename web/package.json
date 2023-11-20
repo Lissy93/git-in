@@ -21,7 +21,7 @@
     "astro": "^3.2.4",
     "astro-compress": "^2.0.6",
     "astro-icon": "^0.8.1",
-    "eslint": "^8.51.0",
+    "eslint": "^8.54.0",
     "eslint-plugin-astro": "^0.29.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "prettier": "^3.0.3",
