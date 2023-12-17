@@ -14,7 +14,7 @@
   "devDependencies": {
     "@astrojs/mdx": "^1.1.5",
     "@astrojs/partytown": "^2.0.1",
-    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/tailwind": "^5.0.3",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.11.0",
     "accessible-astro-components": "^2.2.1",
