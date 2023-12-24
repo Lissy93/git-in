@@ -471,7 +471,7 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     </td>
     <td align="center">
         <a href="https://github.com/AnandChowdhary">
-            <img src="https://avatars.githubusercontent.com/u/2841780?u=ca8e292b15abcc6cddaeae0abded0115c51b4789&v=4" width="60;" alt="AnandChowdhary"/>
+            <img src="https://avatars.githubusercontent.com/u/2841780?u=2d606fd66dbb1e7a102d54b4c90f078760de6674&v=4" width="60;" alt="AnandChowdhary"/>
             <br />
             <sub><b>Anand Chowdhary</b></sub>
         </a>
@@ -527,13 +527,6 @@ Huge thanks to the following kind people, for their ongoing support in funding t
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/DRXAquosus">
-            <img src="https://avatars.githubusercontent.com/u/45409262?v=4" width="60;" alt="DRXAquosus"/>
-            <br />
-            <sub><b>Null</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Bastii717">
             <img src="https://avatars.githubusercontent.com/u/53431819?u=604977bed6ad6875ada890d0d3765a4cacc2fa14&v=4" width="60;" alt="Bastii717"/>
             <br />
@@ -549,7 +542,7 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     </td>
     <td align="center">
         <a href="https://github.com/CrossPatch9000">
-            <img src="https://avatars.githubusercontent.com/u/150388639?v=4" width="60;" alt="CrossPatch9000"/>
+            <img src="https://avatars.githubusercontent.com/u/150388639?u=2de7d52e66299307a2d8f863f81b5f493b068e4c&v=4" width="60;" alt="CrossPatch9000"/>
             <br />
             <sub><b>Null</b></sub>
         </a>
@@ -716,6 +709,13 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/ehtishamsajjad">
+            <img src="https://avatars.githubusercontent.com/u/47937929?v=4" width="60;" alt="ehtishamsajjad"/>
+            <br />
+            <sub><b>Ehtisham Sajjad</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Rohithv07">
             <img src="https://avatars.githubusercontent.com/u/36880893?v=4" width="60;" alt="Rohithv07"/>
             <br />
@@ -728,15 +728,15 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/AKSHATH99">
             <img src="https://avatars.githubusercontent.com/u/126553203?v=4" width="60;" alt="AKSHATH99"/>
             <br />
             <sub><b>AKSHATH P</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Addyk16">
             <img src="https://avatars.githubusercontent.com/u/72308974?v=4" width="60;" alt="Addyk16"/>
@@ -785,15 +785,15 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Anthony Onwuli</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Appy-007">
             <img src="https://avatars.githubusercontent.com/u/114466948?v=4" width="60;" alt="Appy-007"/>
             <br />
             <sub><b>Apratim Raha</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/ARCHITABHATTAD">
             <img src="https://avatars.githubusercontent.com/u/87604491?v=4" width="60;" alt="ARCHITABHATTAD"/>
@@ -841,13 +841,6 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <img src="https://avatars.githubusercontent.com/u/94984185?v=4" width="60;" alt="dharamveer-gupta"/>
             <br />
             <sub><b>Dharamveer Gupta</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/ehtishamsajjad1">
-            <img src="https://avatars.githubusercontent.com/u/47937929?v=4" width="60;" alt="ehtishamsajjad1"/>
-            <br />
-            <sub><b>Ehtisham Sajjad</b></sub>
         </a>
     </td></tr>
 <tr>
