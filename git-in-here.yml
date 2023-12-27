@@ -503,5 +503,16 @@ contributors:
   question: *Q4
   response: >-
     I am currently developing an open-source project called 'Palettegram.' The idea for this project originated a few months ago when I was working on a client's project. I had to design a website based on the client's unique needs, which sometimes didn't align with standard design practices. During that project, I felt the need for a platform where design professionals could review my work, and I could draw inspiration from other designers. I realized that such a platform would be immensely valuable.     
-    
+
+- username: payne680
+  question: *Q1
+  response: >-
+  Personal Growth and Learning: Getting involved in open source will provide me with valuable opportunities for personal growth and continuous learning. It will allow me to expand my knowledge, gain practical experience, and stay up to date with the latest technologies and industry trends.
+
+ - username: payne680
+   question: *Q1
+   response: >-
+    Personal Growth and Learning,
+    Getting involved in open source will provide me with valuable opportunities for personal growth and continuous learning. It will allow me to expand my knowledge, gain practical experience, and stay up to date with the latest technologies and industry trends.
+
 # Leave a blank line at the end of the file :)
