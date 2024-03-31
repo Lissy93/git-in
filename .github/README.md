@@ -456,17 +456,17 @@ Huge thanks to the following kind people, for their ongoing support in funding t
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Admonstrator">
+            <img src="https://avatars.githubusercontent.com/u/69824?v=4" width="60;" alt="Admonstrator"/>
+            <br />
+            <sub><b>Aaron Viehl</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/peng1can">
             <img src="https://avatars.githubusercontent.com/u/225854?v=4" width="60;" alt="peng1can"/>
             <br />
             <sub><b>Null</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/bgadrian">
-            <img src="https://avatars.githubusercontent.com/u/830001?u=69f115baad2fcd8c14eb05bdbf5cd80f4649a95a&v=4" width="60;" alt="bgadrian"/>
-            <br />
-            <sub><b>B.G.Adrian</b></sub>
         </a>
     </td>
     <td align="center">
@@ -600,13 +600,6 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     <td align="center">
         <a href="https://github.com/nrvo">
             <img src="https://avatars.githubusercontent.com/u/151435968?u=e1dcb307fd0efdc45cddbe9490a7b956e4da6835&v=4" width="60;" alt="nrvo"/>
-            <br />
-            <sub><b>Null</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/mezza93">
-            <img src="https://avatars.githubusercontent.com/u/153599966?v=4" width="60;" alt="mezza93"/>
             <br />
             <sub><b>Null</b></sub>
         </a>
