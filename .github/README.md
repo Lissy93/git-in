@@ -959,8 +959,8 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/srshah27">
-            <img src="https://avatars.githubusercontent.com/u/83776946?v=4" width="60;" alt="srshah27"/>
+        <a href="https://github.com/snehilshah">
+            <img src="https://avatars.githubusercontent.com/u/83776946?v=4" width="60;" alt="snehilshah"/>
             <br />
             <sub><b>Snehil Shah</b></sub>
         </a>
