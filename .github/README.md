@@ -591,6 +591,13 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>Christian Løvgren Jensen</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/UhOhSpaghettiCode">
+            <img src="https://avatars.githubusercontent.com/u/247676402?v=4" width="60;" alt="UhOhSpaghettiCode"/>
+            <br />
+            <sub><b>No Thanks</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: sponsors -end -->
