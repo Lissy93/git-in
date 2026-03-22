@@ -508,13 +508,6 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/Zero-Tail">
-            <img src="https://avatars.githubusercontent.com/u/16860155?u=a31a29cc10aba4a336552ecd87914861a2e06e22&v=4" width="60;" alt="Zero-Tail"/>
-            <br />
-            <sub><b>ZeroTail</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/getumbrel">
             <img src="https://avatars.githubusercontent.com/u/59408891?v=4" width="60;" alt="getumbrel"/>
             <br />
@@ -562,18 +555,18 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>LambdaTest</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/hesreallyhim">
             <img src="https://avatars.githubusercontent.com/u/172150522?u=e288991976c46b53437a5880e90be140634a8477&v=4" width="60;" alt="hesreallyhim"/>
             <br />
             <sub><b>Really Him</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/gl0bal01">
-            <img src="https://avatars.githubusercontent.com/u/173822055?u=4d323807f120b34da9b156bfd168b46a22844764&v=4" width="60;" alt="gl0bal01"/>
+            <img src="https://avatars.githubusercontent.com/u/173822055?u=6979dcc4773b1adfe6011019b9df3da6c9fc4534&v=4" width="60;" alt="gl0bal01"/>
             <br />
             <sub><b>Gl0bal01 💖 龴ↀ◡ↀ龴</b></sub>
         </a>
@@ -594,7 +587,7 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     </td>
     <td align="center">
         <a href="https://github.com/UhOhSpaghettiCode">
-            <img src="https://avatars.githubusercontent.com/u/247676402?u=4372f627824b46844d0e4274d7e06eed28ed66a8&v=4" width="60;" alt="UhOhSpaghettiCode"/>
+            <img src="https://avatars.githubusercontent.com/u/247676402?u=5f72d4663b2cfa48035f68ca449330fbc37878d8&v=4" width="60;" alt="UhOhSpaghettiCode"/>
             <br />
             <sub><b>No Thanks</b></sub>
         </a>
