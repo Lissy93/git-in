@@ -493,20 +493,34 @@ Huge thanks to the following kind people, for their ongoing support in funding t
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/elvito">
+            <img src="https://avatars.githubusercontent.com/u/9715912?v=4" width="60;" alt="elvito"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/vlad-tim">
             <img src="https://avatars.githubusercontent.com/u/11474041?u=eee43705b54d2ec9f51fc4fcce5ad18dd17c87e4&v=4" width="60;" alt="vlad-tim"/>
             <br />
             <sub><b>Vlad</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/helixzz">
             <img src="https://avatars.githubusercontent.com/u/12218889?u=d06d0c103dfbdb99450623064f7da3c5a3675fb6&v=4" width="60;" alt="helixzz"/>
             <br />
             <sub><b>HeliXZz</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Daechler">
+            <img src="https://avatars.githubusercontent.com/u/50748803?v=4" width="60;" alt="Daechler"/>
+            <br />
+            <sub><b>Daechler</b></sub>
+        </a>
+    </td>
     <td align="center">
         <a href="https://github.com/getumbrel">
             <img src="https://avatars.githubusercontent.com/u/59408891?v=4" width="60;" alt="getumbrel"/>
@@ -548,7 +562,8 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/LambdaTest-Inc">
             <img src="https://avatars.githubusercontent.com/u/171592363?u=080d9ba6069d0ff2a0558825ff2f667c45807687&v=4" width="60;" alt="LambdaTest-Inc"/>
@@ -562,11 +577,10 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>Really Him</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/gl0bal01">
-            <img src="https://avatars.githubusercontent.com/u/173822055?u=6979dcc4773b1adfe6011019b9df3da6c9fc4534&v=4" width="60;" alt="gl0bal01"/>
+            <img src="https://avatars.githubusercontent.com/u/173822055?u=8911ba88503c8b1d134dc0058e9e0bec5f23b8d9&v=4" width="60;" alt="gl0bal01"/>
             <br />
             <sub><b>Gl0bal01 💖 龴ↀ◡ↀ龴</b></sub>
         </a>
@@ -579,15 +593,8 @@ Huge thanks to the following kind people, for their ongoing support in funding t
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/clj00321">
-            <img src="https://avatars.githubusercontent.com/u/243985327?u=e42e7121ebab0a1a2938d7dd8127b6d3f7bfda8c&v=4" width="60;" alt="clj00321"/>
-            <br />
-            <sub><b>Christian Løvgren Jensen</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/UhOhSpaghettiCode">
-            <img src="https://avatars.githubusercontent.com/u/247676402?u=5f72d4663b2cfa48035f68ca449330fbc37878d8&v=4" width="60;" alt="UhOhSpaghettiCode"/>
+            <img src="https://avatars.githubusercontent.com/u/247676402?u=0bda2a0f4c134befbd89e26b6e8a749a5166d6bc&v=4" width="60;" alt="UhOhSpaghettiCode"/>
             <br />
             <sub><b>No Thanks</b></sub>
         </a>
@@ -833,13 +840,6 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/OmkarKirpan">
-            <img src="https://avatars.githubusercontent.com/u/14964401?v=4" width="60;" alt="OmkarKirpan"/>
-            <br />
-            <sub><b>Omkar Kirpan</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Euler-271">
             <img src="https://avatars.githubusercontent.com/u/109752768?v=4" width="60;" alt="Euler-271"/>
             <br />
@@ -851,6 +851,13 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <img src="https://avatars.githubusercontent.com/u/108756842?v=4" width="60;" alt="Odeyiany2"/>
             <br />
             <sub><b>Miriam </b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/AKSHATH99">
+            <img src="https://avatars.githubusercontent.com/u/126553203?v=4" width="60;" alt="AKSHATH99"/>
+            <br />
+            <sub><b>AKSHATH P</b></sub>
         </a>
     </td>
     <td align="center">
@@ -939,20 +946,13 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/AKSHATH99">
-            <img src="https://avatars.githubusercontent.com/u/126553203?v=4" width="60;" alt="AKSHATH99"/>
-            <br />
-            <sub><b>AKSHATH P</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
         <a href="https://github.com/Addyk16">
             <img src="https://avatars.githubusercontent.com/u/72308974?v=4" width="60;" alt="Addyk16"/>
             <br />
             <sub><b>Addy</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/AaadityaG">
             <img src="https://avatars.githubusercontent.com/u/114663382?v=4" width="60;" alt="AaadityaG"/>
@@ -1001,15 +1001,15 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Apratim Raha</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/ARCHITABHATTAD">
             <img src="https://avatars.githubusercontent.com/u/87604491?v=4" width="60;" alt="ARCHITABHATTAD"/>
             <br />
             <sub><b>Archita Bhattad</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/arungop">
             <img src="https://avatars.githubusercontent.com/u/53209422?v=4" width="60;" alt="arungop"/>
@@ -1058,15 +1058,15 @@ Consider supporting this repo, and my [other](https://github.com/Lissy93/) proje
             <br />
             <sub><b>Ejaj Ahmed</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/TaeMochi12">
             <img src="https://avatars.githubusercontent.com/u/116500412?v=4" width="60;" alt="TaeMochi12"/>
             <br />
             <sub><b>HIMANSHI BHARDWAJ</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/iamharshkr">
             <img src="https://avatars.githubusercontent.com/u/54257619?v=4" width="60;" alt="iamharshkr"/>
