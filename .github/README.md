@@ -458,6 +458,13 @@ Huge thanks to the following kind people, for their ongoing support in funding t
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/BrunoBernardino">
+            <img src="https://avatars.githubusercontent.com/u/1239616?v=4" width="60;" alt="BrunoBernardino"/>
+            <br />
+            <sub><b>Bruno Bernardino</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/bile0026">
             <img src="https://avatars.githubusercontent.com/u/5022496?u=aec96ad173c0ea9baaba93807efa8a848af6595c&v=4" width="60;" alt="bile0026"/>
             <br />
@@ -469,6 +476,13 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <img src="https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4" width="60;" alt="UlisesGascon"/>
             <br />
             <sub><b>Ulises Gascón</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/nrjohnstone">
+            <img src="https://avatars.githubusercontent.com/u/6700819?v=4" width="60;" alt="nrjohnstone"/>
+            <br />
+            <sub><b>Nathan Johnstone</b></sub>
         </a>
     </td>
     <td align="center">
@@ -491,6 +505,14 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>Brian McGonagill</b></sub>
         </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/elvito">
+            <img src="https://avatars.githubusercontent.com/u/9715912?v=4" width="60;" alt="elvito"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
     </td>
     <td align="center">
         <a href="https://github.com/vlad-tim">
@@ -505,8 +527,7 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>HeliXZz</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Daechler">
             <img src="https://avatars.githubusercontent.com/u/50748803?u=de67f2510378245669e134c508b676ea82e7688f&v=4" width="60;" alt="Daechler"/>
@@ -541,7 +562,8 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>John BigoudOps</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/terminaltrove">
             <img src="https://avatars.githubusercontent.com/u/121595180?v=4" width="60;" alt="terminaltrove"/>
@@ -551,7 +573,7 @@ Huge thanks to the following kind people, for their ongoing support in funding t
     </td>
     <td align="center">
         <a href="https://github.com/MichaelPerron">
-            <img src="https://avatars.githubusercontent.com/u/130603904?v=4" width="60;" alt="MichaelPerron"/>
+            <img src="https://avatars.githubusercontent.com/u/130603904?u=7c00e3e333b538bc86168cbfa72e997f818967b8&v=4" width="60;" alt="MichaelPerron"/>
             <br />
             <sub><b>Michael Perron</b></sub>
         </a>
@@ -562,8 +584,7 @@ Huge thanks to the following kind people, for their ongoing support in funding t
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/crmzx8">
             <img src="https://avatars.githubusercontent.com/u/170860426?u=43694046c9b5a99a3014369b22cc48815b07b457&v=4" width="60;" alt="crmzx8"/>
